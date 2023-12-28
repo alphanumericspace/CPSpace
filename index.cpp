@@ -8,7 +8,7 @@ int main() {
    };
    for(char& init : inits) {
       if(init=='M') continue;
-      if(init=='S') std::cout<<init<<'\n';
+      if(init==inits.at(-1)) std::cout<<init<<'\n';
       std::cout<<init<<' ';
    }
 }
