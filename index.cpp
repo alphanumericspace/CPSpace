@@ -12,6 +12,6 @@ int main() {
    mn = std::ranges::min(number);
    mx = std::ranges::max(number);
    
-   std::cout<<"Smallest: "<<min<<std::endl;
-   std::cout<<"Greatest: "<<max<<std::endl;
+   std::cout<<"Smallest: "<<mn<<std::endl;
+   std::cout<<"Greatest: "<<mx<<std::endl;
 }
