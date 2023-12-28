@@ -3,11 +3,11 @@
 #include <vector>
 
 int main() {
-   std::vector<int> numbers = {
-      12, 2, 20, 6
+   std::vector<char> inits = {
+      'N', 'M', 'P', 'S'
    };
-   for(int& number : numbers) {
-      number*=2;
-      std::cout<<number<<std::endl;
+   for(char& init : inits) {
+      std::cout<<init<<' ';
+      if(init=='P') continue;
    }
 }
