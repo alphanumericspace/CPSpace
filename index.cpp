@@ -1,17 +1,12 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <iomanip>
-#include <algorithm>
 
 int main() {
-   std::vector<int> number = {
+   std::vector<int> numbers = {
       12, 2, 20, 6
    };
-   int mn, mx;
-   mn = std::ranges::min(number);
-   mx = std::ranges::max(number);
-   
-   std::cout<<"Smallest: "<<mn<<std::endl;
-   std::cout<<"Greatest: "<<mx<<std::endl;
+   for(int number : numbers) {
+      std::cout<<n<<std::endl;
+   }
 }
