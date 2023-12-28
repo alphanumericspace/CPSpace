@@ -9,8 +9,8 @@ int main() {
       12, 2, 20, 6
    };
    int min, max;
-   min = std::range::min(number);
-   max = std::range::max(number);
+   min = std::ranges::min(number);
+   max = std::ranges::max(number);
    
    std::cout<<"Smallest: "<<min<<std::endl;
    std::cout<<"Greatest: "<<max<<std::endl;
