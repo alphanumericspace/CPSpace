@@ -8,6 +8,7 @@ int main() {
    };
    for(char& init : inits) {
       if(init=='M') continue;
+      if(init=='S') std::cout<<std::endl;
       std::cout<<init<<' ';
    }
 }
