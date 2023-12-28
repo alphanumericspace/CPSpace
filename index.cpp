@@ -8,9 +8,9 @@ int main() {
    std::vector<int> number = {
       12, 2, 20, 6
    };
-   int min, max;
-   min = std::ranges::min(number);
-   max = std::ranges::max(number);
+   int mn, mx;
+   mn = std::ranges::min(number);
+   mx = std::ranges::max(number);
    
    std::cout<<"Smallest: "<<min<<std::endl;
    std::cout<<"Greatest: "<<max<<std::endl;
