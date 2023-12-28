@@ -1,9 +1,13 @@
 #include <iostream>
+#include <string>
+#include <vector>
+#include <iomanip>
+
+void sayHello(void) {
+   std::cout << "Hello!";
+}
 
 int main() {
-   using std::cout;
-   using std::cin;
-   using std::string;
-   
-   cout << "Test";
+   std::cout << "Test";
+   sayHello();
 }
