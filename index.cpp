@@ -8,7 +8,7 @@ int main() {
    };
    for(char& init : inits) {
       if(init=='M') continue;
-      if(init=='S') std::cout<<std::endl;
+      if(init=='S') std::cout<<'S'<<std::endl;
       std::cout<<init<<' ';
    }
 }
