@@ -5,7 +5,7 @@
 #include <algorithm>
 
 int main() {
-   std::vector<int> number {
+   std::vector<int> number = {
       12, 2, 20, 6
    };
    int min, max;
