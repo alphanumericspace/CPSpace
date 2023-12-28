@@ -7,7 +7,7 @@ int main() {
       'N', 'M', 'P', 'S'
    };
    for(char& init : inits) {
-      std::cout<<init<<' ';
       if(init=='P') continue;
+      std::cout<<init<<' ';
    }
 }
