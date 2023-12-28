@@ -12,7 +12,6 @@ int main() {
    min = std::range::min(number);
    max = std::range::max(number);
    
-   std::cout<<"Array: "<<number<<std::endl;
    std::cout<<"Smallest: "<<min<<std::endl;
    std::cout<<"Greatest: "<<max<<std::endl;
 }
