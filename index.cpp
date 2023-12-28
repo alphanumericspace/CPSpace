@@ -4,10 +4,10 @@
 #include <iomanip>
 
 void sayHello(void) {
-   std::cout << "Hello!";
+   std::cout<<"Hello!"<<std::endl;
 }
 
 int main() {
-   std::cout << "Test";
+   std::cout<<"Test"<<std::endl;
    sayHello();
 }
