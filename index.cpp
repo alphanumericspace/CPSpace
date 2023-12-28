@@ -7,6 +7,6 @@ int main() {
       12, 2, 20, 6
    };
    for(int number : numbers) {
-      std::cout<<n<<std::endl;
+      std::cout<<number<<std::endl;
    }
 }
