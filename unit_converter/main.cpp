@@ -6,7 +6,7 @@
 
 int main() {
 
-	std::string greet = "\nWelcome to SPace Project, this is a tool to convert one unit to another based on international standards.\n";
+	std::string greet = "\nWelcome to SPace Project, this is a tool to convert one unit to another based on international standards.\n\n";
 
 	std::array<std::string, 4> list_menu {
 		"[1] Unit Converter",
