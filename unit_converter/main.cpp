@@ -14,8 +14,6 @@ int main() {
 		"[3] See this project on GitHub.\n",
 		"[0] Exit\n"
 	};
-
-	std::cout<<title<<greet<<opt;
 	
 	for(std::string list : list_menu) {
 		std::cout<<list;
