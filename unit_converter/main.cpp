@@ -5,7 +5,7 @@
 #include <string>
 
 int main() {
-   std::string title = "\nUnit Converter\n"
+   std::string title = "\nUnit Converter\n";
 	std::string greet = "\nWelcome to SPace Project, this is a tool to convert one unit to another based on international standards.\n";
 	std::string opt = "\nEnter the number according to the options provided below.\n\n";
 
