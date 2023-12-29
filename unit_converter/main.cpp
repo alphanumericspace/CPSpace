@@ -40,7 +40,7 @@ int main() {
 				std::cout<<"Done"<<std::endl;
 				break;
 			case 0:
-				std::cout<<"Exit"<<std::endl;
+				std::cout<<"Exit..."<<std::endl<<std::endl;
 				break;
 			default:
 				std::cout<<"'"<<input<<"'"<<" is not in option"<<std::endl;
