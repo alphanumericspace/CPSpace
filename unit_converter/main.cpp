@@ -5,8 +5,9 @@
 #include <string>
 
 int main() {
-
-	std::string greet = "\nWelcome to SPace Project, this is a tool to convert one unit to another based on international standards.\n\n";
+   std::string title = "\nUnit Converter\n"
+	std::string greet = "\nWelcome to SPace Project, this is a tool to convert one unit to another based on international standards.\n";
+	std::string opt = "\nEnter the number according to the options provided below.\n\n"
 
 	std::array<std::string, 4> list_menu {
 		"[1] Unit Converter",
@@ -15,7 +16,7 @@ int main() {
 		"[0] Exit"
 	};
 
-	std::cout<<greet;
+	std::cout<<title<<greet<<opt;
 	
 	for(std::string list : list_menu) {
 		std::cout<<list<<std::endl;
