@@ -15,9 +15,9 @@ int main() {
 		"[0] Exit"
 	};
 
-	std::cout<<greet<<std::endl;
+	std::cout<<"\n"<<greet<<std::endl<<std::endl;
 	for(std::string list : list_menu) {
-		std::cout<<list<<std::endl;
+		std::cout<<list<<std::endl<<std::endl;
 	}
 	
 	int input;
