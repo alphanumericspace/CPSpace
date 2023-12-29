@@ -20,8 +20,8 @@ int main() {
 		std::cout<<list<<std::endl;
 	}
 	
-	int input;
 	do {
+	   int input;
 		std::cout<<"Enter the option: ";
 		std::cin>>input;
 
