@@ -47,6 +47,6 @@ int main() {
 				std::cout<<"'"<<input<<"'"<<" is not in option\n";
 
 		}
-	} while (input != 0 && typeid(input).hash_code() != 1243495406);
+	} while (input != 0);
 	return 0;
 }
