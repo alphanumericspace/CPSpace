@@ -44,7 +44,7 @@ int main() {
 				std::cout<<"\tExit...\n\n";
 				break;
 			default:
-				std::cout<<\t"'"<<input<<"'"<<" is not in option\n";
+				std::cout<<"\t'"<<input<<"'"<<" is not in option\n";
 
 		}
 	} while (input != 0);
