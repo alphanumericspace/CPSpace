@@ -47,6 +47,6 @@ int main() {
 				std::cout<<"'"<<input<<"'"<<" is not in option\n";
 
 		}
-	} while (input != 0 && std::cin.fail());
+	} while (input != 0 && !(std::cin.fail()));
 	return 0;
 }
