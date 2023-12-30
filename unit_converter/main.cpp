@@ -47,6 +47,6 @@ int main() {
 				std::cout<<"'"<<input<<"'"<<" is not in option\n";
 
 		}
-	} while (!(input == 0));
+	} while (input != 0 && typeid(input).name() != "i");
 	return 0;
 }
