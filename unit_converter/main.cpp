@@ -24,7 +24,7 @@ int main() {
 	do {
 		std::cout<<"\nEnter the option: ";
 		std::cin>>input;
-		std::cout;
+		std::cout<<"\n";
 
 
 		switch (input) {
