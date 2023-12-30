@@ -24,23 +24,28 @@ int main() {
 	do {
 		std::cout<<"\nEnter the option: ";
 		std::cin>>input;
-		std::cout<<std::endl;
+		std::cout;
+
 
 		switch (input) {
 			case 1:
-				std::cout<<"Done"<<std::endl;
+				std::cout<<"Done\n";
+
 				break;
 			case 2:
-				std::cout<<"Done"<<std::endl;
+				std::cout<<"Done\n";
+
 				break;
 			case 3:
-				std::cout<<"Done"<<std::endl;
+				std::cout<<"Done\n";
+
 				break;
 			case 0:
-				std::cout<<"Exit..."<<std::endl<<std::endl;
+				std::cout<<"Exit...\n\n";
 				break;
 			default:
-				std::cout<<"'"<<input<<"'"<<" is not in option"<<std::endl;
+				std::cout<<"'"<<input<<"'"<<" is not in option\n";
+
 		}
 	} while (input != 0);
 }
