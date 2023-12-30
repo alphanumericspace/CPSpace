@@ -16,36 +16,37 @@ int main() {
 	};
 	
 	for(std::string list : list_menu) {
-		std::cout<<list;
+		std::cout<<"\t"<<list;
 	}
 	
 	int input;
 	
 	do {
-		std::cout<<"\nEnter the option: ";
+		std::cout<<"\n\tEnter the option: ";
 		std::cin>>input;
 		std::cout<<"\n";
 
 
 		switch (input) {
 			case 1:
-				std::cout<<"Done\n";
+				std::cout<<"\tDone\n";
 
 				break;
 			case 2:
-				std::cout<<"Done\n";
+				std::cout<<"\tDone\n";
 
 				break;
 			case 3:
-				std::cout<<"Done\n";
+				std::cout<<"\tDone\n";
 
 				break;
 			case 0:
-				std::cout<<"Exit...\n\n";
+				std::cout<<"\tExit...\n\n";
 				break;
 			default:
-				std::cout<<"'"<<input<<"'"<<" is not in option\n";
+				std::cout<<\t"'"<<input<<"'"<<" is not in option\n";
 
 		}
 	} while (input != 0);
+	return 0;
 }
