@@ -35,10 +35,10 @@ int main() {
 		else if(opt == "3") {
 		   std::cout<<"Done\n\n";
 		}
-		else if(opt == "0" or opt == "exit") {
+		else if(opt == "0") {
 		   std::cout<<"Exit...\n\n";
 		}
 		else std::cout<<"'"<<opt<<"' not in option\n\n";
-	} while (!(opt == "0" or opt == "exit"));
+	} while (!(opt == "0"));
 	return 0;
 }
