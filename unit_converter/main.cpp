@@ -5,11 +5,11 @@
 #include <string>
 
 void straight_line(void) {
-   std::endl;
+   std::cout<<"\n";
    for(int i = 0; i < 25; ++i) {
       std::cout<<"-";
    }
-   std::endl;
+   std::cout<<"\n";
 }
 void main_menu(void) {
    std::cout<<"HEAD >> Main Menu\n\n";
