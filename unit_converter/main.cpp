@@ -18,7 +18,6 @@ void main_menu(void) {
    std::vector<std::string> list_menu {
 		"[1](unc) Unit Converter",
 		"[2](inf) Information",
-		"[3](git) View the repository on GitHub",
 		"[0](ext) Exit"
 	};
 	for(std::string list : list_menu) {
@@ -95,9 +94,6 @@ int main() {
 		   main_menu();
 		}
 		else if(input == "2" or input == "inf") {
-		   std::cout<<"Done\n\n";
-		}
-		else if(input == "3" or input == "git") {
 		   std::cout<<"Done\n\n";
 		}
 		else if(input == "0" or input == "ext") {
