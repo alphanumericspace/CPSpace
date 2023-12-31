@@ -28,13 +28,17 @@ int main() {
 
 		if(opt == "1") {
 		   std::cout<<"Done\n";
-		} else if(opt == "2") {
+		}
+		else if(opt == "2") {
 		   std::cout<<"Done\n";
-		} else if(opt == "3") {
+		}
+		else if(opt == "3") {
 		   std::cout<<"Done\n";
-		} else if(opt == "0") {
+		}
+		else if(opt == "0") {
 		   std::cout<<"Exit...\n\n";
-		} else std::cout<<"'"<<opt<<"' not in option\n";
-	} while (!(opt == "0"));
+		}
+		else std::cout<<"'"<<opt<<"' not in option\n";
+	} while (!(opt == "0" or opt == "exit"));
 	return 0;
 }
