@@ -24,14 +24,14 @@ void main_menu(void) {
 }
 void unit_converter(void) {
    std::cout<<"|> Unit Converter\n\n";
-   std::vector<std::string> unit_option {
+   std::vector<std::string> unit {
       "[1](len) Length", "[2](are) Area",
       "[3](vol) Volume", "[4](wgt) Weight",
       "[5](tmp) Temperature", "[6](spd) Speed",
       "[7](pre) Pressure", "[8](pow) Power",
       "[0](abr) Abort"
    };
-   for(std::string unit : unit_option) {
+   for(std::string unit : unit) {
       std::cout<<unit<<std::endl;
    } newline();
 }
@@ -40,45 +40,45 @@ int main() {
    drawline();
    newline();
    main_menu();
-	std::string input;
-	while(!(input == "0" or input == "ext")) {
+	std::string inp;
+	while(!(inp == "0" or inp == "ext")) {
 		std::cout<<"Enter the option: ";
-		std::cin>>input;
+		std::cin>>inp;
 		drawline();
 		newline();
-		if(input == "1" or input == "unc") {
+		if(inp == "1" or inp == "unc") {
          unit_converter();
-         std::string unit_option;
-         while(!(unit_option == "0" or unit_option == "abr")) {
+         std::string unit;
+         while(!(unit == "0" or unit == "abr")) {
             std::cout<<"Enter the option: ";
-            std::cin>>unit_option;
+            std::cin>>unit;
             newline();
-            if(unit_option == "1" or unit_option == "len") {
+            if(unit == "1" or unit == "len") {
                std::cout<<"Done\n\n";
-            } else if(unit_option == "2" or unit_option == "are") {
+            } else if(unit == "2" or unit == "are") {
                std::cout<<"Done\n\n";
-            } else if(unit_option == "3" or unit_option == "vol") {
+            } else if(unit == "3" or unit == "vol") {
                std::cout<<"Done\n\n";
-            } else if(unit_option == "4" or unit_option == "wgt") {
+            } else if(unit == "4" or unit == "wgt") {
                std::cout<<"Done\n\n";
-            } else if(unit_option == "5" or unit_option == "tmp") {
+            } else if(unit == "5" or unit == "tmp") {
                std::cout<<"Done\n\n";
-            } else if(unit_option == "6" or unit_option == "spd") {
+            } else if(unit == "6" or unit == "spd") {
                std::cout<<"Done\n\n";
-            } else if(unit_option == "7" or unit_option == "pre") {
+            } else if(unit == "7" or unit == "pre") {
                std::cout<<"Done\n\n";
-            } else if(unit_option == "8" or unit_option == "pow") {
+            } else if(unit == "8" or unit == "pow") {
                std::cout<<"Done\n\n";
-            } else if(unit_option == "0" or unit_option == "abr") {
+            } else if(unit == "0" or unit == "abr") {
                std::cout<<"<| Operation aborted...\n";
                drawline();
                newline();
-            } else std::cout<<"'"<<unit_option<<"' not in option\n\n";
+            } else std::cout<<"'"<<unit<<"' not in option\n\n";
          } main_menu();
-		} else if(input == "2" or input == "inf") {
+		} else if(inp == "2" or inp == "inf") {
          std::cout<<"Done\n\n";
-		} else if(input == "0" or input == "ext") {
+		} else if(inp == "0" or inp == "ext") {
          std::cout<<"<| Exit the program...\n\n";
-		} else std::cout<<"'"<<input<<"' not in option\n\n";
+		} else std::cout<<"'"<<inp<<"' not in option\n\n";
 	} return 0;
 }
