@@ -9,7 +9,7 @@ void straight_line(void) {
    for(int i = 0; i < 25; ++i) {
       std::cout<<"-";
    }
-   std::cout<<"\n\n";
+   std::cout<<"\n";
 }
 void main_menu(void) {
    std::cout<<"HEAD >> Main Menu\n\n";
