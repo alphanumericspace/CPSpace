@@ -31,6 +31,7 @@ void unit_option(void) {
    std::cout<<"Select one of the unit conversion operations that you want: \n\n";
    for(std::string unit : unit_opt) {
       std::cout<<unit<<std::endl;
+      std::cout<<"\n";
    }
 }
 
