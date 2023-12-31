@@ -5,6 +5,7 @@
 #include <string>
 
 void straight_line(void) {
+   std::endl;
    for(int i = 0; i < 25; ++i) {
       std::cout<<"-";
    }
