@@ -58,7 +58,6 @@ int main() {
 		   while(!(unit_opt == "0")) {
 		      std::cout<<"Enter the option: ";
 		      std::cin>>unit_opt;
-		      std::cout<<"\n";
 		      if(unit_opt == "1") {
 		         std::cout<<"Done\n\n";
 		      }
@@ -84,7 +83,7 @@ int main() {
 		         std::cout<<"Done\n\n";
 		      }
 		      else if(unit_opt == "0") {
-		         std::cout<<"[]> Operation aborted...\n";
+		         std::cout<<"[]> Operation aborted...";
 		         straight_line();
 		      }
 		      else std::cout<<"'"<<unit_opt<<"' not in option\n\n";
