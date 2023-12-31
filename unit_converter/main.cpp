@@ -48,6 +48,8 @@ void unit_converter(void) {
    for(std::string unit : unit) {
       std::cout<<unit<<std::endl;
    }
+   
+   newline();
 }
 
 int main() {
