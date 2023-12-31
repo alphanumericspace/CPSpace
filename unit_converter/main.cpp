@@ -77,7 +77,7 @@ int main() {
 		         std::cout<<"Done\n\n";
 		      }
 		      else if(unit_opt == "0") {
-		         std::cout<<"Operation aborted...";
+		         std::cout<<"[]> Operation aborted...";
 		         std::cout<<"\n--------------------\n\n";
 		      }
 		      else std::cout<<"'"<<unit_opt<<"' not in option\n\n";
@@ -91,7 +91,7 @@ int main() {
 		   std::cout<<"Done\n\n";
 		}
 		else if(input == "0") {
-		   std::cout<<"Exit...\n\n";
+		   std::cout<<"[]> Exit the program...\n\n";
 		}
 		else std::cout<<"'"<<input<<"' not in option\n\n";
 	}
