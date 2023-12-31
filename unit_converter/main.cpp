@@ -66,6 +66,7 @@ int main() {
 		std::cout<<"Enter the option: ";
 		std::cin>>inp;
 		drawline();
+		newline();
 		
 		if(inp == "1"
 		or inp == "unc") {
