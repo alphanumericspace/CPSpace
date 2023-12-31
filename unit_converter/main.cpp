@@ -23,7 +23,7 @@ int main() {
 	
 	while(!(opt == "0")) {
 		std::cout<<"Enter the option: ";
-		std::getline(cin, opt);
+		std::getline(std::cin, opt);
 		std::cout<<"\n";
 
 		if(opt == "1") {
