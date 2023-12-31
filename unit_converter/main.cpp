@@ -7,7 +7,7 @@
 int main() {
 	std::vector<std::string> list_menu {
       "\nUnit Converter\n\n",
-      "Welcome to SPace Project, this is a tool to convert one unit to another based on international standards.\n\n",
+      "Welcome to CPSPace Project, this is a tool to convert one unit to another based on international standards.\n\n",
       "Enter the number according to the options provided below.\n\n",
 		"[1] Unit Converter\n",
 		"[2] Information\n",
@@ -19,26 +19,26 @@ int main() {
 		std::cout<<list;
 	}
 	
-	std::string opt;
+	std::string input;
 	
-	while(!(opt == "0")) {
+	while(!(input == "0")) {
 		std::cout<<"Enter the option: ";
-		std::cin>>opt;
+		std::cin>>input;
 		std::cout<<"\n";
-
-		if(opt == "1") {
+		
+		if(input == "1") {
 		   std::cout<<"Done\n\n";
 		}
-		else if(opt == "2") {
+		else if(input == "2") {
 		   std::cout<<"Done\n\n";
 		}
-		else if(opt == "3") {
+		else if(input == "3") {
 		   std::cout<<"Done\n\n";
 		}
-		else if(opt == "0") {
+		else if(input == "0") {
 		   std::cout<<"Exit...\n\n";
 		}
-		else std::cout<<"'"<<opt<<"' not in option\n\n";
+		else std::cout<<"'"<<input<<"' not in option\n\n";
 	}
 	return 0;
 }
