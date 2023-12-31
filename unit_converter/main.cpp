@@ -4,6 +4,19 @@
 #include <vector>
 #include <string>
 
+void unit_option(void) {
+   std::vector<std::string> unit_opt {
+      "[1] Length", "[2] Area",
+      "[3] Volume", "[4] Weight",
+      "[5] Temperature", "[6] Speed",
+      "[7] Pressure", "[8] Power"
+   };
+   std:cout<<"Unit Converter\n\n";
+   for(std::string unit : unit_opt) {
+      std::cout<<unit<<std::endl;
+   }
+}
+
 int main() {
 	std::vector<std::string> list_menu {
       "\nUnit Converter\n\n",
@@ -27,7 +40,11 @@ int main() {
 		std::cout<<"\n";
 		
 		if(input == "1") {
-		   std::cout<<"Done\n\n";
+		   unit_option();
+		   
+		   std::string unit_opt;
+		   std::cout<<"Select a unit: ";
+		   std::cin>>unit_opt;
 		}
 		else if(input == "2") {
 		   std::cout<<"Done\n\n";
