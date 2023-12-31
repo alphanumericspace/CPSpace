@@ -26,27 +26,25 @@ int main() {
 		std::cin>>input;
 		std::cout<<"\n";
 
+      std::string cvtInput = input;
 
 		switch (input) {
-			case 1:
+			case "1":
 				std::cout<<"Done\n";
-
 				break;
-			case 2:
+			case "2":
 				std::cout<<"Done\n";
-
 				break;
-			case 3:
+			case "3":
 				std::cout<<"Done\n";
-
 				break;
-			case 0:
+			case "0":
 				std::cout<<"Exit...\n\n";
 				break;
 			default:
 				std::cout<<"'"<<input<<"'"<<" is not in option\n";
 
 		}
-	} while (input != 0);
+	} while (!(input == "0"));
 	return 0;
 }
