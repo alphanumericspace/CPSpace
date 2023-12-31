@@ -47,6 +47,7 @@ int main() {
 	while(!(input == "0")) {
 		std::cout<<"Enter the option: ";
 		std::cin>>input;
+		straight_line();
 		
 		if(input == "1") {
 		   unit_converter();
