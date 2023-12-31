@@ -32,7 +32,7 @@ void unit_converter(void) {
       "[7] Pressure", "[8] Power",
       "[0] Abort"
    };
-   std::cout<<"Select one of the unit conversion operations that you want: \n";
+   std::cout<<"Select one of the unit conversion operations that you want: \n\n";
    for(std::string unit : unit_opt) {
       std::cout<<unit<<std::endl;
    }
@@ -40,7 +40,7 @@ void unit_converter(void) {
 }
 
 int main() {
-   std::cout<<"CPSpace Project - Unit Converter\n\nWelcome to CPSPace Project, this is a tool to convert one unit to another based on international standards.\n\n";
+   std::cout<<"CPSpace Project - Unit Converter\n\nWelcome to CPSPace Project, this is a tool to convert one unit to another based on international standards.\n";
    straight_line();
    main_menu();
 	std::string input;
