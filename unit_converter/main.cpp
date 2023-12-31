@@ -8,7 +8,6 @@ void straight_line(void) {
    for(int i = 0; i < 25; ++i) {
       std::cout<<"-";
    }
-   std::cout<<"\n";
 }
 void main_menu(void) {
    std::cout<<"HEAD >> Main Menu\n\n";
@@ -81,7 +80,7 @@ int main() {
 		         std::cout<<"Done\n\n";
 		      }
 		      else if(unit_opt == "0") {
-		         std::cout<<"[]> Operation aborted...";
+		         std::cout<<"[]> Operation aborted...\n";
 		         straight_line();
 		      }
 		      else std::cout<<"'"<<unit_opt<<"' not in option\n\n";
