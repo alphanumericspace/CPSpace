@@ -7,13 +7,11 @@
 void newline(void) {
    std::cout<<std::endl;
 }
-void straight_line(void) {
+void drawline(void) {
    newline();
-   std::cout<<"|";
    for(int i = 0; i < 25; ++i) {
       std::cout<<"-";
    }
-   std::cout<<"|";
    newline();
 }
 void main_menu(void) {
@@ -47,14 +45,14 @@ void unit_converter(void) {
 
 int main() {
    std::cout<<"\nCPSpace Project - Unit Converter\n\nWelcome to CPSPace Project, this is a tool to convert one unit to another based on international standards.\n";
-   straight_line();
+   drawline();
    newline();
    main_menu();
 	std::string input;
 	while(!(input == "0")) {
 		std::cout<<"Enter the option: ";
 		std::cin>>input;
-		straight_line();
+		drawline();
 		newline();
 		
 		if(input == "1") {
@@ -91,7 +89,7 @@ int main() {
 		      }
 		      else if(unit_opt == "0") {
 		         std::cout<<"<| Operation aborted...\n";
-		         straight_line();
+		         drawline();
 		         newline();
 		      }
 		      else std::cout<<"'"<<unit_opt<<"' not in option\n\n";
