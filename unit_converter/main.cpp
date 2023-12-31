@@ -24,7 +24,8 @@ void unit_option(void) {
       "[1] Length", "[2] Area",
       "[3] Volume", "[4] Weight",
       "[5] Temperature", "[6] Speed",
-      "[7] Pressure", "[8] Power"
+      "[7] Pressure", "[8] Power",
+      "[0] Abort"
    };
    std::cout<<"Unit Converter\n\n";
    for(std::string unit : unit_opt) {
