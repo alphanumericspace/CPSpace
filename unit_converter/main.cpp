@@ -12,7 +12,7 @@ int main() {
 		"[1] Unit Converter\n",
 		"[2] Information\n",
 		"[3] See this project on GitHub.\n",
-		"[0] Exit\n"
+		"[0] Exit\n\n"
 	};
 	
 	for(std::string list : list_menu) {
@@ -22,23 +22,23 @@ int main() {
 	std::string opt;
 	
 	do {
-		std::cout<<"\nEnter the option: ";
+		std::cout<<"Enter the option: ";
 		std::cin>>opt;
 		std::cout<<"\n";
 
 		if(opt == "1") {
-		   std::cout<<"Done\n";
+		   std::cout<<"Done\n\n";
 		}
 		else if(opt == "2") {
-		   std::cout<<"Done\n";
+		   std::cout<<"Done\n\n";
 		}
 		else if(opt == "3") {
-		   std::cout<<"Done\n";
+		   std::cout<<"Done\n\n";
 		}
 		else if(opt == "0") {
 		   std::cout<<"Exit...\n\n";
 		}
-		else std::cout<<"'"<<opt<<"' not in option\n";
+		else std::cout<<"'"<<opt<<"' not in option\n\n";
 	} while (!(opt == "0" or opt == "exit"));
 	return 0;
 }
