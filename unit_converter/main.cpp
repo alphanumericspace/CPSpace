@@ -9,7 +9,7 @@ void newline(void) {
 }
 void drawline(void) {
    newline();
-   for(int i = 0; i < 25; ++i) {
+   for(int i = 0; i < 40; ++i) {
       std::cout<<"-";
    }
    newline();
