@@ -9,15 +9,15 @@ void newline(void) {
 }
 void straight_line(void) {
    newline();
-   std::cout<<"|-";
+   std::cout<<"|";
    for(int i = 0; i < 25; ++i) {
       std::cout<<"-";
    }
-   std::cout<<"-|";
+   std::cout<<"|";
    newline();
 }
 void main_menu(void) {
-   std::cout<<"|> HEAD >> Main Menu\n\n";
+   std::cout<<"|> HEAD > Main Menu\n\n";
    std::vector<std::string> list_menu {
 		"[1] Unit Converter",
 		"[2] Information",
@@ -30,7 +30,7 @@ void main_menu(void) {
 	newline();
 }
 void unit_converter(void) {
-   std::cout<<"|> HEAD >> Unit Converter\n\n";
+   std::cout<<"|> HEAD > Unit Converter\n\n";
    std::vector<std::string> unit_opt {
       "[1] Length", "[2] Area",
       "[3] Volume", "[4] Weight",
@@ -90,7 +90,7 @@ int main() {
 		         std::cout<<"Done\n\n";
 		      }
 		      else if(unit_opt == "0") {
-		         std::cout<<"[]> Operation aborted...\n";
+		         std::cout<<"<| Operation aborted...\n";
 		         straight_line();
 		         newline();
 		      }
@@ -105,7 +105,7 @@ int main() {
 		   std::cout<<"Done\n\n";
 		}
 		else if(input == "0") {
-		   std::cout<<"[]> Exit the program...\n\n";
+		   std::cout<<"<| Exit the program...\n\n";
 		}
 		else std::cout<<"'"<<input<<"' not in option\n\n";
 	}
