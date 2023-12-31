@@ -26,22 +26,15 @@ int main() {
 		std::cin>>opt;
 		std::cout<<"\n";
 
-		switch (opt) {
-			case (opt == "1"):
-				std::cout<<"Done\n";
-				break;
-			case (opt == "2"):
-				std::cout<<"Done\n";
-				break;
-			case (opt == "3"):
-				std::cout<<"Done\n";
-				break;
-			case (opt == "0"):
-				std::cout<<"Exit...\n\n";
-				break;
-			default:
-				std::cout<<"'"<<opt<<"'"<<" is not in option\n";
-
+		if(opt == "1") {
+		   std::cout<<"Done\n";
+		} else if(opt == "2") {
+		   std::cout<<"Done\n";
+		} else if(opt == "3") {
+		   std::cout<<"Done\n";
+		} else if(opt == "0") {
+		   std::cout<<"Exit...\n\n";
+		} else std::cout<<"'"<<opt<<"' not in option\n";
 		}
 	} while (!(opt == "0"));
 	return 0;
