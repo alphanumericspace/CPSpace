@@ -11,7 +11,8 @@ void drawline(void) {
    newline();
    for(int i = 0; i < 40; ++i) {
       std::cout<<"-";
-   } newline();
+   }
+   newline();
 }
 void main_menu(void) {
    std::cout<<"|> Main Menu\n\n";
