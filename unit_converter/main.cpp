@@ -11,7 +11,7 @@ void unit_option(void) {
       "[5] Temperature", "[6] Speed",
       "[7] Pressure", "[8] Power"
    };
-   std:cout<<"Unit Converter\n\n";
+   std::cout<<"Unit Converter\n\n";
    for(std::string unit : unit_opt) {
       std::cout<<unit<<std::endl;
    }
