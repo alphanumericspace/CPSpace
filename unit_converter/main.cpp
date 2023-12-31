@@ -48,6 +48,7 @@ int main() {
 		std::cout<<"Enter the option: ";
 		std::cin>>input;
 		straight_line();
+		std::cout<<"\n";
 		
 		if(input == "1") {
 		   unit_converter();
