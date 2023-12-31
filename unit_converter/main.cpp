@@ -36,7 +36,6 @@ void unit_converter(void) {
       "[7] Pressure", "[8] Power",
       "[0] Abort"
    };
-   std::cout<<"Select one of the unit conversion operations that you want: \n\n";
    for(std::string unit : unit_opt) {
       std::cout<<unit<<std::endl;
    }
