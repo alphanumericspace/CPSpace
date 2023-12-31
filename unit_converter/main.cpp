@@ -8,8 +8,7 @@ void straight_line(void) {
    std::cout<<"\n";
    for(int i = 0; i < 25; ++i) {
       std::cout<<"-";
-   }
-   std::cout<<"\n";
+   } std::cout<<"\n";
 }
 void main_menu(void) {
    std::cout<<"HEAD >> Main Menu\n\n";
@@ -33,7 +32,7 @@ void unit_converter(void) {
       "[7] Pressure", "[8] Power",
       "[0] Abort"
    };
-   std::cout<<"Select one of the unit conversion operations that you want: \n\n";
+   std::cout<<"Select one of the unit conversion operations that you want: \n";
    for(std::string unit : unit_opt) {
       std::cout<<unit<<std::endl;
    }
