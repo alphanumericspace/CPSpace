@@ -9,9 +9,12 @@ void newline(void) {
 }
 void straight_line(void) {
    newline();
+   std::cout<<"|";
    for(int i = 0; i < 25; ++i) {
       std::cout<<"-";
-   } newline();
+   }
+   std::cout<<"|";
+   newline();
 }
 void main_menu(void) {
    std::cout<<"|> HEAD >> Main Menu\n\n";
