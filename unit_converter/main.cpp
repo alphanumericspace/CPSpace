@@ -4,11 +4,14 @@
 #include <vector>
 #include <string>
 
+void newline(void) {
+   std::cout<<std::endl;
+}
 void straight_line(void) {
-   std::cout<<"\n";
+   newline();
    for(int i = 0; i < 25; ++i) {
       std::cout<<"-";
-   } std::cout<<"\n";
+   } newline();
 }
 void main_menu(void) {
    std::cout<<"|> HEAD >> Main Menu\n\n";
@@ -21,7 +24,7 @@ void main_menu(void) {
 	for(std::string list : list_menu) {
 		std::cout<<list<<std::endl;
 	}
-	std::cout<<"\n";
+	newline();
 }
 void unit_converter(void) {
    std::cout<<"|> HEAD >> Unit Converter\n\n";
@@ -36,20 +39,20 @@ void unit_converter(void) {
    for(std::string unit : unit_opt) {
       std::cout<<unit<<std::endl;
    }
-   std::cout<<"\n";
+   newline();
 }
 
 int main() {
    std::cout<<"\nCPSpace Project - Unit Converter\n\nWelcome to CPSPace Project, this is a tool to convert one unit to another based on international standards.\n";
    straight_line();
-   std::cout<<"\n";
+   newline();
    main_menu();
 	std::string input;
 	while(!(input == "0")) {
 		std::cout<<"Enter the option: ";
 		std::cin>>input;
 		straight_line();
-		std::cout<<"\n";
+		newline();
 		
 		if(input == "1") {
 		   unit_converter();
