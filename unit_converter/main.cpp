@@ -36,7 +36,6 @@ void unit_option(void) {
 
 int main() {
    main_menu();
-   
 	std::string input;
 	while(!(input == "0")) {
 		std::cout<<"Enter the option: ";
@@ -45,6 +44,7 @@ int main() {
 		
 		if(input == "1") {
 		   unit_option();
+		   
 		   std::string unit_opt;
 		   while(!(unit_opt == "0")) {
 		      std::cout<<"Enter the option: ";
@@ -80,7 +80,6 @@ int main() {
 		      }
 		      else std::cout<<"'"<<unit_opt<<"' not in option\n\n";
 		   }
-		   
 		   main_menu();
 		}
 		else if(input == "2") {
