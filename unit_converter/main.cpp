@@ -6,9 +6,8 @@
 
 void main_menu(void) {
    std::vector<std::string> list_menu {
-      "\nUnit Converter\n\n",
+      "\nCPSpace Project - Unit Converter\n\n",
       "Welcome to CPSPace Project, this is a tool to convert one unit to another based on international standards.\n\n",
-      "Enter the number according to the options provided below.\n\n",
 		"[1] Unit Converter\n",
 		"[2] Information\n",
 		"[3] See this project on GitHub.\n",
@@ -46,8 +45,39 @@ int main() {
 		   unit_option();
 		   
 		   std::string unit_opt;
-		   std::cout<<"Select a unit: ";
-		   std::cin>>unit_opt;
+		   while(!(unit_opt == "0")) {
+		      std::cout<<"Enter the option: ";
+		      std::cin>>unit_opt;
+		      std::cout<<"\n";
+		      if(unit_opt == "1") {
+		         std::cout<<"Done\n\n";
+		      }
+		      else if(unit_opt == "2") {
+		         std::cout<<"Done\n\n";
+		      }
+		      else if(unit_opt == "3") {
+		         std::cout<<"Done\n\n";
+		      }
+		      else if(unit_opt == "4") {
+		         std::cout<<"Done\n\n";
+		      }
+		      else if(unit_opt == "5") {
+		         std::cout<<"Done\n\n";
+		      }
+		      else if(unit_opt == "6") {
+		         std::cout<<"Done\n\n";
+		      }
+		      else if(unit_opt == "7") {
+		         std::cout<<"Done\n\n";
+		      }
+		      else if(unit_opt == "8") {
+		         std::cout<<"Done\n\n";
+		      }
+		      else if(unit_opt == "0") {
+		         std::cout<<"Exit...\n\n";
+		      }
+		      else std::cout<<"'"<<unit_opt<<"' not in option";
+		   }
 		}
 		else if(input == "2") {
 		   std::cout<<"Done\n\n";
