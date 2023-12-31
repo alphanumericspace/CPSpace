@@ -4,19 +4,25 @@
 #include <vector>
 #include <string>
 
+void straight_line(void) {
+   std::cout<<"\n";
+   for(int i = 0; i < 25; ++i) {
+      std::cout<<"-";
+   }
+   std::cout<<"\n\n";
+}
 void main_menu(void) {
    std::cout<<"HEAD >> Main Menu\n\n";
    std::vector<std::string> list_menu {
-      "CPSpace Project - Unit Converter\n\n",
-      "Welcome to CPSPace Project, this is a tool to convert one unit to another based on international standards.\n\n",
-		"[1] Unit Converter\n",
-		"[2] Information\n",
-		"[3] View the repository on GitHub\n",
-		"[0] Exit\n\n"
+		"[1] Unit Converter",
+		"[2] Information",
+		"[3] View the repository on GitHub",
+		"[0] Exit"
 	};
 	for(std::string list : list_menu) {
-		std::cout<<list;
+		std::cout<<list<<std::endl;
 	}
+	std::cout<<"\n";
 }
 void unit_converter(void) {
    std::cout<<"HEAD >> Unit Converter\n\n";
@@ -35,12 +41,12 @@ void unit_converter(void) {
 }
 
 int main() {
+   std::cout<<"CPSpace Project - Unit Converter\n\nWelcome to CPSPace Project, this is a tool to convert one unit to another based on international standards.\n\n";
    main_menu();
 	std::string input;
 	while(!(input == "0")) {
 		std::cout<<"Enter the option: ";
 		std::cin>>input;
-		std::cout<<"--------------------\n\n";
 		
 		if(input == "1") {
 		   unit_converter();
@@ -76,7 +82,6 @@ int main() {
 		      }
 		      else if(unit_opt == "0") {
 		         std::cout<<"[]> Operation aborted...";
-		         std::cout<<"\n--------------------\n\n";
 		      }
 		      else std::cout<<"'"<<unit_opt<<"' not in option\n\n";
 		   }
