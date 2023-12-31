@@ -7,7 +7,7 @@
 void main_menu(void) {
    std::cout<<"HEAD >> Main Menu\n\n";
    std::vector<std::string> list_menu {
-      "\nCPSpace Project - Unit Converter\n\n",
+      "CPSpace Project - Unit Converter\n\n",
       "Welcome to CPSPace Project, this is a tool to convert one unit to another based on international standards.\n\n",
 		"[1] Unit Converter\n",
 		"[2] Information\n",
