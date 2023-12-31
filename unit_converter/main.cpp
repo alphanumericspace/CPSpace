@@ -4,6 +4,21 @@
 #include <vector>
 #include <string>
 
+void main_menu(void) {
+   std::vector<std::string> list_menu {
+      "\nUnit Converter\n\n",
+      "Welcome to CPSPace Project, this is a tool to convert one unit to another based on international standards.\n\n",
+      "Enter the number according to the options provided below.\n\n",
+		"[1] Unit Converter\n",
+		"[2] Information\n",
+		"[3] See this project on GitHub.\n",
+		"[0] Exit\n\n"
+	};
+	for(std::string list : list_menu) {
+		std::cout<<list;
+	}
+}
+
 void unit_option(void) {
    std::vector<std::string> unit_opt {
       "[1] Length", "[2] Area",
@@ -18,22 +33,9 @@ void unit_option(void) {
 }
 
 int main() {
-	std::vector<std::string> list_menu {
-      "\nUnit Converter\n\n",
-      "Welcome to CPSPace Project, this is a tool to convert one unit to another based on international standards.\n\n",
-      "Enter the number according to the options provided below.\n\n",
-		"[1] Unit Converter\n",
-		"[2] Information\n",
-		"[3] See this project on GitHub.\n",
-		"[0] Exit\n\n"
-	};
-	
-	for(std::string list : list_menu) {
-		std::cout<<list;
-	}
-	
+   main_menu();
+   
 	std::string input;
-	
 	while(!(input == "0")) {
 		std::cout<<"Enter the option: ";
 		std::cin>>input;
