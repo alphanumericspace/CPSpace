@@ -19,14 +19,14 @@ int main() {
 		std::cout<<list;
 	}
 	
-	std::string input;
+	std::string opt;
 	
 	do {
 		std::cout<<"\nEnter the option: ";
-		std::cin>>input;
+		std::cin>>opt;
 		std::cout<<"\n";
 
-		switch (input) {
+		switch (opt) {
 			case "1":
 				std::cout<<"Done\n";
 				break;
@@ -40,9 +40,9 @@ int main() {
 				std::cout<<"Exit...\n\n";
 				break;
 			default:
-				std::cout<<"'"<<input<<"'"<<" is not in option\n";
+				std::cout<<"'"<<opt<<"'"<<" is not in option\n";
 
 		}
-	} while (!(input == "0"));
+	} while (!(opt == "0"));
 	return 0;
 }
