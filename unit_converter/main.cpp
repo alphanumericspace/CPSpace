@@ -74,10 +74,11 @@ int main() {
 		         std::cout<<"Done\n\n";
 		      }
 		      else if(unit_opt == "0") {
-		         std::cout<<"Exit...\n\n";
+		         std::cout<<"Operation aborted...\n\n";
 		      }
 		      else std::cout<<"'"<<unit_opt<<"' not in option\n\n";
 		   }
+		   main_menu();
 		}
 		else if(input == "2") {
 		   std::cout<<"Done\n\n";
