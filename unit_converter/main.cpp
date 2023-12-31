@@ -76,7 +76,7 @@ int main() {
 		      else if(unit_opt == "0") {
 		         std::cout<<"Exit...\n\n";
 		      }
-		      else std::cout<<"'"<<unit_opt<<"' not in option";
+		      else std::cout<<"'"<<unit_opt<<"' not in option\n\n";
 		   }
 		}
 		else if(input == "2") {
