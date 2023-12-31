@@ -27,16 +27,16 @@ int main() {
 		std::cout<<"\n";
 
 		switch (opt) {
-			case "1":
+			case (opt == "1"):
 				std::cout<<"Done\n";
 				break;
-			case "2":
+			case (opt == "2"):
 				std::cout<<"Done\n";
 				break;
-			case "3":
+			case (opt == "3"):
 				std::cout<<"Done\n";
 				break;
-			case "0":
+			case (opt == "0"):
 				std::cout<<"Exit...\n\n";
 				break;
 			default:
