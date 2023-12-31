@@ -138,7 +138,6 @@ int main() {
 		else
 		if(inp == "0" or inp == "ext") {
          std::cout<<"<| Exit the program...\n";
-         newline();
 		}
 		else
 		std::cout<<"'"<<inp<<"' not in option\n";
