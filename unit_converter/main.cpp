@@ -48,7 +48,7 @@ int main() {
 		   
 		   std::string unit_opt;
 		   while(!(unit_opt == "0")) {
-		      std::cout<<"\nEnter the option: ";
+		      std::cout<<"Enter the option: ";
 		      std::cin>>unit_opt;
 		      std::cout<<"\n";
 		      if(unit_opt == "1") {
