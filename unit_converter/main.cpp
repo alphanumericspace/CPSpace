@@ -131,7 +131,7 @@ int main() {
 		}
 		else
 		if(inp == "2" or inp == "inf") {
-         std::cout<<"Done\n\n";
+         std::cout<<"Done\n";
 		}
 		else
 		if(inp == "0" or inp == "ext") {
