@@ -26,9 +26,7 @@ int main() {
 		std::cin>>input;
 		std::cout<<"\n";
 
-      std::string cvtInput = std::to_string(input);
-
-		switch (cvtInput) {
+		switch (std::to_string(input)) {
 			case "1":
 				std::cout<<"Done\n";
 				break;
