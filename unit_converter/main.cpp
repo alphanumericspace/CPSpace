@@ -58,7 +58,7 @@ int main() {
    newline();
    
    main_menu();
-   
+   newline();
 	std::string inp;
 	while(!(inp == "0" or inp == "ext")) {
 		std::cout<<"Enter the option: ";
