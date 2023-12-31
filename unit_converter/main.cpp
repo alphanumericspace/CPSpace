@@ -41,7 +41,7 @@ int main() {
 	while(!(input == "0")) {
 		std::cout<<"Enter the option: ";
 		std::cin>>input;
-		std::cout<<"\n";
+		std::cout<<"\n--------------------\n";
 		
 		if(input == "1") {
 		   unit_option();
@@ -76,8 +76,8 @@ int main() {
 		         std::cout<<"Done\n\n";
 		      }
 		      else if(unit_opt == "0") {
-		         std::cout<<"Operation aborted...\n";
-		         std::cout<<"--------------------\n\n";
+		         std::cout<<"Operation aborted...";
+		         std::cout<<"\n--------------------\n\n";
 		      }
 		      else std::cout<<"'"<<unit_opt<<"' not in option\n\n";
 		   }
