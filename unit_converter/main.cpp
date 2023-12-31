@@ -42,6 +42,7 @@ void unit_converter(void) {
 int main() {
    std::cout<<"CPSpace Project - Unit Converter\n\nWelcome to CPSPace Project, this is a tool to convert one unit to another based on international standards.\n";
    straight_line();
+   std::cout<<"\n";
    main_menu();
 	std::string input;
 	while(!(input == "0")) {
