@@ -5,13 +5,13 @@
 #include <string>
 
 void straight_line(void) {
-   std::cout<<"\n|>";
+   std::cout<<"\n";
    for(int i = 0; i < 25; ++i) {
-      std::cout<<"=";
-   } std::cout<<"<|\n";
+      std::cout<<"-";
+   } std::cout<<"\n";
 }
 void main_menu(void) {
-   std::cout<<"HEAD >> Main Menu\n\n";
+   std::cout<<"|> HEAD >> Main Menu\n\n";
    std::vector<std::string> list_menu {
 		"[1] Unit Converter",
 		"[2] Information",
@@ -24,7 +24,7 @@ void main_menu(void) {
 	std::cout<<"\n";
 }
 void unit_converter(void) {
-   std::cout<<"HEAD >> Unit Converter\n\n";
+   std::cout<<"|> HEAD >> Unit Converter\n\n";
    std::vector<std::string> unit_opt {
       "[1] Length", "[2] Area",
       "[3] Volume", "[4] Weight",
