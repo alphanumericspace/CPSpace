@@ -21,7 +21,7 @@ int main() {
 	
 	std::string opt;
 	
-	do {
+	while(!(input == "0")) {
 		std::cout<<"Enter the option: ";
 		std::cin>>opt;
 		std::cout<<"\n";
@@ -39,6 +39,6 @@ int main() {
 		   std::cout<<"Exit...\n\n";
 		}
 		else std::cout<<"'"<<opt<<"' not in option\n\n";
-	} while (!(opt == "0"));
+	}
 	return 0;
 }
