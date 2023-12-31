@@ -35,7 +35,6 @@ int main() {
 		} else if(opt == "0") {
 		   std::cout<<"Exit...\n\n";
 		} else std::cout<<"'"<<opt<<"' not in option\n";
-		}
 	} while (!(opt == "0"));
 	return 0;
 }
