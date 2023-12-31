@@ -5,6 +5,7 @@
 #include <string>
 
 void main_menu(void) {
+   std::cout<<"HEAD >> Main Menu\n\n";
    std::vector<std::string> list_menu {
       "\nCPSpace Project - Unit Converter\n\n",
       "Welcome to CPSPace Project, this is a tool to convert one unit to another based on international standards.\n\n",
@@ -19,6 +20,7 @@ void main_menu(void) {
 }
 
 void unit_option(void) {
+   std::cout<<"HEAD >> Unit Converter\n\n";
    std::vector<std::string> unit_opt {
       "[1] Length", "[2] Area",
       "[3] Volume", "[4] Weight",
@@ -74,7 +76,8 @@ int main() {
 		         std::cout<<"Done\n\n";
 		      }
 		      else if(unit_opt == "0") {
-		         std::cout<<"Operation aborted...\n\n";
+		         std::cout<<"Operation aborted...";
+		         std::cout<<"--------------------\n\n";
 		      }
 		      else std::cout<<"'"<<unit_opt<<"' not in option\n\n";
 		   }
