@@ -18,7 +18,7 @@ void main_menu(void) {
 		std::cout<<list;
 	}
 }
-void unit_option(void) {
+void unit_converter(void) {
    std::cout<<"HEAD >> Unit Converter\n\n";
    std::vector<std::string> unit_opt {
       "[1] Length", "[2] Area",
@@ -43,7 +43,7 @@ int main() {
 		std::cout<<"--------------------\n\n";
 		
 		if(input == "1") {
-		   unit_option();
+		   unit_converter();
 		   
 		   std::string unit_opt;
 		   while(!(unit_opt == "0")) {
