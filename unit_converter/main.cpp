@@ -126,7 +126,6 @@ int main() {
          }
          
          main_menu();
-         newline();
 		}
 		else
 		if(inp == "2" or inp == "inf") {
