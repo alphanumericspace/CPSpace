@@ -20,6 +20,7 @@ int main() {
 	}
 	
 	std::string opt;
+	std::cin.ignore();
 	
 	while(!(opt == "0")) {
 		std::cout<<"Enter the option: ";
