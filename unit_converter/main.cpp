@@ -48,8 +48,6 @@ void unit_converter(void) {
    for(std::string unit : unit) {
       std::cout<<unit<<std::endl;
    }
-   
-   newline();
 }
 
 int main() {
@@ -59,6 +57,7 @@ int main() {
    
    main_menu();
    newline();
+   
 	std::string inp;
 	while(!(inp == "0" or inp == "ext")) {
 		std::cout<<"Enter the option: ";
@@ -127,6 +126,7 @@ int main() {
          }
          
          main_menu();
+         newline();
 		}
 		else
 		if(inp == "2" or inp == "inf") {
