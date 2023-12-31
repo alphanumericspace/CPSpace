@@ -9,11 +9,11 @@ void newline(void) {
 }
 void straight_line(void) {
    newline();
-   std::cout<<"|";
+   std::cout<<"|-";
    for(int i = 0; i < 25; ++i) {
       std::cout<<"-";
    }
-   std::cout<<"|";
+   std::cout<<"-|";
    newline();
 }
 void main_menu(void) {
