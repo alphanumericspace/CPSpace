@@ -87,7 +87,7 @@ int main() {
 		         std::cout<<"Done\n\n";
 		      }
 		      else if(unit_opt == "0") {
-		         std::cout<<"\n[]> Operation aborted...\n";
+		         std::cout<<"[]> Operation aborted...\n";
 		         straight_line();
 		      }
 		      else std::cout<<"'"<<unit_opt<<"' not in option\n\n";
