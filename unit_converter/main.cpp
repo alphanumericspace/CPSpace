@@ -61,6 +61,7 @@ int main() {
 		   while(!(unit_opt == "0")) {
 		      std::cout<<"Enter the option: ";
 		      std::cin>>unit_opt;
+		      newline();
 		      if(unit_opt == "1") {
 		         std::cout<<"Done\n\n";
 		      }
