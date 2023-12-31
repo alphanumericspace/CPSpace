@@ -5,10 +5,10 @@
 #include <string>
 
 void straight_line(void) {
-   std::cout<<"\n>";
+   std::cout<<"\n|>";
    for(int i = 0; i < 25; ++i) {
       std::cout<<"=";
-   } std::cout<<"<\n";
+   } std::cout<<"<|\n";
 }
 void main_menu(void) {
    std::cout<<"HEAD >> Main Menu\n\n";
