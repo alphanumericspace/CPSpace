@@ -35,7 +35,7 @@ int main() {
 		else if(opt == "3") {
 		   std::cout<<"Done\n\n";
 		}
-		else if(opt == "0") {
+		else if(opt == "0" or opt == "exit") {
 		   std::cout<<"Exit...\n\n";
 		}
 		else std::cout<<"'"<<opt<<"' not in option\n\n";
