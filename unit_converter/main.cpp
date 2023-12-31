@@ -11,7 +11,7 @@ void main_menu(void) {
       "Welcome to CPSPace Project, this is a tool to convert one unit to another based on international standards.\n\n",
 		"[1] Unit Converter\n",
 		"[2] Information\n",
-		"[3] See this project on GitHub.\n",
+		"[3] View the repository on GitHub\n",
 		"[0] Exit\n\n"
 	};
 	for(std::string list : list_menu) {
