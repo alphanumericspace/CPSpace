@@ -53,17 +53,6 @@ void unit_converter(void) {
    
    newline();
 }
-
-std::string reverseString(std::string str) {
-    int n = str.length();
-    for (int i = 0; i < n / 2; ++i) {
-        char temp = str[i];
-        str[i] = str[n - i - 1];
-        str[n - i - 1] = temp;
-    }
-    return str;
-   }
-
 int main() {
    std::cout<<"\nCPSpace Project - Unit Converter\n\nWelcome to CPSPace Project, this is a tool to convert one unit to another based on international standards.\n";
    drawline();
@@ -165,6 +154,5 @@ int main() {
 		newline();
 		}
 	}
-   std::cout<<reverseString("Farhan");
 	return 0;
 }
