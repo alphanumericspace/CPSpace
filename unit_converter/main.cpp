@@ -122,9 +122,10 @@ int main() {
                std::cout<<"<| Operation aborted...\n";
                drawline();
             }
-            else
+            else {
             std::cout<<"'"<<unit<<"' not in option\n";
             newline();
+            }
          }
          
          main_menu();
@@ -137,9 +138,10 @@ int main() {
 		if(inp == "0" or inp == "ext") {
          std::cout<<"<| Exit the program...\n";
 		}
-		else
+		else {
 		std::cout<<"'"<<inp<<"' not in option\n";
 		newline();
+		}
 	}
 	
 	return 0;
