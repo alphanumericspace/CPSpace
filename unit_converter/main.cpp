@@ -129,6 +129,7 @@ int main() {
             or unit == "abr") {
                std::cout<<"<| Operation aborted...\n";
                drawline();
+               newline();
             }
             else {
             std::cout<<"'"<<unit<<"' not in option\n";
