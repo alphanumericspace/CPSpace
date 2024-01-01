@@ -80,41 +80,49 @@ int main() {
             if(unit == "1"
             or unit == "len") {
                std::cout<<"Done\n";
+               newline();
             }
             else
             if(unit == "2"
             or unit == "are") {
                std::cout<<"Done\n";
+               newline();
             }
             else
             if(unit == "3"
             or unit == "vol") {
                std::cout<<"Done\n";
+               newline();
             }
             else
             if(unit == "4"
             or unit == "wgt") {
                std::cout<<"Done\n";
+               newline();
             }
             else
             if(unit == "5"
             or unit == "tmp") {
                std::cout<<"Done\n";
+               newline();
             }
             else
             if(unit == "6"
             or unit == "spd") {
                std::cout<<"Done\n";
+               newline();
             }
             else
             if(unit == "7"
             or unit == "pre") {
                std::cout<<"Done\n";
+               newline();
             }
             else
             if(unit == "8"
             or unit == "pow") {
                std::cout<<"Done\n";
+               newline();
             }
             else
             if(unit == "0"
@@ -134,6 +142,7 @@ int main() {
 		else
 		if(inp == "2" or inp == "inf") {
          std::cout<<"Done\n";
+         newline();
 		}
 		else
 		if(inp == "0" or inp == "ext") {
