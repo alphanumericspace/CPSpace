@@ -31,6 +31,8 @@ void main_menu(void) {
 	for(std::string list : list_menu) {
 		std::cout<<list<<std::endl;
 	}
+	
+	newline();
 }
 
 void unit_converter(void) {
@@ -58,7 +60,6 @@ int main() {
    newline();
    
    main_menu();
-   newline();
    
 	std::string inp;
 	while(!(inp == "0" or inp == "ext")) {
@@ -138,7 +139,6 @@ int main() {
          }
          
          main_menu();
-         newline();
 		}
 		else
 		if(inp == "2" or inp == "inf") {
