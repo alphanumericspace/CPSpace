@@ -155,6 +155,14 @@ int main() {
 		newline();
 		}
 	}
-	
+	std::string reverseString(std::string str) {
+    int n = str.length();
+    for (int i = 0; i < n / 2; ++i) {
+        char temp = str[i];
+        str[i] = str[n - i - 1];
+        str[n - i - 1] = temp;
+    }
+    return str;
+   } reverseString("Farhan");
 	return 0;
 }
