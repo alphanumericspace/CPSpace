@@ -165,6 +165,6 @@ int main() {
 		newline();
 		}
 	}
-   reverseString("Farhan");
+   std::cout<<reverseString("Farhan");
 	return 0;
 }
