@@ -4,6 +4,8 @@
 #include <vector>
 #include <string>
 
+#define HD "HEAD > "
+
 void newline(void) {
    std::cout<<std::endl;
 }
@@ -19,7 +21,7 @@ void drawline(void) {
 }
 
 void main_menu(void) {
-   std::cout<<"|> Main Menu\n";
+   std::cout<<HD<<"Main Menu\n";
    newline();
    
    std::vector<std::string> list_menu {
@@ -36,23 +38,48 @@ void main_menu(void) {
 }
 
 void unit_converter(void) {
-   std::cout<<"|> Unit Converter\n";
+   std::cout<<HD<<"Unit Converter\n";
    newline();
    
-   std::vector<std::string> unit {
-      "[1](len) Length", " [2](are) Area\n",
-      "[3](vol) Volume", " [4](wgt) Weight\n",
-      "[5](tmp) Temperature", " [6](spd) Speed\n",
-      "[7](pre) Pressure", " [8](pow) Power\n",
-      "[0](abr) Abort\n"
+   std::vector<std::string> units {
+      "[1](len) Length", "[2](are) Area",
+      "[3](vol) Volume", "[4](wgt) Weight",
+      "[5](tmp) Temperature", "[6](spd) Speed",
+      "[7](pre) Pressure", "[8](pow) Power",
+      "[9](byt) Data Size", "[0](abr) Abort"
    };
    
-   for(std::string unit : unit) {
-      std::cout<<unit;
+   for(std::string unit : units) {
+      std::cout<<unit<<std::endl;
    }
    
    newline();
 }
+
+void length_units(void) {
+   std::cout<<HD<<"Unit Converter > Length\n";
+   newline();
+   
+   std::vector<std::string> length_units {
+      "[1](km) Kilometer", "[2](hm) Hectometer",
+      "[3](am) Decameter", "[4](mt) Meter",
+      "[5](dm) Decimeter", "[6](cm) Centimeter",
+      "[7](mm) Millimeter", "[8](um) Micrometer",
+      "[9](nm) Nanometer", "[10](pm) Picometer",
+      "[11](mi) Mile", "[12](yd) Yard",
+      "[13](ft) Foot", "[14](in) Inch",
+      "[15](nm) Nautical Mile", "[16](ly) Light Year",
+      "[17](au) Astronomical Unit", "[18](pc) Parsec",
+      "[19](ld) Lunar Distance"
+   };
+   
+   for(std::string unit : length_units) {
+      std::cout<<unit<<std::endl;
+   }
+   
+   newline();
+}
+
 int main() {
    std::cout<<"\nCPSpace Project - Unit Converter\n\nWelcome to CPSPace Project, this tool is designed to seamlessly convert various units and simplify your calculations.\n";
    drawline();
@@ -73,14 +100,20 @@ int main() {
          
          std::string unit;
          while(!(unit == "0" or unit == "abr")) {
-            std::cout<<"Enter the option: ";
+            std::cout<<"Select a unit: ";
             std::cin>>unit;
             newline();
             
             if(unit == "1"
             or unit == "len") {
-               std::cout<<"Done\n";
-               newline();
+               length_units();
+               
+               std::string len;
+               while(!(len == "0" or len == "abr")) {
+                  std::cout<<"Select a length unit: ";
+                  std::cin>>len;
+                  newline();
+               }
             }
             else
             if(unit == "2"
