@@ -211,7 +211,7 @@ int main() {
          newline();
 		}
 		else
-		if(inp == "-1" or inp == "ext") {
+		if(inp == "0" or inp == "ext") {
          std::cout<<EX<<"Exit Program\n";
          newline();
 		}
