@@ -80,7 +80,7 @@ int main() {
          
          std::string unit;
          while(!(unit == "-1")) {
-            std::cout<<"Select a unit: ";
+            std::cout<<GC<<FI<<RC;
             std::cin>>unit;
             
             if(unit == "1") {
@@ -88,7 +88,7 @@ int main() {
                
                std::string len;
                while(!(len == "-1")) {
-                  std::cout<<"Select a length unit: ";
+                  std::cout<<GC<<FI<<RC;
                   std::cin>>len;
                   
                   if(len == "-1") {
