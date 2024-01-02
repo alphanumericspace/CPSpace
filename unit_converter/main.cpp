@@ -100,7 +100,7 @@ int main() {
                      unit_converter();
                   }
                   else if(len == "0") {
-                     std::cout<<EX<<"Exit Program\n";
+                     std::cout<<EX<<"Exit Program\n\n";
                      return 0;
                   }
                   else {
@@ -136,7 +136,7 @@ int main() {
                main_menu();
             }
             else if(unit == "0") {
-               std::cout<<EX<<"Exit Program\n";
+               std::cout<<EX<<"Exit Program\n\n";
                return 0;
             }
             else {
@@ -148,7 +148,7 @@ int main() {
          std::cout<<"Done\n";
 		}
 		else if(input == "0") {
-         std::cout<<EX<<"Exit Program\n";
+         std::cout<<EX<<"Exit Program\n\n";
          return 0;
 		}
 		else {
