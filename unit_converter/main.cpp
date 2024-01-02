@@ -10,8 +10,8 @@
 
 void drawline(void) {
    std::cout<<"\n";
-   for(int i = 0; i < 35; i++) {
-      std::cout<<"-";
+   for(int i = 0; i < 20; i++) {
+      std::cout<<"<> ";
    }
    std::cout<<"\n\n";
 }
@@ -112,7 +112,7 @@ int main() {
                      return 0;
                   }
                   else {
-                     std::cout<<"'"<<len<<"' not in option\n";
+                     std::cout<<"'"<<len<<"' not in option\n\n";
                   }
                }
             }
@@ -148,7 +148,7 @@ int main() {
                return 0;
             }
             else {
-            std::cout<<"'"<<unit<<"' not in option\n";
+            std::cout<<"'"<<unit<<"' not in option\n\n";
             }
          }
 		}
@@ -160,7 +160,7 @@ int main() {
          return 0;
 		}
 		else {
-		std::cout<<"'"<<input<<"' not in option\n";
+		std::cout<<"'"<<input<<"' not in option\n\n";
 		}
 	}
 }
