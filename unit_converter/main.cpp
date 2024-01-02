@@ -111,6 +111,7 @@ int main() {
                      return 0;
                   }
                   else {
+                     length_units();
                      std::cout<<"'"<<len<<"' not in option\n\n";
                   }
                }
@@ -147,7 +148,8 @@ int main() {
                return 0;
             }
             else {
-            std::cout<<"'"<<unit<<"' not in option\n\n";
+               unit_converter();
+               std::cout<<"'"<<unit<<"' not in option\n\n";
             }
          }
 		}
@@ -159,7 +161,8 @@ int main() {
          return 0;
 		}
 		else {
-		std::cout<<"'"<<input<<"' not in option\n\n";
+         main_menu();
+         std::cout<<"'"<<input<<"' not in option\n\n";
 		}
 	}
 }
