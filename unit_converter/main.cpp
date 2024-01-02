@@ -66,12 +66,12 @@ void length_units(void) {
 double lengthUnitConversion(std::string option, double input);
 
 int main() {
-   std::cout<<"Welcome to CPSPace Project,\nthis tool is designed to seamlessly convert\nvarious units and simplify your calculations.";
-   
-   main_menu();
+   std::cout<<"Welcome to CPSPace Project,\nthis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n";
    
 	std::string input;
 	while(!(input == "0")) {
+      main_menu();
+      
 		std::cout<<G<<FI<<T;
 		std::cin>>input;
 		
