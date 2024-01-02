@@ -38,7 +38,6 @@ void main_menu(void) {
 	for(std::string list : list_menu) {
 		std::cout<<list<<std::endl;
 	}
-	singlen();
 }
 
 void unit_converter(void) {
@@ -57,7 +56,6 @@ void unit_converter(void) {
    for(std::string unit : units) {
       std::cout<<unit<<std::endl;
    }
-   singlen();
 }
 
 void length_units(void) {
@@ -81,7 +79,6 @@ void length_units(void) {
    for(std::string unit : length_units) {
       std::cout<<unit<<std::endl;
    }
-   singlen();
 }
 
 double lengthUnitConversion(std::string option, double input);
@@ -94,6 +91,7 @@ int main() {
    
 	std::string input;
 	while(!(input == "0")) {
+	   singlen();
 		std::cout<<"Enter the option: ";
 		std::cin>>input;
 		drawline();
