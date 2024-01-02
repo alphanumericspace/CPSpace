@@ -4,12 +4,14 @@
 #include <vector>
 #include <string>
 
+#define G "\033[1;32m"
+#define T "\033[0m"
 #define FI "HEAD >> "
 #define FD "HEAD << "
 #define EX "HEAD <> "
 
 void main_menu(void) {
-   std::cout<<FD<<"Main Menu\n";
+   std::cout<<G<<FD<<T<<"Main Menu\n";
    
    std::vector<std::string> list_menu {
 		"(1) Unit Converter",
@@ -23,7 +25,7 @@ void main_menu(void) {
 }
 
 void unit_converter(void) {
-   std::cout<<FD<<"Unit Converter\n";
+   std::cout<<G<<FD<<T<<"Unit Converter\n";
    
    std::vector<std::string> units {
       "(1) Length", "(2) Area",
@@ -40,7 +42,7 @@ void unit_converter(void) {
 }
 
 void length_units(void) {
-   std::cout<<FD<<"Length\n";
+   std::cout<<G<<FD<<T<<"Length\n";
    
    std::vector<std::string> length_units {
       "(1) Kilometer", "(2) Hectometer",
@@ -93,7 +95,7 @@ int main() {
                      unit_converter();
                   }
                   else if(len == "0") {
-                     std::cout<<EX<<"Exit Program\n";
+                     std::cout<<G<<EX<<T<<"Exit Program\n";
                      return 0;
                   }
                   else {
@@ -129,7 +131,7 @@ int main() {
                main_menu();
             }
             else if(unit == "0") {
-               std::cout<<EX<<"Exit Program\n";
+               std::cout<<G<<EX<<T<<"Exit Program\n";
                return 0;
             }
             else {
@@ -141,7 +143,7 @@ int main() {
          std::cout<<"Done\n";
 		}
 		else if(input == "0") {
-         std::cout<<EX<<"Exit Program\n";
+         std::cout<<G<<EX<<T<<"Exit Program\n";
          return 0;
 		}
 		else {
