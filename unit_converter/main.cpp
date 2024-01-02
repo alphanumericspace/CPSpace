@@ -76,6 +76,7 @@ int main() {
       
 		std::cout<<FI;
 		std::cin>>input;
+		std::cout<<"\n";
 		
 		if(input == "1") {
          unit_converter();
@@ -84,6 +85,7 @@ int main() {
          while(!(unit == "-1")) {
             std::cout<<FI;
             std::cin>>unit;
+            std::cout<<"\n";
             
             if(unit == "1") {
                length_units();
@@ -92,6 +94,7 @@ int main() {
                while(!(len == "-1")) {
                   std::cout<<FI;
                   std::cin>>len;
+                  std::cout<<"\n";
                   
                   if(len == "-1") {
                      unit_converter();
