@@ -91,7 +91,6 @@ int main() {
    doublen();
    
    main_menu();
-   singlen();
    
 	std::string input;
 	while(!(input == "0")) {
