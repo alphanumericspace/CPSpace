@@ -72,7 +72,7 @@ int main() {
    
 	std::string input;
 	while(!(input == "0")) {
-		std::cout<<FI;
+		std::cout<<G<<FI<<T;
 		std::cin>>input;
 		
 		if(input == "1") {
@@ -80,7 +80,7 @@ int main() {
          
          std::string unit;
          while(!(unit == "-1")) {
-            std::cout<<FI;
+            std::cout<<G<<FI<<T;
             std::cin>>unit;
             
             if(unit == "1") {
@@ -88,7 +88,7 @@ int main() {
                
                std::string len;
                while(!(len == "-1")) {
-                  std::cout<<FI;
+                  std::cout<<G<<FI<<T;
                   std::cin>>len;
                   
                   if(len == "-1") {
