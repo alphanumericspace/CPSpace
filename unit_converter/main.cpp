@@ -11,7 +11,7 @@
 #define EX "HEAD <> "
 
 void main_menu(void) {
-   std::cout<<"\n\n"<<G<<FD<<T<<"Main Menu\n";
+   std::cout<<"\n\n"<<G<<FD<<T<<"Main Menu\n\n";
    
    std::vector<std::string> list_menu {
 		"(1) Unit Converter",
@@ -26,7 +26,7 @@ void main_menu(void) {
 }
 
 void unit_converter(void) {
-   std::cout<<"\n\n"<<G<<FD<<T<<"Unit Converter\n";
+   std::cout<<"\n\n"<<G<<FD<<T<<"Unit Converter\n\n";
    
    std::vector<std::string> units {
       "(1) Length       |  (2) Area",
@@ -44,7 +44,7 @@ void unit_converter(void) {
 }
 
 void length_units(void) {
-   std::cout<<"\n\n"<<G<<FD<<T<<"Length\n";
+   std::cout<<"\n\n"<<G<<FD<<T<<"Length\n\n";
    
    std::vector<std::string> length_units {
       "(1) Kilometer          |  (2) Hectometer",
@@ -69,7 +69,7 @@ void length_units(void) {
 double lengthUnitConversion(std::string option, double input);
 
 int main() {
-   std::cout<<"Welcome to CPSPace Project,\nthis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n";
+   std::cout<<"Welcome to CPSPace Project,\nthis tool is designed to seamlessly convert\nvarious units and simplify your calculations.";
    
    main_menu();
    
