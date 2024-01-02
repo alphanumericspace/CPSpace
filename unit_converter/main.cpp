@@ -6,8 +6,8 @@
 
 #define GC "\033[1;32m"
 #define RC "\033[0m"
+#define FI "HEAD <<"
 #define FD "HEAD >> "
-#define BW "HEAD << "
 #define EX "HEAD <> "
 
 void main_menu(void) {
@@ -73,7 +73,7 @@ int main() {
    
 	std::string input;
 	while(!(input == "0")) {
-		std::cout<<GC<<FD<<RC;
+		std::cout<<GC<<FI<<RC;
 		std::cin>>input;
 		
 		if(input == "1") {
@@ -93,7 +93,7 @@ int main() {
                   std::cin>>len;
                   
                   if(len == "-1") {
-                     std::cout<<GC<<BW<<RC<<"Previous";
+                     std::cout<<GC<<FD<<RC<<"Previous";
                   }
                   else
                   if(len == "0") {
@@ -137,7 +137,7 @@ int main() {
             }
             else
             if(unit == "-1") {
-               std::cout<<GC<<BW<<RC<<"Previous";
+               std::cout<<GC<<FD<<RC<<"Previous";
             }
             else
             if(unit == "0") {
