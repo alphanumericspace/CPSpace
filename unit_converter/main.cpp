@@ -15,16 +15,6 @@ void doublen(void) {
    std::cout<<"\n\n";
 }
 
-void drawline(void) {
-   singlen();
-   
-   for(int i = 0; i < 30; ++i) {
-      std::cout<<"-";
-   }
-   
-   singlen();
-}
-
 void main_menu(void) {
    std::cout<<FD<<"Main Menu";
    doublen();
@@ -58,6 +48,7 @@ void unit_converter(void) {
    for(std::string unit : units) {
       std::cout<<unit<<std::endl;
    }
+   singlen();
 }
 
 void length_units(void) {
@@ -81,6 +72,7 @@ void length_units(void) {
    for(std::string unit : length_units) {
       std::cout<<unit<<std::endl;
    }
+   singlen();
 }
 
 double lengthUnitConversion(std::string option, double input);
@@ -95,7 +87,6 @@ int main() {
 	while(!(input == "0")) {
 		std::cout<<"Enter the option: ";
 		std::cin>>input;
-		drawline();
 		
 		if(input == "1") {
          unit_converter();
@@ -104,7 +95,6 @@ int main() {
          while(!(unit == "-1")) {
             std::cout<<"Select a unit: ";
             std::cin>>unit;
-            drawline();
             
             if(unit == "1") {
                length_units();
@@ -113,11 +103,9 @@ int main() {
                while(!(len == "-1")) {
                   std::cout<<"Select a length unit: ";
                   std::cin>>len;
-                  drawline();
                   
                   if(len == "-1") {
                      std::cout<<BW<<"Previous";
-                     drawline();
                   }
                   else
                   if(len == "0") {
@@ -171,7 +159,6 @@ int main() {
             else
             if(unit == "-1") {
                std::cout<<BW<<"Previous";
-               drawline();
             }
             else
             if(unit == "0") {
