@@ -46,7 +46,8 @@ void unit_converter(void) {
       "[3](vol) Volume", "[4](wgt) Weight",
       "[5](tmp) Temperature", "[6](spd) Speed",
       "[7](pre) Pressure", "[8](pow) Power",
-      "[9](byt) Data Size", "[0](abr) Abort"
+      "[9](byt) Data Size", "[0](abr) Abort",
+      "[00](out) Exit Program"
    };
    
    for(std::string unit : units) {
@@ -190,6 +191,10 @@ int main() {
 		if(inp == "0" or inp == "ext") {
          std::cout<<"<| Exit the program...\n";
          newline();
+		}
+		else
+		if(inp == "00" or inp == "out") {
+		   return 0;
 		}
 		else {
 		std::cout<<"'"<<inp<<"' not in option\n";
