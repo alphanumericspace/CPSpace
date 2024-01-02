@@ -174,6 +174,11 @@ int main() {
                drawline();
                newline();
             }
+            else
+            if(unit == "00"
+            or unit == "out") {
+               return 0;
+            }
             else {
             std::cout<<"'"<<unit<<"' not in option\n";
             newline();
@@ -191,10 +196,6 @@ int main() {
 		if(inp == "0" or inp == "ext") {
          std::cout<<"<| Exit the program...\n";
          newline();
-		}
-		else
-		if(inp == "00" or inp == "out") {
-		   break;
 		}
 		else {
 		std::cout<<"'"<<inp<<"' not in option\n";
