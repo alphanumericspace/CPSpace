@@ -9,11 +9,9 @@
 #define FD "HEAD >> "
 #define BW "HEAD << "
 #define EX "HEAD <> "
-#define SN "\n"
-#define DN "\n\n"
 
 void main_menu(void) {
-   std::cout<<GC<<FD<<RC<<"Main Menu";
+   std::cout<<GC<<FD<<RC<<"Main Menu\n";
    
    std::vector<std::string> list_menu {
 		"[1] Unit Converter",
@@ -27,7 +25,7 @@ void main_menu(void) {
 }
 
 void unit_converter(void) {
-   std::cout<<GC<<FD<<RC<<"Unit Converter";
+   std::cout<<GC<<FD<<RC<<"Unit Converter\n";
    
    std::vector<std::string> units {
       "[1] Length", "[2] Area",
@@ -44,7 +42,7 @@ void unit_converter(void) {
 }
 
 void length_units(void) {
-   std::cout<<GC<<FD<<RC<<"Length";
+   std::cout<<GC<<FD<<RC<<"Length\n";
    
    std::vector<std::string> length_units {
       "[1] Kilometer", "[2] Hectometer",
@@ -68,8 +66,8 @@ void length_units(void) {
 double lengthUnitConversion(std::string option, double input);
 
 int main() {
-   std::cout<<"CPSpace Project - Unit Converter";
-   std::cout<<"Welcome to CPSPace Project, this tool is designed to seamlessly convert various units and simplify your calculations.";
+   std::cout<<"\nCPSpace Project - Unit Converter\n";
+   std::cout<<"\nWelcome to CPSPace Project, this tool is designed to seamlessly convert various units and simplify your calculations.\n\n";
    
    main_menu();
    
