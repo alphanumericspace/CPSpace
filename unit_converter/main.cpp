@@ -9,6 +9,7 @@
 #define Y "\033[33m"
 #define R "\033[31m"
 #define S "\033[0m"
+#define BD "\033[1m"
 #define FI "INPUT >> " // Blue
 #define FD "HEAD << " // Green
 #define EX "STOP <> " // Yellow
@@ -16,14 +17,14 @@
 
 void drawline(void) {
    std::cout<<"\n";
-   for(int i = 0; i < 40; i++) {
+   for(int i = 0; i < 50; i++) {
       std::cout<<"-";
    }
    std::cout<<"\n\n";
 }
 
 void main_menu(void) {
-   std::cout<<G<<FD<<S<<"Main Menu\n\n";
+   std::cout<<BD<<G<<FD<<S<<"Main Menu\n\n";
    
    std::vector<std::string> list_menu {
 		"(1) Unit Converter",
@@ -38,7 +39,7 @@ void main_menu(void) {
 }
 
 void unit_converter(void) {
-   std::cout<<G<<FD<<S<<"Unit Converter\n\n";
+   std::cout<<BD<<G<<FD<<S<<"Unit Converter\n\n";
    
    std::vector<std::string> units {
       "(1) Length       |  (2) Area",
@@ -56,7 +57,7 @@ void unit_converter(void) {
 }
 
 void length_units(void) {
-   std::cout<<G<<FD<<S<<"Length\n\n";
+   std::cout<<BD<<G<<FD<<S<<"Length\n\n";
    
    std::vector<std::string> length_units {
       "(1) Kilometer          |  (2) Hectometer",
@@ -87,7 +88,7 @@ int main() {
    
 	std::string input;
 	while(!(input == "0")) {
-		std::cout<<B<<FI<<S;
+		std::cout<<BD<<B<<FI<<S;
 		std::cin>>input;
 		drawline();
 		
@@ -96,7 +97,7 @@ int main() {
          
          std::string unit;
          while(!(unit == "-1")) {
-            std::cout<<B<<FI<<S;
+            std::cout<<BD<<B<<FI<<S;
             std::cin>>unit;
             drawline();
             
@@ -105,7 +106,7 @@ int main() {
                
                std::string len;
                while(!(len == "-1")) {
-                  std::cout<<B<<FI<<S;
+                  std::cout<<BD<<B<<FI<<S;
                   std::cin>>len;
                   drawline();
                   
@@ -113,12 +114,12 @@ int main() {
                      unit_converter();
                   }
                   else if(len == "0") {
-                     std::cout<<Y<<EX<<S<<"Exit Program\n\n";
+                     std::cout<<BD<<Y<<EX<<S<<"Exit Program\n\n";
                      return 0;
                   }
                   else {
                      length_units();
-                     std::cout<<R<<ER<<S<<"'"<<len<<"' not in option\n\n";
+                     std::cout<<BD<<R<<ER<<S<<"'"<<len<<"' not in option\n\n";
                   }
                }
             }
@@ -150,12 +151,12 @@ int main() {
                main_menu();
             }
             else if(unit == "0") {
-               std::cout<<Y<<EX<<S<<"Exit Program\n\n";
+               std::cout<<BD<<Y<<EX<<S<<"Exit Program\n\n";
                return 0;
             }
             else {
                unit_converter();
-               std::cout<<R<<ER<<S<<"'"<<unit<<"' not in option\n\n";
+               std::cout<<BD<<R<<ER<<S<<"'"<<unit<<"' not in option\n\n";
             }
          }
 		}
@@ -163,12 +164,12 @@ int main() {
          std::cout<<"Done\n";
 		}
 		else if(input == "0") {
-         std::cout<<Y<<EX<<S<<"Exit Program\n\n";
+         std::cout<<BD<<Y<<EX<<S<<"Exit Program\n\n";
          return 0;
 		}
 		else {
          main_menu();
-         std::cout<<R<<ER<<S<<"'"<<input<<"' not in option\n\n";
+         std::cout<<BD<<R<<ER<<S<<"'"<<input<<"' not in option\n\n";
 		}
 	}
 }
