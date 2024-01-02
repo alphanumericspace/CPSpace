@@ -4,14 +4,12 @@
 #include <vector>
 #include <string>
 
-#define GC "\033[1;32m"
-#define RC "\033[0m"
-#define FI "HEAD >> "
-#define FD "HEAD << "
-#define EX "HEAD <> "
+#define FI "\033[1;32mHEAD >>\033[0m "
+#define FD "\033[1;32mHEAD <<\033[0m "
+#define EX "\033[1;32mHEAD <>\033[0m "
 
 void main_menu(void) {
-   std::cout<<GC<<FD<<RC<<"Main Menu\n";
+   std::cout<<FD<<"Main Menu\n";
    
    std::vector<std::string> list_menu {
 		"[1] Unit Converter",
@@ -25,7 +23,7 @@ void main_menu(void) {
 }
 
 void unit_converter(void) {
-   std::cout<<GC<<FD<<RC<<"Unit Converter\n";
+   std::cout<<FD<<"Unit Converter\n";
    
    std::vector<std::string> units {
       "[1] Length", "[2] Area",
@@ -42,7 +40,7 @@ void unit_converter(void) {
 }
 
 void length_units(void) {
-   std::cout<<GC<<FD<<RC<<"Length\n";
+   std::cout<<FD<<"Length\n";
    
    std::vector<std::string> length_units {
       "[1] Kilometer", "[2] Hectometer",
@@ -72,7 +70,7 @@ int main() {
    
 	std::string input;
 	while(!(input == "0")) {
-		std::cout<<GC<<FI<<RC;
+		std::cout<<FI<<;
 		std::cin>>input;
 		
 		if(input == "1") {
@@ -80,7 +78,7 @@ int main() {
          
          std::string unit;
          while(!(unit == "-1")) {
-            std::cout<<GC<<FI<<RC;
+            std::cout<<FI<<;
             std::cin>>unit;
             
             if(unit == "1") {
@@ -88,14 +86,14 @@ int main() {
                
                std::string len;
                while(!(len == "-1")) {
-                  std::cout<<GC<<FI<<RC;
+                  std::cout<<FI<<;
                   std::cin>>len;
                   
                   if(len == "-1") {
                      unit_converter();
                   }
                   else if(len == "0") {
-                     std::cout<<GC<<EX<<RC<<"Exit Program\n";
+                     std::cout<<EX<<<<"Exit Program\n";
                      return 0;
                   }
                   else {
@@ -131,7 +129,7 @@ int main() {
                main_menu();
             }
             else if(unit == "0") {
-               std::cout<<GC<<EX<<RC<<"Exit Program\n";
+               std::cout<<EX<<<<"Exit Program\n";
                return 0;
             }
             else {
@@ -143,7 +141,7 @@ int main() {
          std::cout<<"Done\n";
 		}
 		else if(input == "0") {
-         std::cout<<GC<<EX<<RC<<"Exit Program\n";
+         std::cout<<EX<<<<"Exit Program\n";
          return 0;
 		}
 		else {
