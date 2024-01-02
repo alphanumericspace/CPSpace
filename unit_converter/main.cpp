@@ -10,7 +10,7 @@
 
 void drawline(void) {
    std::cout<<"\n";
-   for(int i = 0; i < 15; i++) {
+   for(int i = 0; i < 20; i++) {
       std::cout<<"<>";
    }
    std::cout<<"\n\n";
@@ -77,7 +77,6 @@ double lengthUnitConversion(std::string option, double input);
 int main() {
    std::cout<<"CPSPace Project\n\n";
    std::cout<<"This tool is designed to seamlessly convert various units and simplify your calculations.\n\n";
-   
    main_menu();
    
 	std::string input;
