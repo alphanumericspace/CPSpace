@@ -6,8 +6,8 @@
 
 #define GC "\033[1;32m"
 #define RC "\033[0m"
-#define FI "HEAD <<"
-#define FD "HEAD >> "
+#define FI "HEAD >> "
+#define FD "HEAD << "
 #define EX "HEAD <> "
 
 void main_menu(void) {
