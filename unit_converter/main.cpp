@@ -66,8 +66,8 @@ void length_units(void) {
 double lengthUnitConversion(std::string option, double input);
 
 int main() {
-   std::cout<<"\nCPSpace Project - Unit Converter\n";
-   std::cout<<"\nWelcome to CPSPace Project,\nthis tool is designed to seamlessly\nconvert various units and simplify your calculations.\n\n";
+   std::cout<<"\nCPSpace - Unit Converter\n";
+   std::cout<<"\nWelcome to CPSPace Project,\nthis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n";
    
    main_menu();
    
