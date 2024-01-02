@@ -5,6 +5,7 @@
 #include <string>
 
 #define G "\033[1;32m"
+#define B "\033[1;34m"
 #define T "\033[0m"
 #define FI "HEAD >> "
 #define FD "HEAD << "
@@ -66,7 +67,7 @@ void length_units(void) {
 double lengthUnitConversion(std::string option, double input);
 
 int main() {
-   std::cout<<"CPSPace Project\n\n";
+   std::cout<<B<<"CPSPace Project\n\n"<<T;
    std::cout<<"This tool is designed to seamlessly convert various units and simplify your calculations.\n";
    
 	std::string input;
