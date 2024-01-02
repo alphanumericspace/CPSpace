@@ -16,7 +16,7 @@ void doublen(void) {
 }
 
 void drawline(void) {
-   doublen();
+   singlen();
    
    for(int i = 0; i < 30; ++i) {
       std::cout<<"-";
@@ -95,7 +95,6 @@ int main() {
 	while(!(input == "0")) {
 		std::cout<<"Enter the option: ";
 		std::cin>>input;
-		std::cin.ignore();
 		drawline();
 		
 		if(input == "1") {
