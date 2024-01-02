@@ -7,6 +7,7 @@
 #define FI "INPUT >> "
 #define FD "HEAD << "
 #define EX "STOP <> "
+#define ER "ERROR >< "
 
 void drawline(void) {
    std::cout<<"\n";
