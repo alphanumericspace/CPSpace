@@ -131,10 +131,8 @@ int main() {
             else if(unit == "-1") {
                std::cout<<GC<<FD<<RC<<"Previous\n";
                main_menu();
-               
             }
-            else
-            if(unit == "0") {
+            else if(unit == "0") {
                std::cout<<GC<<EX<<RC<<"Exit Program\n";
                return 0;
             }
@@ -143,18 +141,16 @@ int main() {
             }
          }
 		}
-		else
-		if(input == "2") {
+		else if(input == "2") {
          std::cout<<"Done\n";
 		}
-		else
-		if(input == "0") {
+		else if(input == "0") {
          std::cout<<GC<<EX<<RC<<"Exit Program\n";
+         return 0;
 		}
 		else {
 		std::cout<<"'"<<input<<"' not in option\n";
 		}
 	}
-	return 0;
 }
 //double lengthUnitConversion(std::string option, double input) {}
