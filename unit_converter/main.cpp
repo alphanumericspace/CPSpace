@@ -213,5 +213,5 @@ int main() {
 }
 
 double lengthUnitConversion(std::string option, double input) {
-   
+   return true;
 }
