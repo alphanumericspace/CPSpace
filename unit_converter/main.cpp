@@ -26,7 +26,7 @@ void main_menu(void) {
 }
 
 void unit_converter(void) {
-   std::cout<<"\n\n"<<G<<FD<<T<<Unit Converter\n";
+   std::cout<<"\n\n"<<G<<FD<<T<<"Unit Converter\n";
    
    std::vector<std::string> units {
       "(1) Length       |  (2) Area",
@@ -44,7 +44,7 @@ void unit_converter(void) {
 }
 
 void length_units(void) {
-   std::cout<<"\n\n"<<G<<FD<<T<<Length\n";
+   std::cout<<"\n\n"<<G<<FD<<T<<"Length\n";
    
    std::vector<std::string> length_units {
       "(1) Kilometer          |  (2) Hectometer",
