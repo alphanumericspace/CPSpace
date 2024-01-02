@@ -104,6 +104,7 @@ int main() {
          while(!(unit == "0" or unit == "abr")) {
             std::cout<<"Select a unit: ";
             std::cin>>unit;
+            drawline();
             newline();
             
             if(unit == "1"
@@ -114,6 +115,7 @@ int main() {
                while(!(len == "0" or len == "abr")) {
                   std::cout<<"Select a length unit: ";
                   std::cin>>len;
+                  drawline();
                   newline();
                   
                   if(len == "0"
