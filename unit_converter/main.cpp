@@ -35,8 +35,6 @@ void main_menu(void) {
 	for(std::string list : list_menu) {
 		std::cout<<list<<std::endl;
 	}
-	
-	line();
 }
 
 void unit_converter(void) {
