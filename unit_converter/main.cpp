@@ -87,6 +87,7 @@ int main() {
 	while(!(input == "0")) {
 		std::cout<<"Enter the option: ";
 		std::cin>>input;
+		singlen();
 		
 		if(input == "1") {
          unit_converter();
