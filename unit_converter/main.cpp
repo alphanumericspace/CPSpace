@@ -40,10 +40,10 @@ void unit_converter(void) {
    newline();
    
    std::vector<std::string> unit {
-      "[1](len) Length", "[2](are) Area",
-      "[3](vol) Volume", "[4](wgt) Weight",
-      "[5](tmp) Temperature", "[6](spd) Speed",
-      "[7](pre) Pressure", "[8](pow) Power",
+      "[1](len) Length", "[2](are) Area\n",
+      "[3](vol) Volume", "[4](wgt) Weight\n",
+      "[5](tmp) Temperature", "[6](spd) Speed\n",
+      "[7](pre) Pressure", "[8](pow) Power\n",
       "[0](abr) Abort"
    };
    
