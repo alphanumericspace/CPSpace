@@ -156,10 +156,10 @@ int main() {
 		}
 		else
 		if(input == "0") {
-         std::cout<<GC<<EX<<RC<<"Exit Program";
+         std::cout<<GC<<EX<<RC<<"Exit Program\n";
 		}
 		else {
-		std::cout<<"'"<<input<<"' not in option";
+		std::cout<<"'"<<input<<"' not in option\n";
 		}
 	}
 	return 0;
