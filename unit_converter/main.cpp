@@ -44,11 +44,11 @@ void unit_converter(void) {
       "[3](vol) Volume", " [4](wgt) Weight\n",
       "[5](tmp) Temperature", " [6](spd) Speed\n",
       "[7](pre) Pressure", " [8](pow) Power\n",
-      "[0](abr) Abort"
+      "[0](abr) Abort\n"
    };
    
    for(std::string unit : unit) {
-      std::cout<<unit<<std::endl;
+      std::cout<<unit;
    }
    
    newline();
