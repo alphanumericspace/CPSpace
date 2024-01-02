@@ -92,7 +92,6 @@ int main() {
                   std::cin>>len;
                   
                   if(len == "-1") {
-                     std::cout<<GC<<FD<<RC<<"Previous\n";
                      unit_converter();
                   }
                   else if(len == "0") {
@@ -129,7 +128,6 @@ int main() {
                std::cout<<"Done\n";
             }
             else if(unit == "-1") {
-               std::cout<<GC<<FD<<RC<<"Previous\n";
                main_menu();
             }
             else if(unit == "0") {
