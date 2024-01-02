@@ -116,12 +116,10 @@ int main() {
                   std::cout<<"Select a length unit: ";
                   std::cin>>len;
                   drawline();
-                  doublen();
                   
                   if(len == "-1") {
                      std::cout<<BW<<"Previous";
                      drawline();
-                     doublen();
                   }
                   else
                   if(len == "0") {
@@ -176,7 +174,6 @@ int main() {
             if(unit == "-1") {
                std::cout<<BW<<"Previous";
                drawline();
-               doublen();
             }
             else
             if(unit == "0") {
