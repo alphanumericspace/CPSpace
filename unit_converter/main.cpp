@@ -110,6 +110,7 @@ int main() {
                while(!(len == "-1")) {
                   std::cout<<"Select a length unit: ";
                   std::cin>>len;
+                  singlen();
                   
                   if(len == "-1") {
                      std::cout<<BW<<"Previous";
