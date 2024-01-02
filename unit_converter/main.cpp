@@ -27,7 +27,7 @@ void main_menu(void) {
    std::vector<std::string> list_menu {
 		"[1](unc) Unit Converter",
 		"[2](inf) Information",
-		"[0](ext) Exit"
+		"[0](ext) Exit Program"
 	};
 	
 	for(std::string list : list_menu) {
@@ -47,7 +47,7 @@ void unit_converter(void) {
       "[5](tmp) Temperature", "[6](spd) Speed",
       "[7](pre) Pressure", "[8](pow) Power",
       "[9](byt) Data Size", "[0](abr) Abort",
-      "[00](out) Exit Program"
+      "[00](ext) Exit Program"
    };
    
    for(std::string unit : units) {
@@ -71,7 +71,8 @@ void length_units(void) {
       "[13](ft) Foot", "[14](in) Inch",
       "[15](nm) Nautical Mile", "[16](ly) Light Year",
       "[17](au) Astronomical Unit", "[18](pc) Parsec",
-      "[19](ld) Lunar Distance", "[0](abr) Abort"
+      "[19](ld) Lunar Distance", "[0](abr) Abort",
+      "[00](ext) Exit Program"
    };
    
    for(std::string unit : length_units) {
@@ -119,6 +120,15 @@ int main() {
                   or len == "abr") {
                      std::cout<<"<| Operation aborted...\n";
                      drawline();
+                     newline();
+                  }
+                  else
+                  if(len == "00"
+                  or len == "ext") {
+                     return 0;
+                  }
+                  else {
+                     std::cout<<"'"<<len<<"' not in option\n";
                      newline();
                   }
                }
@@ -176,7 +186,7 @@ int main() {
             }
             else
             if(unit == "00"
-            or unit == "out") {
+            or unit == "ext") {
                return 0;
             }
             else {
