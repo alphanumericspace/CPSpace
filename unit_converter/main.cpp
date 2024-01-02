@@ -125,6 +125,8 @@ int main() {
                   else
                   if(len == "00"
                   or len == "ext") {
+                     std::cout<<"<| Exit the program...\n";
+                     newline();
                      return 0;
                   }
                   else {
@@ -187,6 +189,8 @@ int main() {
             else
             if(unit == "00"
             or unit == "ext") {
+               std::cout<<"<| Exit the program...\n";
+               newline();
                return 0;
             }
             else {
