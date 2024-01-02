@@ -68,7 +68,7 @@ double lengthUnitConversion(std::string option, double input);
 
 int main() {
    std::cout<<B<<"CPSPace Project\n\n"<<T;
-   std::cout<<"This tool is designed to seamlessly convert various units and simplify your calculations.\n";
+   std::cout<<"This tool is designed to seamlessly convert various units and simplify your calculations.\n\n";
    
 	std::string input;
 	while(!(input == "0")) {
