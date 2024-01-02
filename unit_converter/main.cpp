@@ -96,11 +96,11 @@ int main() {
 	std::string input;
 	while(!(input == "0")) {
 		std::cout<<"Enter the option: ";
-		std::cin>>inp;
+		std::cin>>input;
 		drawline();
 		newline();
 		
-		if(inp == "1") {
+		if(input == "1") {
          unit_converter();
          
          std::string unit;
