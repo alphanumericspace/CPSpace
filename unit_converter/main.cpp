@@ -8,23 +8,23 @@
 #define BW "HEAD << "
 #define EX "HEAD <> "
 
-void newline(void) {
-   std::cout<<std::endl;
+void line(void) {
+   std::cout<<"\n\n";
 }
 
 void drawline(void) {
-   newline();
+   line();
    
    for(int i = 0; i < 30; ++i) {
       std::cout<<"-";
    }
    
-   newline();
+   line();
 }
 
 void main_menu(void) {
-   std::cout<<FD<<"Main Menu\n";
-   newline();
+   std::cout<<FD<<"Main Menu";
+   line();
    
    std::vector<std::string> list_menu {
 		"[1] Unit Converter",
@@ -36,12 +36,12 @@ void main_menu(void) {
 		std::cout<<list<<std::endl;
 	}
 	
-	newline();
+	line();
 }
 
 void unit_converter(void) {
-   std::cout<<FD<<"Unit Converter\n";
-   newline();
+   std::cout<<FD<<"Unit Converter";
+   line();
    
    std::vector<std::string> units {
       "[1] Length", "[2] Area",
@@ -56,12 +56,12 @@ void unit_converter(void) {
       std::cout<<unit<<std::endl;
    }
    
-   newline();
+   line();
 }
 
 void length_units(void) {
-   std::cout<<FD<<"Unit Converter > Length\n";
-   newline();
+   std::cout<<FD<<"Unit Converter > Length";
+   line();
    
    std::vector<std::string> length_units {
       "[1] Kilometer", "[2] Hectometer",
@@ -81,15 +81,14 @@ void length_units(void) {
       std::cout<<unit<<std::endl;
    }
    
-   newline();
+   line();
 }
 
 double lengthUnitConversion(std::string option, double input);
 
 int main() {
-   std::cout<<"\nCPSpace Project - Unit Converter\n\nWelcome to CPSPace Project, this tool is designed to seamlessly convert various units and simplify your calculations.\n";
+   std::cout<<"\nCPSpace Project - Unit Converter\n\nWelcome to CPSPace Project, this tool is designed to seamlessly convert various units and simplify your calculations.";
    drawline();
-   newline();
    
    main_menu();
    
@@ -98,7 +97,7 @@ int main() {
 		std::cout<<"Enter the option: ";
 		std::cin>>input;
 		drawline();
-		newline();
+		line();
 		
 		if(input == "1") {
          unit_converter();
@@ -108,7 +107,7 @@ int main() {
             std::cout<<"Select a unit: ";
             std::cin>>unit;
             drawline();
-            newline();
+            line();
             
             if(unit == "1") {
                length_units();
@@ -118,22 +117,22 @@ int main() {
                   std::cout<<"Select a length unit: ";
                   std::cin>>len;
                   drawline();
-                  newline();
+                  line();
                   
                   if(len == "-1") {
-                     std::cout<<BW<<"Previous\n";
+                     std::cout<<BW<<"Previous";
                      drawline();
-                     newline();
+                     line();
                   }
                   else
                   if(len == "0") {
-                     std::cout<<EX<<"Exit Program\n";
-                     newline();
+                     std::cout<<EX<<"Exit Program";
+                     line();
                      return 0;
                   }
                   else {
-                     std::cout<<"'"<<len<<"' not in option\n";
-                     newline();
+                     std::cout<<"'"<<len<<"' not in option";
+                     line();
                   }
                }
                
@@ -141,54 +140,54 @@ int main() {
             }
             else
             if(unit == "2") {
-               std::cout<<"Done\n";
-               newline();
+               std::cout<<"Done";
+               line();
             }
             else
             if(unit == "3") {
-               std::cout<<"Done\n";
-               newline();
+               std::cout<<"Done";
+               line();
             }
             else
             if(unit == "4") {
                std::cout<<"Done\n";
-               newline();
+               line();
             }
             else
             if(unit == "5") {
-               std::cout<<"Done\n";
-               newline();
+               std::cout<<"Done";
+               line();
             }
             else
             if(unit == "6") {
-               std::cout<<"Done\n";
-               newline();
+               std::cout<<"Done";
+               line();
             }
             else
             if(unit == "7") {
-               std::cout<<"Done\n";
-               newline();
+               std::cout<<"Done";
+               line();
             }
             else
             if(unit == "8") {
-               std::cout<<"Done\n";
-               newline();
+               std::cout<<"Done";
+               line();
             }
             else
             if(unit == "-1") {
-               std::cout<<BW<<"Previous\n";
+               std::cout<<BW<<"Previous";
                drawline();
-               newline();
+               line();
             }
             else
             if(unit == "0") {
-               std::cout<<EX<<"Exit Program\n";
-               newline();
+               std::cout<<EX<<"Exit Program";
+               line();
                return 0;
             }
             else {
-            std::cout<<"'"<<unit<<"' not in option\n";
-            newline();
+            std::cout<<"'"<<unit<<"' not in option";
+            line();
             }
          }
          
@@ -196,17 +195,17 @@ int main() {
 		}
 		else
 		if(input == "2") {
-         std::cout<<"Done\n";
-         newline();
+         std::cout<<"Done";
+         line();
 		}
 		else
 		if(input == "0") {
-         std::cout<<EX<<"Exit Program\n";
-         newline();
+         std::cout<<EX<<"Exit Program";
+         line();
 		}
 		else {
-		std::cout<<"'"<<input<<"' not in option\n";
-		newline();
+		std::cout<<"'"<<input<<"' not in option";
+		line();
 		}
 	}
 	return 0;
