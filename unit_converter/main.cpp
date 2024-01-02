@@ -4,9 +4,9 @@
 #include <vector>
 #include <string>
 
-#define FI "\033(1;32mHEAD >>\033(0m "
-#define FD "\033(1;32mHEAD <<\033(0m "
-#define EX "\033(1;32mHEAD <>\033(0m "
+#define FI "\033(1;32m HEAD >> \033(0m "
+#define FD "\033(1;32m HEAD << \033(0m "
+#define EX "\033(1;32m HEAD <> \033(0m "
 
 void main_menu(void) {
    std::cout<<FD<<"Main Menu\n";
