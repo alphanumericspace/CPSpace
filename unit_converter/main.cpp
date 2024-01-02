@@ -194,7 +194,7 @@ int main() {
 		}
 		else
 		if(inp == "00" or inp == "out") {
-		   return 0;
+		   return 1;
 		}
 		else {
 		std::cout<<"'"<<inp<<"' not in option\n";
