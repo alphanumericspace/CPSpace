@@ -11,7 +11,7 @@
 void drawline(void) {
    std::cout<<"\n";
    for(int i = 0; i < 27; i++) {
-      std::cout<<"<>";
+      std::cout<<"_";
    }
    std::cout<<"\n\n";
 }
