@@ -6,7 +6,7 @@
 
 #define B "\033[34m"
 #define G "\033[32m"
-#define Y "\033[33m"
+#define Y "\033[36m"
 #define R "\033[31m"
 #define S "\033[0m"
 #define BD "\033[1m"
