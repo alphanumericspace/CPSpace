@@ -4,7 +4,9 @@
 #include <vector>
 #include <string>
 
-#define HD "HEAD > "
+#define FD "HEAD >> "
+#define BW "HEAD << "
+#define EX "HEAD <> "
 
 void newline(void) {
    std::cout<<std::endl;
@@ -13,7 +15,7 @@ void newline(void) {
 void drawline(void) {
    newline();
    
-   for(int i = 0; i < 35; ++i) {
+   for(int i = 0; i < 30; ++i) {
       std::cout<<"-";
    }
    
@@ -21,7 +23,7 @@ void drawline(void) {
 }
 
 void main_menu(void) {
-   std::cout<<HD<<"Main Menu\n";
+   std::cout<<FD<<"Main Menu\n";
    newline();
    
    std::vector<std::string> list_menu {
@@ -38,7 +40,7 @@ void main_menu(void) {
 }
 
 void unit_converter(void) {
-   std::cout<<HD<<"Unit Converter\n";
+   std::cout<<FD<<"Unit Converter\n";
    newline();
    
    std::vector<std::string> units {
@@ -46,8 +48,8 @@ void unit_converter(void) {
       "[3](vol) Volume", "[4](wgt) Weight",
       "[5](tmp) Temperature", "[6](spd) Speed",
       "[7](pre) Pressure", "[8](pow) Power",
-      "[9](byt) Data Size", "[0](abr) Abort",
-      "[00](ext) Exit Program"
+      "[9](byt) Data Size", "[-1](back) Back to Previous",
+      "[0](ext) Exit Program"
    };
    
    for(std::string unit : units) {
@@ -58,7 +60,7 @@ void unit_converter(void) {
 }
 
 void length_units(void) {
-   std::cout<<HD<<"Unit Converter > Length\n";
+   std::cout<<FD<<"Unit Converter > Length\n";
    newline();
    
    std::vector<std::string> length_units {
@@ -71,8 +73,8 @@ void length_units(void) {
       "[13](ft) Foot", "[14](in) Inch",
       "[15](nm) Nautical Mile", "[16](ly) Light Year",
       "[17](au) Astronomical Unit", "[18](pc) Parsec",
-      "[19](ld) Lunar Distance", "[0](abr) Abort",
-      "[00](ext) Exit Program"
+      "[19](ld) Lunar Distance", "[-1](back) Back to Previous",
+      "[0](ext) Exit Program"
    };
    
    for(std::string unit : length_units) {
@@ -90,7 +92,7 @@ int main() {
    main_menu();
    
 	std::string inp;
-	while(!(inp == "0" or inp == "ext")) {
+	while(!(inp == "-1" or inp == "ext")) {
 		std::cout<<"Enter the option: ";
 		std::cin>>inp;
 		drawline();
@@ -101,7 +103,7 @@ int main() {
          unit_converter();
          
          std::string unit;
-         while(!(unit == "0" or unit == "abr")) {
+         while(!(unit == "-1" or unit == "back")) {
             std::cout<<"Select a unit: ";
             std::cin>>unit;
             drawline();
@@ -112,22 +114,22 @@ int main() {
                length_units();
                
                std::string len;
-               while(!(len == "0" or len == "abr")) {
+               while(!(len == "-1" or len == "back")) {
                   std::cout<<"Select a length unit: ";
                   std::cin>>len;
                   drawline();
                   newline();
                   
-                  if(len == "0"
-                  or len == "abr") {
-                     std::cout<<"<| Operation aborted...\n";
+                  if(len == "-1"
+                  or len == "back") {
+                     std::cout<<BW<<"Back to Previous\n";
                      drawline();
                      newline();
                   }
                   else
-                  if(len == "00"
+                  if(len == "0"
                   or len == "ext") {
-                     std::cout<<"<| Exit the program...\n";
+                     std::cout<<EX<<"Exit Program\n";
                      newline();
                      return 0;
                   }
@@ -182,16 +184,16 @@ int main() {
                newline();
             }
             else
-            if(unit == "0"
-            or unit == "abr") {
-               std::cout<<"<| Operation aborted...\n";
+            if(unit == "-1"
+            or unit == "back") {
+               std::cout<<BW<<"Back to Previous\n";
                drawline();
                newline();
             }
             else
-            if(unit == "00"
+            if(unit == "0"
             or unit == "ext") {
-               std::cout<<"<| Exit the program...\n";
+               std::cout<<EX<<"Exit Program\n";
                newline();
                return 0;
             }
@@ -209,8 +211,8 @@ int main() {
          newline();
 		}
 		else
-		if(inp == "0" or inp == "ext") {
-         std::cout<<"<| Exit the program...\n";
+		if(inp == "-1" or inp == "ext") {
+         std::cout<<EX<<"Exit Program\n";
          newline();
 		}
 		else {
