@@ -4,10 +4,10 @@
 #include <vector>
 #include <string>
 
-#define FI "INPUT >> "
-#define FD "HEAD << "
-#define EX "STOP <> "
-#define ER "ERROR >< "
+#define FI "INPUT >> " // Blue
+#define FD "HEAD << " // Green
+#define EX "STOP <> " // Yellow
+#define ER "ERROR >< " // Red
 
 void drawline(void) {
    std::cout<<"\n";
