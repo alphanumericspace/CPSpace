@@ -101,6 +101,7 @@ int main() {
          while(!(unit == "-1")) {
             std::cout<<"Select a unit: ";
             std::cin>>unit;
+            singlen();
             
             if(unit == "1") {
                length_units();
