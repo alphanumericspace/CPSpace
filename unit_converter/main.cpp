@@ -34,6 +34,7 @@ void main_menu(void) {
 }
 
 void unit_converter(void) {
+   singlen();
    std::cout<<FD<<"Unit Converter";
    doublen();
    
@@ -53,6 +54,7 @@ void unit_converter(void) {
 }
 
 void length_units(void) {
+   singlen();
    std::cout<<FD<<"Unit Converter > Length";
    doublen();
    
