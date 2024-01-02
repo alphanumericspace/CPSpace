@@ -55,8 +55,6 @@ void unit_converter(void) {
    for(std::string unit : units) {
       std::cout<<unit<<std::endl;
    }
-   
-   line();
 }
 
 void length_units(void) {
