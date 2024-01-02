@@ -11,7 +11,7 @@
 #define EX "HEAD <> "
 
 void main_menu(void) {
-   std::cout<<GC<<FD<<RC<<"Main Menu\n\n";
+   std::cout<<GC<<FD<<RC<<"Main Menu\n";
    
    std::vector<std::string> list_menu {
 		"[1] Unit Converter",
@@ -25,7 +25,7 @@ void main_menu(void) {
 }
 
 void unit_converter(void) {
-   std::cout<<GC<<FD<<RC<<"Unit Converter\n\n";
+   std::cout<<GC<<FD<<RC<<"Unit Converter\n";
    
    std::vector<std::string> units {
       "[1] Length", "[2] Area",
@@ -42,7 +42,7 @@ void unit_converter(void) {
 }
 
 void length_units(void) {
-   std::cout<<GC<<FD<<RC<<"Length\n\n";
+   std::cout<<GC<<FD<<RC<<"Length\n";
    
    std::vector<std::string> length_units {
       "[1] Kilometer", "[2] Hectometer",
@@ -73,7 +73,7 @@ int main() {
    
 	std::string input;
 	while(!(input == "0")) {
-		std::cout<<"\nEnter the option: ";
+		std::cout<<"Enter the option: ";
 		std::cin>>input;
 		
 		if(input == "1") {
