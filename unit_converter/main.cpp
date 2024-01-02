@@ -20,7 +20,7 @@ void main_menu(void) {
 	for(std::string list : list_menu) {
 		std::cout<<list<<std::endl;
 	}
-	std::cout<<"\nPlease enter your choice according to the number provided\n";
+	std::cout<<"\nPlease enter your choice according to the number provided\n\n";
 }
 
 void unit_converter(void) {
@@ -38,7 +38,7 @@ void unit_converter(void) {
    for(std::string unit : units) {
       std::cout<<unit<<std::endl;
    }
-   std::cout<<"\nPlease enter your choice according to the number provided\n";
+   std::cout<<"\nPlease enter your choice according to the number provided\n\n";
 }
 
 void length_units(void) {
@@ -61,7 +61,7 @@ void length_units(void) {
    for(std::string unit : length_units) {
       std::cout<<unit<<std::endl;
    }
-   std::cout<<"\nPlease enter your choice according to the number provided\n";
+   std::cout<<"\nPlease enter your choice according to the number provided\n\n";
 }
 
 double lengthUnitConversion(std::string option, double input);
