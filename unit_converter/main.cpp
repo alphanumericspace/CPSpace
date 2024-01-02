@@ -78,10 +78,10 @@ int main() {
    std::cout<<"CPSPace Project\n\n";
    std::cout<<"This tool is designed to seamlessly convert various units and simplify your calculations.\n\n";
    
+   main_menu();
+   
 	std::string input;
 	while(!(input == "0")) {
-      main_menu();
-      
 		std::cout<<FI;
 		std::cin>>input;
 		drawline();
