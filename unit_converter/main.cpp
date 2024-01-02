@@ -9,6 +9,7 @@
 #define EX "HEAD <> "
 
 void drawline(void) {
+   std::cout<<"\n";
    for(int i = 0; i < 35; i++) {
       std::cout<<"-";
    }
