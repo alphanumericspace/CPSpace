@@ -73,7 +73,7 @@ int main() {
    
 	std::string input;
 	while(!(input == "0")) {
-		std::cout<<"Enter the option: ";
+		std::cout<<GC<<FD<<RC;
 		std::cin>>input;
 		
 		if(input == "1") {
