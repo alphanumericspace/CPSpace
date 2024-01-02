@@ -106,7 +106,6 @@ int main() {
             std::cout<<"Select a unit: ";
             std::cin>>unit;
             drawline();
-            doublen();
             
             if(unit == "1") {
                length_units();
