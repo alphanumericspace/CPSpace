@@ -22,7 +22,7 @@ void drawline(void) {
       std::cout<<"-";
    }
    
-   doublen();
+   singlen();
 }
 
 void main_menu(void) {
