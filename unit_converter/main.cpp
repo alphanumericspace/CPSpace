@@ -6,7 +6,7 @@
 
 #define FI "INPUT >> "
 #define FD "HEAD << "
-#define EX "HEAD <> "
+#define EX "STOP <> "
 
 void drawline(void) {
    std::cout<<"\n";
