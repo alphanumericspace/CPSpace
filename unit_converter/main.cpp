@@ -113,7 +113,7 @@ int main() {
                   }
                   else {
                      length_units();
-                     std::cout<<"'"<<len<<"' not in option\n\n";
+                     std::cout<<ER<<"'"<<len<<"' not in option\n\n";
                   }
                }
             }
@@ -150,7 +150,7 @@ int main() {
             }
             else {
                unit_converter();
-               std::cout<<"'"<<unit<<"' not in option\n\n";
+               std::cout<<ER<<"'"<<unit<<"' not in option\n\n";
             }
          }
 		}
@@ -163,7 +163,7 @@ int main() {
 		}
 		else {
          main_menu();
-         std::cout<<"'"<<input<<"' not in option\n\n";
+         std::cout<<ER<<"'"<<input<<"' not in option\n\n";
 		}
 	}
 }
