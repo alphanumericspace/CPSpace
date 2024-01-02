@@ -90,7 +90,6 @@ int main() {
 	while(!(input == "0")) {
 		std::cout<<BD<<B<<FI<<S;
 		std::cin>>input;
-		drawline();
 		
 		if(input == "1") {
          unit_converter();
@@ -99,7 +98,6 @@ int main() {
          while(!(unit == "-1")) {
             std::cout<<BD<<B<<FI<<S;
             std::cin>>unit;
-            drawline();
             
             if(unit == "1") {
                length_units();
@@ -108,7 +106,6 @@ int main() {
                while(!(len == "-1")) {
                   std::cout<<BD<<B<<FI<<S;
                   std::cin>>len;
-                  drawline();
                   
                   if(len == "-1") {
                      unit_converter();
