@@ -38,6 +38,8 @@ void main_menu(void) {
 	for(std::string list : list_menu) {
 		std::cout<<list<<std::endl;
 	}
+	
+	singlen();
 }
 
 void unit_converter(void) {
@@ -91,7 +93,6 @@ int main() {
    
 	std::string input;
 	while(!(input == "0")) {
-	   singlen();
 		std::cout<<"Enter the option: ";
 		std::cin>>input;
 		drawline();
