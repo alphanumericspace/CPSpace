@@ -8,23 +8,26 @@
 #define BW "HEAD << "
 #define EX "HEAD <> "
 
-void line(void) {
+void singlen(void) {
+   std::cout<<"\n";
+}
+void doublen(void) {
    std::cout<<"\n\n";
 }
 
 void drawline(void) {
-   line();
+   doublen();
    
    for(int i = 0; i < 30; ++i) {
       std::cout<<"-";
    }
    
-   line();
+   doublen();
 }
 
 void main_menu(void) {
    std::cout<<FD<<"Main Menu";
-   line();
+   doublen();
    
    std::vector<std::string> list_menu {
 		"[1] Unit Converter",
@@ -35,11 +38,12 @@ void main_menu(void) {
 	for(std::string list : list_menu) {
 		std::cout<<list<<std::endl;
 	}
+	singlen();
 }
 
 void unit_converter(void) {
    std::cout<<FD<<"Unit Converter";
-   line();
+   doublen();
    
    std::vector<std::string> units {
       "[1] Length", "[2] Area",
@@ -53,11 +57,12 @@ void unit_converter(void) {
    for(std::string unit : units) {
       std::cout<<unit<<std::endl;
    }
+   singlen();
 }
 
 void length_units(void) {
    std::cout<<FD<<"Unit Converter > Length";
-   line();
+   doublen();
    
    std::vector<std::string> length_units {
       "[1] Kilometer", "[2] Hectometer",
@@ -76,16 +81,17 @@ void length_units(void) {
    for(std::string unit : length_units) {
       std::cout<<unit<<std::endl;
    }
+   singlen();
 }
 
 double lengthUnitConversion(std::string option, double input);
 
 int main() {
    std::cout<<"\nCPSpace Project - Unit Converter\n\nWelcome to CPSPace Project, this tool is designed to seamlessly convert various units and simplify your calculations.";
-   drawline();
+   ();
    
    main_menu();
-   line();
+   doublen();
    
 	std::string input;
 	while(!(input == "0")) {
@@ -101,7 +107,7 @@ int main() {
             std::cout<<"Select a unit: ";
             std::cin>>unit;
             drawline();
-            line();
+            doublen();
             
             if(unit == "1") {
                length_units();
@@ -111,22 +117,22 @@ int main() {
                   std::cout<<"Select a length unit: ";
                   std::cin>>len;
                   drawline();
-                  line();
+                  doublen();
                   
                   if(len == "-1") {
                      std::cout<<BW<<"Previous";
                      drawline();
-                     line();
+                     doublen();
                   }
                   else
                   if(len == "0") {
                      std::cout<<EX<<"Exit Program";
-                     line();
+                     doublen();
                      return 0;
                   }
                   else {
                      std::cout<<"'"<<len<<"' not in option";
-                     line();
+                     doublen();
                   }
                }
                
@@ -135,53 +141,53 @@ int main() {
             else
             if(unit == "2") {
                std::cout<<"Done";
-               line();
+               doublen();
             }
             else
             if(unit == "3") {
                std::cout<<"Done";
-               line();
+               doublen();
             }
             else
             if(unit == "4") {
                std::cout<<"Done\n";
-               line();
+               doublen();
             }
             else
             if(unit == "5") {
                std::cout<<"Done";
-               line();
+               doublen();
             }
             else
             if(unit == "6") {
                std::cout<<"Done";
-               line();
+               doublen();
             }
             else
             if(unit == "7") {
                std::cout<<"Done";
-               line();
+               doublen();
             }
             else
             if(unit == "8") {
                std::cout<<"Done";
-               line();
+               doublen();
             }
             else
             if(unit == "-1") {
                std::cout<<BW<<"Previous";
                drawline();
-               line();
+               doublen();
             }
             else
             if(unit == "0") {
                std::cout<<EX<<"Exit Program";
-               line();
+               doublen();
                return 0;
             }
             else {
             std::cout<<"'"<<unit<<"' not in option";
-            line();
+            doublen();
             }
          }
          
@@ -190,16 +196,16 @@ int main() {
 		else
 		if(input == "2") {
          std::cout<<"Done";
-         line();
+         doublen();
 		}
 		else
 		if(input == "0") {
          std::cout<<EX<<"Exit Program";
-         line();
+         doublen();
 		}
 		else {
 		std::cout<<"'"<<input<<"' not in option";
-		line();
+		doublen();
 		}
 	}
 	return 0;
