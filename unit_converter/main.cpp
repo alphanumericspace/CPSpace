@@ -93,9 +93,9 @@ int main() {
                   
                   if(len == "-1") {
                      std::cout<<GC<<FD<<RC<<"Previous\n";
+                     unit_converter();
                   }
-                  else
-                  if(len == "0") {
+                  else if(len == "0") {
                      std::cout<<GC<<EX<<RC<<"Exit Program\n";
                      return 0;
                   }
@@ -103,40 +103,35 @@ int main() {
                      std::cout<<"'"<<len<<"' not in option\n";
                   }
                }
-               
-               unit_converter();
             }
-            else
-            if(unit == "2") {
+            else if(unit == "2") {
                std::cout<<"Done\n";
             }
-            else
-            if(unit == "3") {
+            else if(unit == "3") {
                std::cout<<"Done\n";
             }
-            else
-            if(unit == "4") {
+            else if(unit == "4") {
                std::cout<<"Done\n";
             }
-            else
-            if(unit == "5") {
+            else if(unit == "5") {
                std::cout<<"Done\n";
             }
-            else
-            if(unit == "6") {
+            else if(unit == "6") {
                std::cout<<"Done\n";
             }
-            else
-            if(unit == "7") {
+            else if(unit == "7") {
                std::cout<<"Done\n";
             }
-            else
-            if(unit == "8") {
+            else if(unit == "8") {
                std::cout<<"Done\n";
             }
-            else
-            if(unit == "-1") {
+            else if(unit == "9") {
+               std::cout<<"Done\n";
+            }
+            else if(unit == "-1") {
                std::cout<<GC<<FD<<RC<<"Previous\n";
+               main_menu();
+               
             }
             else
             if(unit == "0") {
@@ -147,7 +142,6 @@ int main() {
             std::cout<<"'"<<unit<<"' not in option\n";
             }
          }
-         main_menu();
 		}
 		else
 		if(input == "2") {
