@@ -211,7 +211,4 @@ int main() {
 	}
 	return 0;
 }
-
-double lengthUnitConversion(std::string option, double input) {
-   return true;
-}
+//double lengthUnitConversion(std::string option, double input) {}
