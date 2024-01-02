@@ -4,7 +4,7 @@
 #include <vector>
 #include <string>
 
-#define FI "HEAD >> "
+#define FI "INPUT >> "
 #define FD "HEAD << "
 #define EX "HEAD <> "
 
