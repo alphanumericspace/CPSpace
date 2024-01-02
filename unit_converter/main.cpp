@@ -80,8 +80,6 @@ void length_units(void) {
    for(std::string unit : length_units) {
       std::cout<<unit<<std::endl;
    }
-   
-   line();
 }
 
 double lengthUnitConversion(std::string option, double input);
