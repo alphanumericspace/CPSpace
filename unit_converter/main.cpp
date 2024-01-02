@@ -10,10 +10,10 @@
 #define R "\033[31m"
 #define S "\033[0m"
 #define BD "\033[1m"
-#define FI "INPUT << " // Blue
-#define FD "HEAD >> " // Green
-#define EX "STOP <> " // Yellow
-#define ER "ERROR >< " // Red
+#define FI "INPUT << "
+#define FD "HEAD >> "
+#define EX "STOP <> "
+#define ER "ERROR >< "
 
 void drawline(void) {
    std::cout<<"\n";
