@@ -88,10 +88,10 @@ double lengthUnitConversion(std::string option, double input);
 
 int main() {
    std::cout<<"\nCPSpace Project - Unit Converter\n\nWelcome to CPSPace Project, this tool is designed to seamlessly convert various units and simplify your calculations.";
-   ();
+   doublen();
    
    main_menu();
-   doublen();
+   singlen();
    
 	std::string input;
 	while(!(input == "0")) {
