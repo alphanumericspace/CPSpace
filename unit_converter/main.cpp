@@ -4,17 +4,17 @@
 #include <vector>
 #include <string>
 
-#define FI "\033[1;32mHEAD >>\033[0m "
-#define FD "\033[1;32mHEAD <<\033[0m "
-#define EX "\033[1;32mHEAD <>\033[0m "
+#define FI "\033(1;32mHEAD >>\033(0m "
+#define FD "\033(1;32mHEAD <<\033(0m "
+#define EX "\033(1;32mHEAD <>\033(0m "
 
 void main_menu(void) {
    std::cout<<FD<<"Main Menu\n";
    
    std::vector<std::string> list_menu {
-		"[1] Unit Converter",
-		"[2] Information",
-		"[0] Exit Program"
+		"(1) Unit Converter",
+		"(2) Information",
+		"(0) Exit Program"
 	};
 	
 	for(std::string list : list_menu) {
@@ -26,12 +26,12 @@ void unit_converter(void) {
    std::cout<<FD<<"Unit Converter\n";
    
    std::vector<std::string> units {
-      "[1] Length", "[2] Area",
-      "[3] Volume", "[4] Weight",
-      "[5] Temperature", "[6] Speed",
-      "[7] Pressure", "[8] Power",
-      "[9] Data Size", "[-1] Previous",
-      "[0] Exit Program"
+      "(1) Length", "(2) Area",
+      "(3) Volume", "(4) Weight",
+      "(5) Temperature", "(6) Speed",
+      "(7) Pressure", "(8) Power",
+      "(9) Data Size", "(-1) Previous",
+      "(0) Exit Program"
    };
    
    for(std::string unit : units) {
@@ -43,17 +43,17 @@ void length_units(void) {
    std::cout<<FD<<"Length\n";
    
    std::vector<std::string> length_units {
-      "[1] Kilometer", "[2] Hectometer",
-      "[3] Decameter", "[4] Meter",
-      "[5] Decimeter", "[6] Centimeter",
-      "[7] Millimeter", "[8] Micrometer",
-      "[9] Nanometer", "[10] Picometer",
-      "[11] Mile", "[12] Yard",
-      "[13] Foot", "[14] Inch",
-      "[15] Nautical Mile", "[16] Light Year",
-      "[17] Astronomical Unit", "[18] Parsec",
-      "[19] Lunar Distance", "[-1] Previous",
-      "[0] Exit Program"
+      "(1) Kilometer", "(2) Hectometer",
+      "(3) Decameter", "(4) Meter",
+      "(5) Decimeter", "(6) Centimeter",
+      "(7) Millimeter", "(8) Micrometer",
+      "(9) Nanometer", "(10) Picometer",
+      "(11) Mile", "(12) Yard",
+      "(13) Foot", "(14) Inch",
+      "(15) Nautical Mile", "(16) Light Year",
+      "(17) Astronomical Unit", "(18) Parsec",
+      "(19) Lunar Distance", "(-1) Previous",
+      "(0) Exit Program"
    };
    
    for(std::string unit : length_units) {
