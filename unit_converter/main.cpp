@@ -27,9 +27,9 @@ void main_menu(void) {
    newline();
    
    std::vector<std::string> list_menu {
-		"[1](unc) Unit Converter",
-		"[2](inf) Information",
-		"[0](ext) Exit Program"
+		"[1] Unit Converter",
+		"[2] Information",
+		"[0] Exit Program"
 	};
 	
 	for(std::string list : list_menu) {
@@ -44,12 +44,12 @@ void unit_converter(void) {
    newline();
    
    std::vector<std::string> units {
-      "[1](len) Length", "[2](are) Area",
-      "[3](vol) Volume", "[4](wgt) Weight",
-      "[5](tmp) Temperature", "[6](spd) Speed",
-      "[7](pre) Pressure", "[8](pow) Power",
-      "[9](byt) Data Size", "[-1](back) Back to Previous",
-      "[0](ext) Exit Program"
+      "[1] Length", "[2] Area",
+      "[3] Volume", "[4] Weight",
+      "[5] Temperature", "[6] Speed",
+      "[7] Pressure", "[8] Power",
+      "[9] Data Size", "[-1] Previous",
+      "[0] Exit Program"
    };
    
    for(std::string unit : units) {
@@ -64,17 +64,17 @@ void length_units(void) {
    newline();
    
    std::vector<std::string> length_units {
-      "[1](km) Kilometer", "[2](hm) Hectometer",
-      "[3](am) Decameter", "[4](mt) Meter",
-      "[5](dm) Decimeter", "[6](cm) Centimeter",
-      "[7](mm) Millimeter", "[8](um) Micrometer",
-      "[9](nm) Nanometer", "[10](pm) Picometer",
-      "[11](mi) Mile", "[12](yd) Yard",
-      "[13](ft) Foot", "[14](in) Inch",
-      "[15](nm) Nautical Mile", "[16](ly) Light Year",
-      "[17](au) Astronomical Unit", "[18](pc) Parsec",
-      "[19](ld) Lunar Distance", "[-1](back) Back to Previous",
-      "[0](ext) Exit Program"
+      "[1] Kilometer", "[2] Hectometer",
+      "[3] Decameter", "[4] Meter",
+      "[5] Decimeter", "[6] Centimeter",
+      "[7] Millimeter", "[8] Micrometer",
+      "[9] Nanometer", "[10] Picometer",
+      "[11] Mile", "[12] Yard",
+      "[13] Foot", "[14] Inch",
+      "[15] Nautical Mile", "[16] Light Year",
+      "[17] Astronomical Unit", "[18] Parsec",
+      "[19] Lunar Distance", "[-1] Previous",
+      "[0] Exit Program"
    };
    
    for(std::string unit : length_units) {
@@ -84,6 +84,8 @@ void length_units(void) {
    newline();
 }
 
+double lengthUnitConversion(std::string option, double input);
+
 int main() {
    std::cout<<"\nCPSpace Project - Unit Converter\n\nWelcome to CPSPace Project, this tool is designed to seamlessly convert various units and simplify your calculations.\n";
    drawline();
@@ -91,44 +93,40 @@ int main() {
    
    main_menu();
    
-	std::string inp;
-	while(!(inp == "0" or inp == "ext")) {
+	std::string input;
+	while(!(input == "0")) {
 		std::cout<<"Enter the option: ";
 		std::cin>>inp;
 		drawline();
 		newline();
 		
-		if(inp == "1"
-		or inp == "unc") {
+		if(inp == "1") {
          unit_converter();
          
          std::string unit;
-         while(!(unit == "-1" or unit == "back")) {
+         while(!(unit == "-1")) {
             std::cout<<"Select a unit: ";
             std::cin>>unit;
             drawline();
             newline();
             
-            if(unit == "1"
-            or unit == "len") {
+            if(unit == "1") {
                length_units();
                
                std::string len;
-               while(!(len == "-1" or len == "back")) {
+               while(!(len == "-1")) {
                   std::cout<<"Select a length unit: ";
                   std::cin>>len;
                   drawline();
                   newline();
                   
-                  if(len == "-1"
-                  or len == "back") {
-                     std::cout<<BW<<"Back to Previous\n";
+                  if(len == "-1") {
+                     std::cout<<BW<<"Previous\n";
                      drawline();
                      newline();
                   }
                   else
-                  if(len == "0"
-                  or len == "ext") {
+                  if(len == "0") {
                      std::cout<<EX<<"Exit Program\n";
                      newline();
                      return 0;
@@ -142,57 +140,48 @@ int main() {
                unit_converter();
             }
             else
-            if(unit == "2"
-            or unit == "are") {
+            if(unit == "2") {
                std::cout<<"Done\n";
                newline();
             }
             else
-            if(unit == "3"
-            or unit == "vol") {
+            if(unit == "3") {
                std::cout<<"Done\n";
                newline();
             }
             else
-            if(unit == "4"
-            or unit == "wgt") {
+            if(unit == "4") {
                std::cout<<"Done\n";
                newline();
             }
             else
-            if(unit == "5"
-            or unit == "tmp") {
+            if(unit == "5") {
                std::cout<<"Done\n";
                newline();
             }
             else
-            if(unit == "6"
-            or unit == "spd") {
+            if(unit == "6") {
                std::cout<<"Done\n";
                newline();
             }
             else
-            if(unit == "7"
-            or unit == "pre") {
+            if(unit == "7") {
                std::cout<<"Done\n";
                newline();
             }
             else
-            if(unit == "8"
-            or unit == "pow") {
+            if(unit == "8") {
                std::cout<<"Done\n";
                newline();
             }
             else
-            if(unit == "-1"
-            or unit == "back") {
-               std::cout<<BW<<"Back to Previous\n";
+            if(unit == "-1") {
+               std::cout<<BW<<"Previous\n";
                drawline();
                newline();
             }
             else
-            if(unit == "0"
-            or unit == "ext") {
+            if(unit == "0") {
                std::cout<<EX<<"Exit Program\n";
                newline();
                return 0;
@@ -206,19 +195,23 @@ int main() {
          main_menu();
 		}
 		else
-		if(inp == "2" or inp == "inf") {
+		if(input == "2") {
          std::cout<<"Done\n";
          newline();
 		}
 		else
-		if(inp == "0" or inp == "ext") {
+		if(input == "0") {
          std::cout<<EX<<"Exit Program\n";
          newline();
 		}
 		else {
-		std::cout<<"'"<<inp<<"' not in option\n";
+		std::cout<<"'"<<input<<"' not in option\n";
 		newline();
 		}
 	}
 	return 0;
+}
+
+double lengthUnitConversion(std::string option, double input) {
+   
 }
