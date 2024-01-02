@@ -118,7 +118,7 @@ int main() {
                      return 0;
                   }
                   else {
-                     std::cout<<BD<<R<<ER<<S<<"'"<<len<<"' not in option\n\n";
+                     std::cout<<BD<<R<<ER<<S<<"'"<<len<<"' Unavailable Option\n\n";
                      length_units();
                   }
                }
@@ -155,7 +155,7 @@ int main() {
                return 0;
             }
             else {
-               std::cout<<BD<<R<<ER<<S<<"'"<<unit<<"' not in option\n\n";
+               std::cout<<BD<<R<<ER<<S<<"'"<<unit<<"' Unavailable Option\n\n";
                unit_converter();
             }
          }
@@ -168,7 +168,7 @@ int main() {
          return 0;
 		}
 		else {
-         std::cout<<BD<<R<<ER<<S<<"'"<<input<<"' not in option\n\n";
+         std::cout<<BD<<R<<ER<<S<<"'"<<input<<"' Unavailable Option\n\n";
 	      main_menu();
 		}
 	}
