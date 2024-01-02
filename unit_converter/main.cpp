@@ -97,7 +97,6 @@ int main() {
 		std::cout<<"Enter the option: ";
 		std::cin>>input;
 		drawline();
-		line();
 		
 		if(input == "1") {
          unit_converter();
