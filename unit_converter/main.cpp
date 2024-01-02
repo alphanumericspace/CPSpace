@@ -70,7 +70,7 @@ void length_units(void) {
       "[13](ft) Foot", "[14](in) Inch",
       "[15](nm) Nautical Mile", "[16](ly) Light Year",
       "[17](au) Astronomical Unit", "[18](pc) Parsec",
-      "[19](ld) Lunar Distance"
+      "[19](ld) Lunar Distance", "[0](abr) Abort"
    };
    
    for(std::string unit : length_units) {
@@ -113,7 +113,16 @@ int main() {
                   std::cout<<"Select a length unit: ";
                   std::cin>>len;
                   newline();
+                  
+                  if(len == "0"
+                  or len == "abr") {
+                     std::cout<<"<| Operation aborted...\n";
+                     drawline();
+                     newline();
+                  }
                }
+               
+               unit_converter();
             }
             else
             if(unit == "2"
