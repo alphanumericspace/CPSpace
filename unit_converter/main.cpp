@@ -8,6 +8,14 @@
 #define FD "HEAD << "
 #define EX "HEAD <> "
 
+void drawline(void) {
+   std::cout<<"\n";
+   for(int i = 0; i < 35; i++) {
+      std::cout<<"-";
+   }
+   std::cout<<"\n";
+}
+
 void main_menu(void) {
    std::cout<<FD<<"Main Menu\n\n";
    
@@ -76,7 +84,7 @@ int main() {
       
 		std::cout<<FI;
 		std::cin>>input;
-		std::cout<<"\n";
+		drawline();
 		
 		if(input == "1") {
          unit_converter();
@@ -85,7 +93,7 @@ int main() {
          while(!(unit == "-1")) {
             std::cout<<FI;
             std::cin>>unit;
-            std::cout<<"\n";
+            drawline();
             
             if(unit == "1") {
                length_units();
@@ -94,7 +102,7 @@ int main() {
                while(!(len == "-1")) {
                   std::cout<<FI;
                   std::cin>>len;
-                  std::cout<<"\n";
+                  drawline();
                   
                   if(len == "-1") {
                      unit_converter();
