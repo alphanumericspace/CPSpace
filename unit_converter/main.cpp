@@ -92,15 +92,15 @@ int main() {
                   std::cin>>len;
                   
                   if(len == "-1") {
-                     std::cout<<GC<<FD<<RC<<"Previous";
+                     std::cout<<GC<<FD<<RC<<"Previous\n";
                   }
                   else
                   if(len == "0") {
-                     std::cout<<GC<<EX<<RC<<"Exit Program";
+                     std::cout<<GC<<EX<<RC<<"Exit Program\n";
                      return 0;
                   }
                   else {
-                     std::cout<<"'"<<len<<"' not in option";
+                     std::cout<<"'"<<len<<"' not in option\n";
                   }
                }
                
@@ -108,50 +108,50 @@ int main() {
             }
             else
             if(unit == "2") {
-               std::cout<<"Done";
+               std::cout<<"Done\n";
             }
             else
             if(unit == "3") {
-               std::cout<<"Done";
+               std::cout<<"Done\n";
             }
             else
             if(unit == "4") {
-               std::cout<<"Done";
+               std::cout<<"Done\n";
             }
             else
             if(unit == "5") {
-               std::cout<<"Done";
+               std::cout<<"Done\n";
             }
             else
             if(unit == "6") {
-               std::cout<<"Done";
+               std::cout<<"Done\n";
             }
             else
             if(unit == "7") {
-               std::cout<<"Done";
+               std::cout<<"Done\n";
             }
             else
             if(unit == "8") {
-               std::cout<<"Done";
+               std::cout<<"Done\n";
             }
             else
             if(unit == "-1") {
-               std::cout<<GC<<FD<<RC<<"Previous";
+               std::cout<<GC<<FD<<RC<<"Previous\n";
             }
             else
             if(unit == "0") {
-               std::cout<<GC<<EX<<RC<<"Exit Program";
+               std::cout<<GC<<EX<<RC<<"Exit Program\n";
                return 0;
             }
             else {
-            std::cout<<"'"<<unit<<"' not in option";
+            std::cout<<"'"<<unit<<"' not in option\n";
             }
          }
          main_menu();
 		}
 		else
 		if(input == "2") {
-         std::cout<<"Done";
+         std::cout<<"Done\n";
 		}
 		else
 		if(input == "0") {
