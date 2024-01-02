@@ -9,11 +9,10 @@
 #define EX "HEAD <> "
 
 void drawline(void) {
-   std::cout<<"\n";
    for(int i = 0; i < 35; i++) {
       std::cout<<"-";
    }
-   std::cout<<"\n";
+   std::cout<<"\n\n";
 }
 
 void main_menu(void) {
