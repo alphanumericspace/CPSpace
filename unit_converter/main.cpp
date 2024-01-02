@@ -28,11 +28,11 @@ void unit_converter(void) {
    std::cout<<G<<FD<<T<<"Unit Converter\n";
    
    std::vector<std::string> units {
-      "(1) Length", "(2) Area",
-      "(3) Volume", "(4) Weight",
-      "(5) Temperature", "(6) Speed",
-      "(7) Pressure", "(8) Power",
-      "(9) Data Size", "(-1) Previous",
+      "(1) Length       |  (2) Area",
+      "(3) Volume       |  (4) Weight",
+      "(5) Temperature  |  (6) Speed",
+      "(7) Pressure     |  (8) Power",
+      "(9) Data Size    |  (-1) Previous",
       "(0) Exit Program"
    };
    
@@ -45,16 +45,16 @@ void length_units(void) {
    std::cout<<G<<FD<<T<<"Length\n";
    
    std::vector<std::string> length_units {
-      "(1) Kilometer", "(2) Hectometer",
-      "(3) Decameter", "(4) Meter",
-      "(5) Decimeter", "(6) Centimeter",
-      "(7) Millimeter", "(8) Micrometer",
-      "(9) Nanometer", "(10) Picometer",
-      "(11) Mile", "(12) Yard",
-      "(13) Foot", "(14) Inch",
-      "(15) Nautical Mile", "(16) Light Year",
-      "(17) Astronomical Unit", "(18) Parsec",
-      "(19) Lunar Distance", "(-1) Previous",
+      "(1) Kilometer          |  (2) Hectometer",
+      "(3) Decameter          |  (4) Meter",
+      "(5) Decimeter          |  (6) Centimeter",
+      "(7) Millimeter         |  (8) Micrometer",
+      "(9) Nanometer          |  (10) Picometer",
+      "(11) Mile              |  (12) Yard",
+      "(13) Foot              |  (14) Inch",
+      "(15) Nautical Mile     |  (16) Light Year",
+      "(17) Astronomical Unit |  (18) Parsec",
+      "(19) Lunar Distance    |  (-1) Previous",
       "(0) Exit Program"
    };
    
