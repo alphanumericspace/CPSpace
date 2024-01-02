@@ -85,6 +85,7 @@ int main() {
    drawline();
    
    main_menu();
+   line();
    
 	std::string input;
 	while(!(input == "0")) {
