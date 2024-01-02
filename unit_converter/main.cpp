@@ -54,7 +54,7 @@ void unit_converter(void) {
    newline();
 }
 int main() {
-   std::cout<<"\nCPSpace Project - Unit Converter\n\nWelcome to CPSPace Project, this is a tool to convert one unit to another based on international standards.\n";
+   std::cout<<"\nCPSpace Project - Unit Converter\n\nWelcome to CPSPace Project, this tool is designed to seamlessly convert various units and simplify your calculations.\n";
    drawline();
    newline();
    
