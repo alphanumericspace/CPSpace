@@ -90,6 +90,7 @@ int main() {
 	while(!(input == "0")) {
 		std::cout<<BD<<B<<FI<<S;
 		std::cin>>input;
+		std::cout<<"\n";
 		
 		if(input == "1") {
          unit_converter();
@@ -98,6 +99,7 @@ int main() {
          while(!(unit == "-1")) {
             std::cout<<BD<<B<<FI<<S;
             std::cin>>unit;
+            std::cout<<"\n";
             
             if(unit == "1") {
                length_units();
@@ -106,6 +108,7 @@ int main() {
                while(!(len == "-1")) {
                   std::cout<<BD<<B<<FI<<S;
                   std::cin>>len;
+                  std::cout<<"\n";
                   
                   if(len == "-1") {
                      unit_converter();
