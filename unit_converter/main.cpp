@@ -12,7 +12,7 @@
 #define EX "HEAD <> "
 
 void main_menu(void) {
-   std::cout<<G<<FD<<T<<"Main Menu\n";
+   std::cout<<G<<FD<<T<<"Main Menu\n\n";
    
    std::vector<std::string> list_menu {
 		"(1) Unit Converter",
@@ -23,10 +23,11 @@ void main_menu(void) {
 	for(std::string list : list_menu) {
 		std::cout<<list<<std::endl;
 	}
+	std::cout<<"\nPlease enter your choice according to the number provided\n"
 }
 
 void unit_converter(void) {
-   std::cout<<G<<FD<<T<<"Unit Converter\n";
+   std::cout<<G<<FD<<T<<"Unit Converter\n\n";
    
    std::vector<std::string> units {
       "(1) Length       |  (2) Area",
@@ -40,10 +41,11 @@ void unit_converter(void) {
    for(std::string unit : units) {
       std::cout<<unit<<std::endl;
    }
+   std::cout<<"\nPlease enter your choice according to the number provided\n"
 }
 
 void length_units(void) {
-   std::cout<<G<<FD<<T<<"Length\n";
+   std::cout<<G<<FD<<T<<"Length\n\n";
    
    std::vector<std::string> length_units {
       "(1) Kilometer          |  (2) Hectometer",
@@ -62,6 +64,7 @@ void length_units(void) {
    for(std::string unit : length_units) {
       std::cout<<unit<<std::endl;
    }
+   std::cout<<"\nPlease enter your choice according to the number provided\n"
 }
 
 double lengthUnitConversion(std::string option, double input);
