@@ -11,7 +11,7 @@
 #define EX "HEAD <> "
 
 void main_menu(void) {
-   std::cout<<G<<FD<<T<<"\nMain Menu\n";
+   std::cout<<G<<FD<<T<<"\n\nMain Menu\n";
    
    std::vector<std::string> list_menu {
 		"(1) Unit Converter",
@@ -22,11 +22,11 @@ void main_menu(void) {
 	for(std::string list : list_menu) {
 		std::cout<<list<<std::endl;
 	}
-	std::cout<<std::endl;
+	std::cout<<"\n\n";
 }
 
 void unit_converter(void) {
-   std::cout<<G<<FD<<T<<"\nUnit Converter\n";
+   std::cout<<G<<FD<<T<<"\n\nUnit Converter\n";
    
    std::vector<std::string> units {
       "(1) Length       |  (2) Area",
@@ -40,11 +40,11 @@ void unit_converter(void) {
    for(std::string unit : units) {
       std::cout<<unit<<std::endl;
    }
-	std::cout<<std::endl;
+	std::cout<<"\n\n";
 }
 
 void length_units(void) {
-   std::cout<<G<<FD<<T<<"\nLength\n";
+   std::cout<<G<<FD<<T<<"\n\nLength\n";
    
    std::vector<std::string> length_units {
       "(1) Kilometer          |  (2) Hectometer",
@@ -63,7 +63,7 @@ void length_units(void) {
    for(std::string unit : length_units) {
       std::cout<<unit<<std::endl;
    }
-	std::cout<<std::endl;
+	std::cout<<"\n\n";
 }
 
 double lengthUnitConversion(std::string option, double input);
