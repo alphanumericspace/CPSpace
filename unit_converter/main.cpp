@@ -177,7 +177,7 @@ int main() {
             doublen();
             }
          }
-         
+         singlen();
          main_menu();
 		}
 		else
