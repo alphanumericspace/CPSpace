@@ -119,6 +119,7 @@ int main() {
                   }
                   else {
                      std::cout<<BD<<R<<ER<<S<<"'"<<len<<"' not in option\n\n";
+                     length_units();
                   }
                }
             }
@@ -155,6 +156,7 @@ int main() {
             }
             else {
                std::cout<<BD<<R<<ER<<S<<"'"<<unit<<"' not in option\n\n";
+               unit_converter();
             }
          }
 		}
@@ -167,6 +169,7 @@ int main() {
 		}
 		else {
          std::cout<<BD<<R<<ER<<S<<"'"<<input<<"' not in option\n\n";
+	      main_menu();
 		}
 	}
 }
