@@ -16,6 +16,7 @@ void doublen(void) {
 }
 
 void main_menu(void) {
+   singlen();
    std::cout<<FD<<"Main Menu";
    doublen();
    
@@ -78,8 +79,11 @@ void length_units(void) {
 double lengthUnitConversion(std::string option, double input);
 
 int main() {
-   //std::cout<<"\nCPSpace Project - Unit Converter\n\nWelcome to CPSPace Project, this tool is designed to seamlessly convert various units and simplify your calculations.";
-   //doublen();
+   singlen();
+   std::cout<<"CPSpace Project - Unit Converter";
+   doublen();
+   std::cout<<"Welcome to CPSPace Project, this tool is designed to seamlessly convert various units and simplify your calculations.";
+   singlen();
    
    main_menu();
    
