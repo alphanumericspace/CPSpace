@@ -92,7 +92,7 @@ int main() {
    main_menu();
    
 	std::string inp;
-	while(!(inp == "-1" or inp == "ext")) {
+	while(!(inp == "0" or inp == "ext")) {
 		std::cout<<"Enter the option: ";
 		std::cin>>inp;
 		drawline();
