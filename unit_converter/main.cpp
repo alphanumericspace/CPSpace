@@ -54,10 +54,10 @@ int main() {
                   std::cin>>are;
                   std::cout<<"\n";
                   
-                  if(len == "-1") {
+                  if(are == "-1") {
                      interface::defn("unit_converter");
                   }
-                  else if(len == "0") {
+                  else if(are == "0") {
                      interface::defn("exit_header");
                      return 0;
                   }
