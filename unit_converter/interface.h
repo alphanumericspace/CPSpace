@@ -1,6 +1,13 @@
 #ifndef interface
 #define interface
 
+std::string B = "\033[34m"; // Blue
+   std::string G = "\033[32m"; // Green
+   std::string C = "\033[36m"; // Cyan
+   std::string R = "\033[31m"; // Red
+   std::string S = "\033[0m"; // Reset
+   std::string BD = "\033[1m"; // Bold
+
 struct Header {
       std::string name;
       std::string icon;
@@ -30,13 +37,6 @@ struct Header {
    }
 
 void defn(std::string param, std::string input) {
-   std::string B = "\033[34m"; // Blue
-   std::string G = "\033[32m"; // Green
-   std::string C = "\033[36m"; // Cyan
-   std::string R = "\033[31m"; // Red
-   std::string S = "\033[0m"; // Reset
-   std::string BD = "\033[1m"; // Bold
-   
    if(param == "main_header") {
       std::cout<<"CPSPace Project\n\nThis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n";
    } else if(param == "main_menu") {
