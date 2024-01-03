@@ -68,6 +68,10 @@ void length_units(void) {
    std::cout<<"\nEnter available options. Select one of the units that will be used as the conversion parameter for all units.\n\n";
 }
 
+void input(void) {
+   std::cout<<BD<<B<<FI<<S;
+}
+
 void unavailableOption(std::string input) {
    std::cout<<BD<<R<<ER<<S<<"Unavailable Option '"<<input<<"'\n\n";
 }
