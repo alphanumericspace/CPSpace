@@ -15,14 +15,6 @@
 #define EX "STOP <> "
 #define ER "ERROR >< "
 
-void drawline(void) {
-   std::cout<<"\n";
-   for(int i = 0; i < 50; i++) {
-      std::cout<<"-";
-   }
-   std::cout<<"\n\n";
-}
-
 void main_menu(void) {
    std::cout<<BD<<G<<FD<<S<<"Main Menu\n\n";
    
