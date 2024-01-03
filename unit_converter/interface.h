@@ -114,6 +114,7 @@ void defn(std::string param, std::string input = "") {
       ext.color = C;
       printHeader(ext);
       std::cout<<"Exit Program\n\n";
+      exit(0);
    } else if(param == "error_header") {
       Header error;
       error.name = "ERROR";
