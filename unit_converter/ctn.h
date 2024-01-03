@@ -22,21 +22,21 @@ struct Menu {
    std::string menu_description;
 };
 
-void printHeader(Header details) {
-   std::cout<<details.style<<details.color<<details.name<<" "<<details.icon<<details.reset<<" ";
+void printHeader(Header det) {
+   std::cout<<det.style<<det.color<<det.name<<" "<<det.icon<<det.reset<<" ";
 }
 
-void printMenu(Menu details) {
+void printMenu(Menu det) {
    Header head;
    head.name = "HEAD";
    head.icon = ">>";
    head.color = G;
    printHeader(head);
-   std::cout<<details.menu_name<<"\n\n";
-   for(std::string content : details.menu_contents) {
+   std::cout<<det.menu_name<<"\n\n";
+   for(std::string content : det.menu_contents) {
       std::cout<<content<<"\n";
    }
-   std::cout<<"\n"<<details.menu_description<<"\n\n";
+   std::cout<<"\n"<<det.menu_description<<"\n\n";
 }
 
 void defn(std::string param, std::string input = "") {
