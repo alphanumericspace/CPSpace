@@ -41,7 +41,7 @@ int main() {
                      return 0;
                   }
                   else {
-                     ctn::defn("error_header");
+                     ctn::defn("error_header", len);
                      ctn::defn("length_units");
                   }
                }
@@ -78,7 +78,7 @@ int main() {
                return 0;
             }
             else {
-               ctn::defn("error_header");
+               ctn::defn("error_header", unit);
                ctn::defn("unit_converter");
             }
          }
@@ -91,7 +91,7 @@ int main() {
          return 0;
 		}
 		else {
-         ctn::defn("error_header");
+         ctn::defn("error_header", input);
 	      ctn::defn("main_menu");
 		}
 	}
