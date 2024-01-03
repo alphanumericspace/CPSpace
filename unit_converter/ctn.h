@@ -105,7 +105,7 @@ void defn(std::string param, std::string input) {
       error.icon = "><";
       error.color = R;
       printHeader(error);
-      std::cout<<"Unavailable option\n\n"<<input;
+      std::cout<<"Unavailable option\n\n";
    } else {
       std::cout<<"\n\n"<<B<<R<<"Parameter '"<<param<<"' Unavailable!"<<S<<"\n\n";
    }
