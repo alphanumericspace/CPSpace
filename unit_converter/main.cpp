@@ -51,6 +51,7 @@ int main() {
                   }
                   else if(len == "0") {
                      menu::exitProgram();
+                     return 0;
                   }
                   else {
                      std::cout<<BD<<R<<ER<<S<<"Unavailable Option '"<<len<<"'\n\n";
@@ -87,6 +88,7 @@ int main() {
             }
             else if(unit == "0") {
                menu::exitProgram();
+               return 0;
             }
             else {
                std::cout<<BD<<R<<ER<<S<<"Unavailable Option '"<<unit<<"'\n\n";
@@ -99,6 +101,7 @@ int main() {
 		}
 		else if(input == "0") {
          menu::exitProgram();
+         return 0;
 		}
 		else {
          std::cout<<BD<<R<<ER<<S<<"Unavailable Option '"<<input<<"'\n\n";
