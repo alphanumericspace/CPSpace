@@ -85,7 +85,7 @@ void defn(std::string param, std::string input = "") {
       printMenu(length_units);
    } 
    else if(param == "information") {
-      std::cout<<"Done\n\n";
+      std::cout<<"Done\n\n\n";
    } else if(param == "input_header") {
       Header input;
       input.name = "INPUT";
