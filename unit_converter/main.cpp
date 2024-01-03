@@ -29,7 +29,7 @@ int main() {
 		std::cout<<"\n";
 		
 		if(input == "1") {
-         unit_converter();
+         menu::unit_converter();
          
          std::string unit;
          while(!(unit == "-1")) {
@@ -38,7 +38,7 @@ int main() {
             std::cout<<"\n";
             
             if(unit == "1") {
-               length_units();
+               menu::length_units();
                
                std::string len;
                while(!(len == "-1")) {
@@ -47,7 +47,7 @@ int main() {
                   std::cout<<"\n";
                   
                   if(len == "-1") {
-                     unit_converter();
+                     menu::unit_converter();
                   }
                   else if(len == "0") {
                      std::cout<<BD<<C<<EX<<S<<"Exit Program\n\n";
@@ -55,7 +55,7 @@ int main() {
                   }
                   else {
                      std::cout<<BD<<R<<ER<<S<<"Unavailable Option '"<<len<<"'\n\n";
-                     length_units();
+                     menu::length_units();
                   }
                }
             }
@@ -92,7 +92,7 @@ int main() {
             }
             else {
                std::cout<<BD<<R<<ER<<S<<"Unavailable Option '"<<unit<<"'\n\n";
-               unit_converter();
+               menu::unit_converter();
             }
          }
 		}
