@@ -6,17 +6,6 @@
 
 #include "menu.h"
 
-#define B "\033[34m" // Blue
-#define G "\033[32m" // Green
-#define C "\033[36m" // Cyan
-#define R "\033[31m" // Red
-#define S "\033[0m" // Reset
-#define BD "\033[1m" // Bold
-#define FI "INPUT << "
-#define FD "HEAD >> "
-#define EX "STOP <> "
-#define ER "ERROR >< "
-
 int main() {
    std::cout<<"CPSPace Project\n\n";
    std::cout<<"This tool is designed to seamlessly convert various units and simplify your calculations.\n\n";
@@ -24,7 +13,7 @@ int main() {
    
 	std::string input;
 	while(!(input == "0")) {
-		std::cout<<BD<<B<<FI<<S;
+	   menu::input();
 		std::cin>>input;
 		std::cout<<"\n";
 		
@@ -33,7 +22,7 @@ int main() {
          
          std::string unit;
          while(!(unit == "-1")) {
-            std::cout<<BD<<B<<FI<<S;
+            menu::input();
             std::cin>>unit;
             std::cout<<"\n";
             
@@ -42,7 +31,7 @@ int main() {
                
                std::string len;
                while(!(len == "-1")) {
-                  std::cout<<BD<<B<<FI<<S;
+                  menu::input();
                   std::cin>>len;
                   std::cout<<"\n";
                   
