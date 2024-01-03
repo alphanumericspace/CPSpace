@@ -61,7 +61,26 @@ void defn(std::string param, std::string input) {
       };
       unit_converter.menu_description = "Enter available options.";
       printMenu(unit_converter);
-   } else if(param == "information") {
+   } else if(param == "length_units") {
+      Menu length_units;
+      length_units.menu_name = "Length";
+      length_units.menu_contents = {
+         "(1) Kilometer          |  (2) Hectometer",
+         "(3) Decameter          |  (4) Meter",
+         "(5) Decimeter          |  (6) Centimeter",
+         "(7) Millimeter         |  (8) Micrometer",
+         "(9) Nanometer          |  (10) Picometer",
+         "(11) Mile              |  (12) Yard",
+         "(13) Foot              |  (14) Inch",
+         "(15) Nautical Mile     |  (16) Light Year",
+         "(17) Astronomical Unit |  (18) Parsec",
+         "(19) Lunar Distance    |  (-1) Previous",
+         "(0) Exit Program"
+      };
+      length_units.menu_description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
+      printMenu(length_units);
+   } 
+   else if(param == "information") {
       std::cout<<"Done\n\n";
    } else if(param == "input_header") {
       Header input;
