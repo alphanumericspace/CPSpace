@@ -1,12 +1,12 @@
 #ifndef interface
 #define interface
 
-#define B "\033[34m"// Blue
-#define G "\033[32m" // Green
-#define C "\033[36m" // Cyan
-#define R "\033[31m" // Red
-#define S "\033[0m" // Reset
-#define BD "\033[1m" // Bold
+const std::string B = "\033[34m";// Blue
+const std::string G = "\033[32m"; // Green
+const std::string C = "\033[36m"; // Cyan
+const std::string R = "\033[31m"; // Red
+const std::string S = "\033[0m"; // Reset
+const std::string BD = "\033[1m"; // Bold
 
 struct Header {
    std::string name;
