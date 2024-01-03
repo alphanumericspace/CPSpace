@@ -7,6 +7,7 @@ const std::string C = "\033[36m"; // Cyan
 const std::string R = "\033[31m"; // Red
 const std::string S = "\033[0m"; // Reset
 const std::string BD = "\033[1m"; // Bold
+const std::string BG = "\033[48;5;15m\033[38;5;0m";
 
 struct Header {
    std::string name;
@@ -32,7 +33,7 @@ void printMenu(Menu det) {
    head.icon = ">>";
    head.color = G;
    printHeader(head);
-   std::cout<<det.menu_name<<"\n\n";
+   std::cout<<BG<<det.menu_name<<S<<"\n\n";
    for(std::string content : det.menu_contents) {
       std::cout<<content<<"\n";
    }
