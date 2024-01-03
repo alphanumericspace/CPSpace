@@ -85,7 +85,7 @@ void defn(std::string param) {
    } else if(param == "input_header") {
       Header input;
       input.name = "INPUT";
-      input.icon = "<<"
+      input.icon = "<<";
       input.color = B;
       printHeader(input);
    } else if(param == "exit_header") {
