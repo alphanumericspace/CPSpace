@@ -84,7 +84,7 @@ int main() {
          }
 		}
 		else if(input == "2") {
-         std::cout<<"Done\n";
+         ctn::defn("information");
 		}
 		else if(input == "0") {
          ctn::defn("exit_header");
