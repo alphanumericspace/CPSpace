@@ -122,7 +122,10 @@ void defn(std::string param, std::string input = "") {
       error.color = R;
       printHeader(error);
       std::cout<<"Unavailable option '"<<input<<"'\n\n";
-   } else {
+   } else if(param == "newline") {
+      std::cout<<"\n";
+   } 
+   else {
       std::cout<<BD<<R<<"Parameter '"<<param<<"' Unavailable!"<<S<<"\n\n";
       exit(0);
    }
