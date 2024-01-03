@@ -107,7 +107,7 @@ void defn(const std::string param, const std::string input = "") {
          "(3) Cb. Decameter(dam3)   |  (4) Cb. Meter(m3)",
          "(5) Cb. Decimeter(dm3)    |  (6) Cb. Centimeter(cm3)",
          "(7) Cb. Millimeter(m3)    |  (8) Kiloliter(kl)",
-         "(8) ",
+         "(8) Hectoliter(hl)",
          "(9)     |  (-1) Previous",
          "(0) Exit Program"
       };
