@@ -68,7 +68,7 @@ void length_units(void) {
    for(std::string unit : length_units) {
       std::cout<<unit<<std::endl;
    }
-   std::cout<<"\nEnter available options.\n\n";
+   std::cout<<"\nEnter available options. Select one of the units that will be used as the conversion parameter for all units.\n\n";
 }
 
 double lengthUnitConversion(std::string option, double input);
