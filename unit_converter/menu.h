@@ -83,6 +83,7 @@ void unavailableOption(std::string input) {
 
 void exitProgram(void) {
    std::cout<<BD<<C<<EX<<S<<"Exit Program\n\n";
+   return 0;
 }
 
 #endif
