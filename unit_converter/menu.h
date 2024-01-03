@@ -68,7 +68,7 @@ void length_units(void) {
    std::cout<<"\nEnter available options. Select one of the units that will be used as the conversion parameter for all units.\n\n";
 }
 
-std::string exitProgram(void) {
+std::string exitProgram() {
    std::cout<<BD<<C<<EX<<S<<"Exit Program\n\n";
 }
 
