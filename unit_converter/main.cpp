@@ -54,7 +54,7 @@ int main() {
                      return 0;
                   }
                   else {
-                     menu::unavailableOption();
+                     menu::unavailableOption(len);
                      menu::length_units();
                   }
                }
@@ -91,7 +91,7 @@ int main() {
                return 0;
             }
             else {
-               menu::unavailableOption();
+               menu::unavailableOption(unit);
                menu::unit_converter();
             }
          }
@@ -104,7 +104,7 @@ int main() {
          return 0;
 		}
 		else {
-         menu::unavailableOption();
+         menu::unavailableOption(input);
 	      menu::main_menu();
 		}
 	}
