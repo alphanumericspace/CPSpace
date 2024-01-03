@@ -70,7 +70,6 @@ void length_units(void) {
 
 std::string exitProgram(void) {
    std::cout<<BD<<C<<EX<<S<<"Exit Program\n\n";
-   return 0;
 }
 
 #endif
