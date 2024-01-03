@@ -8,21 +8,7 @@
 #define S "\033[0m" // Reset
 #define BD "\033[1m" // Bold
 
-struct Header {
-      std::string name;
-      std::string icon;
-      std::string color;
-      std::string style = BD;
-      std::string reset = S;
-   };
-   struct Menu {
-     std::string menu_name;
-     std::vector<std::string> menu_contents;
-     std::string menu_description;
-   };
-
-void defn(std::string param, std::string input) {
-   void printHeader(Header details) {
+void printHeader(Header details) {
       std::cout<<style<<color<<name<<" "<<icon<<reset<<" ";
    }
    void printMenu(Menu details) {
@@ -37,6 +23,20 @@ void defn(std::string param, std::string input) {
       }
       std::cout<<"\n"<<details.menu_description<<"\n\n"
    }
+
+void defn(std::string param, std::string input) {
+   struct Header {
+      std::string name;
+      std::string icon;
+      std::string color;
+      std::string style = BD;
+      std::string reset = S;
+   };
+   struct Menu {
+     std::string menu_name;
+     std::vector<std::string> menu_contents;
+     std::string menu_description;
+   };
    if(param == "main_header") {
       std::cout<<"CPSPace Project\n\nThis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n";
    } else if(param == "main_menu") {
