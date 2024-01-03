@@ -20,6 +20,8 @@ struct Header {
      std::vector<std::string> menu_contents;
      std::string menu_description;
    };
+
+void defn(std::string param, std::string input) {
    void printHeader(Header details) {
       std::cout<<style<<color<<name<<" "<<icon<<reset<<" ";
    }
@@ -35,8 +37,6 @@ struct Header {
       }
       std::cout<<"\n"<<details.menu_description<<"\n\n"
    }
-
-void defn(std::string param, std::string input) {
    if(param == "main_header") {
       std::cout<<"CPSPace Project\n\nThis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n";
    } else if(param == "main_menu") {
