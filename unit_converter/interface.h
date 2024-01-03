@@ -9,7 +9,7 @@
 #define BD "\033[1m" // Bold
 
 struct Header {
-   const std::string name;
+   std::string name;
    std::string icon;
    std::string color;
    std::string style = BD;
