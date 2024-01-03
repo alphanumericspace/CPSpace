@@ -49,7 +49,7 @@ int main() {
                interface::defn("area_units");
                
                std::string are;
-               while(len != "-1") {
+               while(are != "-1") {
                   interface::defn("input_header");
                   std::cin>>are;
                   std::cout<<"\n";
