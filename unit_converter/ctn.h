@@ -39,7 +39,7 @@ void printMenu(Menu details) {
    std::cout<<"\n"<<details.menu_description<<"\n\n";
 }
 
-void defn(std::string param) {
+void defn(std::string param, std::string input) {
    if(param == "main_header") {
       std::cout<<"CPSPace Project\n\nThis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n";
    } else if(param == "main_menu") {
@@ -105,7 +105,7 @@ void defn(std::string param) {
       error.icon = "><";
       error.color = R;
       printHeader(error);
-      std::cout<<"Unavailable option\n\n";
+      std::cout<<"Unavailable option\n\n"<<input;
    } else {
       std::cout<<"\n\n"<<B<<R<<"Parameter '"<<param<<"' Unavailable!"<<S<<"\n\n";
    }
