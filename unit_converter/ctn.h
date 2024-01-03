@@ -7,35 +7,39 @@
 #define R "\033[31m" // Red
 #define S "\033[0m" // Reset
 #define BD "\033[1m" // Bold
+
 struct Header {
-      std::string name;
-      std::string icon;
-      std::string color;
-      std::string style = BD;
-      std::string reset = S;
-   };
-   struct Menu {
-     std::string menu_name;
-     std::vector<std::string> menu_contents;
-     std::string menu_description;
-   };
-   void printHeader(Header details) {
-      std::cout<<details.style<<details.color<<details.name<<" "<<details.icon<<details.reset<<" ";
+   std::string name;
+   std::string icon;
+   std::string color;
+   std::string style = BD;
+   std::string reset = S;
+};
+
+struct Menu {
+   std::string menu_name;
+   std::vector<std::string> menu_contents;
+   std::string menu_description;
+};
+
+void printHeader(Header details) {
+   std::cout<<details.style<<details.color<<details.name<<" "<<details.icon<<details.reset<<" ";
+}
+
+void printMenu(Menu details) {
+   Header head;
+   head.name = "HEAD";
+   head.icon = ">>";
+   head.color = G;
+   printHeader(head);
+   std::cout<<details.menu_name<<"\n\n";
+   for(std::string content : details.menu_contents) {
+      std::cout<<content<<"\n";
    }
-   void printMenu(Menu details) {
-      Header head;
-      head.name = "HEAD";
-      head.icon = ">>";
-      head.color = G;
-      printHeader(head);
-      std::cout<<details.menu_name<<"\n\n";
-      for(std::string content : details.menu_contents) {
-         std::cout<<content<<"\n";
-      }
-      std::cout<<"\n"<<details.menu_description<<"\n\n";
-   }
+   std::cout<<"\n"<<details.menu_description<<"\n\n";
+}
+
 void defn(std::string param) {
-   
    if(param == "main_header") {
       std::cout<<"CPSPace Project\n\nThis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n";
    } else if(param == "main_menu") {
