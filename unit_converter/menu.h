@@ -12,6 +12,11 @@
 #define EX "STOP <> "
 #define ER "ERROR >< "
 
+void header(void) {
+   std::cout<<"CPSPace Project\n\n";
+   std::cout<<"This tool is designed to seamlessly convert various units and simplify your calculations.\n\n";
+}
+
 void main_menu(void) {
    std::cout<<BD<<G<<FD<<S<<"Main Menu\n\n";
    
