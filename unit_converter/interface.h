@@ -1,5 +1,4 @@
 #ifndef interface
-#define interface
 
 #define B "\033[34m"// Blue
 #define G "\033[32m" // Green
