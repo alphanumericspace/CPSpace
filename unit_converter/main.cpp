@@ -4,47 +4,45 @@
 #include <vector>
 #include <string>
 
-#include "menu.h"
+#include "interface.h"
 
 int main() {
-   menu::header();
-   
-   menu::main_menu();
-   
+   interface::defn("main_header");
+   interface::defn("main_menu");
 	std::string input;
 	while(!(input == "0")) {
-	   menu::input();
+	   interface::defn("input_header");
 		std::cin>>input;
 		std::cout<<"\n";
 		
 		if(input == "1") {
-         menu::unit_converter();
+         interface::defn("unit_converter");
          
          std::string unit;
          while(!(unit == "-1")) {
-            menu::input();
+            interface::defn("input_header");
             std::cin>>unit;
             std::cout<<"\n";
             
             if(unit == "1") {
-               menu::length_units();
+               interface::defn("length_units");
                
                std::string len;
                while(!(len == "-1")) {
-                  menu::input();
+                  interface::defn("input_header");
                   std::cin>>len;
                   std::cout<<"\n";
                   
                   if(len == "-1") {
-                     menu::unit_converter();
+                     interface::defn("unit_converter");
                   }
                   else if(len == "0") {
-                     menu::exitProgram();
+                     interface::defn("exit_header");
                      return 0;
                   }
                   else {
-                     menu::unavailableOption(len);
-                     menu::length_units();
+                     interface::defn("error_header", len);
+                     interface::defn("length_units");
                   }
                }
             }
@@ -73,15 +71,15 @@ int main() {
                std::cout<<"Done\n";
             }
             else if(unit == "-1") {
-               menu::main_menu();
+               interface::main_menu();
             }
             else if(unit == "0") {
-               menu::exitProgram();
+               interface::exitProgram();
                return 0;
             }
             else {
-               menu::unavailableOption(unit);
-               menu::unit_converter();
+               interface::defn("error_header", unit);
+               interface::defn("unit_converter");
             }
          }
 		}
@@ -89,12 +87,12 @@ int main() {
          std::cout<<"Done\n";
 		}
 		else if(input == "0") {
-         menu::exitProgram();
+         interface::defn("exit_header");
          return 0;
 		}
 		else {
-         menu::unavailableOption(input);
-	      menu::main_menu();
+         interface::defn("error_header", input);
+	      interface::defn("main_menu");
 		}
 	}
 }
