@@ -7,8 +7,7 @@
 #include "menu.h"
 
 int main() {
-   std::cout<<"CPSPace Project\n\n";
-   std::cout<<"This tool is designed to seamlessly convert various units and simplify your calculations.\n\n";
+   menu::header();
    menu::main_menu();
    
 	std::string input;
