@@ -21,10 +21,10 @@ void defn(std::string param) {
      std::vector<std::string> menu_contents;
      std::string menu_description;
    };
-   void printHeader(Header details) {
+   std::string printHeader(Header details) {
       std::cout<<details.style<<details.color<<details.name<<" "<<details.icon<<details.reset<<" ";
    }
-   void printMenu(Menu details) {
+   std::string printMenu(Menu details) {
       Header head;
       head.name = "HEAD";
       head.icon = ">>";
