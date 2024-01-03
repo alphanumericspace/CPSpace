@@ -83,8 +83,23 @@ void defn(std::string param, std::string input = "") {
       };
       length_units.menu_description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
       printMenu(length_units);
-   } 
-   else if(param == "information") {
+   } else if(param == "area_units") {
+      Menu area_units;
+      area_units.menu_name = "Area";
+      area_units.menu_contents = {
+         "(1) Sq. Kilometer(km2)   |   (2) Sq. Hectometer(hm2)",
+         "(3) Sq. Decameter(dam2)  |   (4) Sq. Meter(m2)",
+         "(5) Sq. Decimeter(dm2)   |   (6) Sq. Centimeter(cm2)",
+         "(7) Sq. Millimeter(mm2)  |   (8) Hectare(ha)",
+         "(9) Are(a)               |   (10) Centiare(ca)",
+         "(11) Sq. Mile(mi2)       |   (12) Sq. Yard(yd2)",
+         "(13) Sq. Foot(ft2)       |   (14) Sq. Inch(in2)",
+         "(15) Sq. Rod(rd2)        |   (-1) Previous",
+         "(0) Exit Program"
+      };
+      area_units.menu_description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
+      printMenu(area_units);
+   } else if(param == "information") {
       std::cout<<"Done\n\n";
    } else if(param == "input_header") {
       Header input;
