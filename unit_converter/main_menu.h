@@ -1,7 +1,7 @@
 #ifndef main_menu
 #define main_menu
 
-void main_menu(void) {
+void main_menu() {
    std::cout<<BD<<G<<FD<<S<<"Main Menu\n\n";
    
    std::vector<std::string> list_menu {
