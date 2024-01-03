@@ -122,7 +122,7 @@ void defn(std::string param, std::string input = "") {
       printHeader(error);
       std::cout<<"Unavailable option '"<<input<<"'\n\n";
    } else {
-      std::cout<<"\n\n"<<B<<R<<"Parameter '"<<param<<"' Unavailable!"<<S<<"\n\n";
+      std::cout<<"\n"<<B<<R<<"Parameter '"<<param<<"' Unavailable!"<<S<<"\n\n";
    }
 }
 
