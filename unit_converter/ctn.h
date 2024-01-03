@@ -8,7 +8,7 @@
 #define S "\033[0m" // Reset
 #define BD "\033[1m" // Bold
 
-void printHeader(Header details) {
+   void printHeader(Header details) {
       std::cout<<style<<color<<name<<" "<<icon<<reset<<" ";
    }
    void printMenu(Menu details) {
@@ -24,7 +24,7 @@ void printHeader(Header details) {
       std::cout<<"\n"<<details.menu_description<<"\n\n"
    }
 
-void defn(std::string param, std::string input) {
+void defn(std::string param) {
    struct Header {
       std::string name;
       std::string icon;
@@ -102,7 +102,7 @@ void defn(std::string param, std::string input) {
       error.icon = "><";
       error.color = R;
       printHeader(error);
-      std::cout<<"Unavailable option '"<<input<<"'\n\n";
+      std::cout<<"Unavailable option\n\n";
    } else {
       std::cout<<"\n\n"<<B<<R<<"Parameter '"<<param<<"' Unavailable!"<<S<<"\n\n";
    }
