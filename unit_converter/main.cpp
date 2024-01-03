@@ -91,7 +91,6 @@ int main() {
             }
             else if(unit == "0") {
                interface::defn("exit_header");
-               return 0;
             }
             else {
                interface::defn("error_header", unit);
