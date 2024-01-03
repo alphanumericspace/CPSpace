@@ -69,16 +69,16 @@ void defn(std::string param, std::string input) {
       Menu length_units;
       length_units.menu_name = "Length";
       length_units.menu_contents = {
-         "(1) Kilometer          |  (2) Hectometer",
-         "(3) Decameter          |  (4) Meter",
-         "(5) Decimeter          |  (6) Centimeter",
-         "(7) Millimeter         |  (8) Micrometer",
-         "(9) Nanometer          |  (10) Picometer",
-         "(11) Mile              |  (12) Yard",
-         "(13) Foot              |  (14) Inch",
-         "(15) Nautical Mile     |  (16) Light Year",
-         "(17) Astronomical Unit |  (18) Parsec",
-         "(19) Lunar Distance    |  (-1) Previous",
+         "(1) Kilometer(km)          |  (2) Hectometer(hm)",
+         "(3) Decameter(dam)         |  (4) Meter(m)",
+         "(5) Decimeter(dm)          |  (6) Centimeter(cm)",
+         "(7) Millimeter(mm)         |  (8) Micrometer(μm)",
+         "(9) Nanometer(nm)          |  (10) Picometer(pm)",
+         "(11) Mile(mi)              |  (12) Yard(yd)",
+         "(13) Foot(ft)              |  (14) Inch(in)",
+         "(15) Nautical Mile(nm)     |  (16) Light Year(ly)",
+         "(17) Astronomical Unit(au) |  (18) Parsec(pc)",
+         "(19) Lunar Distance(ld)    |  (-1) Previous",
          "(0) Exit Program"
       };
       length_units.menu_description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
