@@ -128,7 +128,7 @@ void defn(const std::string param, const std::string input = "") {
       ext.icon = "<>";
       ext.color = C;
       printHeader(ext);
-      std::cout<<"Exit Program\n\n";
+      std::cout<<BG<<"Exit Program"<<S<<"\n\n";
       exit(0);
    } else if(param == "error_header") {
       Header error;
@@ -136,7 +136,7 @@ void defn(const std::string param, const std::string input = "") {
       error.icon = "><";
       error.color = R;
       printHeader(error);
-      std::cout<<"Unavailable option '"<<input<<"'\n\n";
+      std::cout<<BG<<"Unavailable option '"<<input<<"'"<<S<<"\n\n";
    } else if(param == "newline") {
       std::cout<<"\n";
    } else {
