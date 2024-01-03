@@ -38,7 +38,6 @@ int main() {
                   }
                   else if(len == "0") {
                      interface::defn("exit_header");
-                     return 0;
                   }
                   else {
                      interface::defn("error_header", len);
@@ -59,7 +58,6 @@ int main() {
                   }
                   else if(are == "0") {
                      interface::defn("exit_header");
-                     return 0;
                   }
                   else {
                      interface::defn("error_header", are);
@@ -106,7 +104,6 @@ int main() {
 		}
 		else if(input == "0") {
          interface::defn("exit_header");
-         return 0;
 		}
 		else {
          interface::defn("error_header", input);
