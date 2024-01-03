@@ -39,7 +39,7 @@ void printMenu(Menu det) {
    std::cout<<"\n"<<det.menu_description<<"\n\n";
 }
 
-void defn(std::string param, std::string input = "") {
+void defn(const std::string param, std::string input = "") {
    if(param == "main_header") {
       std::cout<<BD<<"CPSPace Project"<<S<<"\n\nThis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n";
    } else if(param == "main_menu") {
@@ -99,6 +99,20 @@ void defn(std::string param, std::string input = "") {
       };
       area_units.menu_description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
       printMenu(area_units);
+   } else if(param == "volume_units") {
+      Menu volume_units;
+      volume_units.menu_name = "Unit Converter";
+      volume_units.menu_contents = {
+         "(1) Cb. Kilometer(m3)     |  (2) Cb. Hectometer(hm3)",
+         "(3) Cb. Decameter(dam3)   |  (4) Cb. Meter(m3)",
+         "(5) Cb. Decimeter(dm3)    |  (6) Cb. Centimeter(cm3)",
+         "(7) Cb. Millimeter(m3)    |  (8) Kiloliter(kl)",
+         "(8) ",
+         "(9)     |  (-1) Previous",
+         "(0) Exit Program"
+      };
+      volume_units.menu_description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
+      printMenu(volume_units);
    } else if(param == "information") {
       std::cout<<"Done\n\n";
    } else if(param == "input_header") {
