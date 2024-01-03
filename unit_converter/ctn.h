@@ -41,7 +41,7 @@ void printMenu(Menu det) {
 
 void defn(std::string param, std::string input = "") {
    if(param == "main_header") {
-      std::cout<<"CPSPace Project\n\nThis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n";
+      std::cout<<BD<<"CPSPace Project"<<S<<"\n\nThis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n";
    } else if(param == "main_menu") {
       Menu main_menu;
       main_menu.menu_name = "Main Menu";
