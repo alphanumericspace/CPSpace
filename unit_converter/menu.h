@@ -22,7 +22,7 @@ void main_menu(void) {
 	};
 	
 	for(std::string list : list_menu) {
-		std::cout<<list<<std::endl;
+		std::cout<<list<<"\n";
 	}
 	std::cout<<"\nEnter available options.\n\n";
 }
@@ -40,7 +40,7 @@ void unit_converter(void) {
    };
    
    for(std::string unit : units) {
-      std::cout<<unit<<std::endl;
+      std::cout<<unit<<"\n";
    }
    std::cout<<"\nEnter available options.\n\n";
 }
@@ -63,7 +63,7 @@ void length_units(void) {
    };
    
    for(std::string unit : length_units) {
-      std::cout<<unit<<std::endl;
+      std::cout<<unit<<"\n";
    }
    std::cout<<"\nEnter available options. Select one of the units that will be used as the conversion parameter for all units.\n\n";
 }
