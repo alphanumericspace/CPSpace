@@ -109,4 +109,5 @@ int main() {
 	      interface::defn("main_menu");
 		}
 	}
+	return 0;
 }
