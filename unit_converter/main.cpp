@@ -4,12 +4,12 @@
 #include <vector>
 #include <string>
 
-#define B "\033[34m"
-#define G "\033[32m"
-#define Y "\033[36m"
-#define R "\033[31m"
-#define S "\033[0m"
-#define BD "\033[1m"
+#define B "\033[34m" // Blue
+#define G "\033[32m" // Green
+#define C "\033[36m" // Cyan
+#define R "\033[31m" // Red
+#define S "\033[0m" // Reset
+#define BD "\033[1m" // Bold
 #define FI "INPUT << "
 #define FD "HEAD >> "
 #define EX "STOP <> "
@@ -106,7 +106,7 @@ int main() {
                      unit_converter();
                   }
                   else if(len == "0") {
-                     std::cout<<BD<<Y<<EX<<S<<"Exit Program\n\n";
+                     std::cout<<BD<<C<<EX<<S<<"Exit Program\n\n";
                      return 0;
                   }
                   else {
@@ -143,7 +143,7 @@ int main() {
                main_menu();
             }
             else if(unit == "0") {
-               std::cout<<BD<<Y<<EX<<S<<"Exit Program\n\n";
+               std::cout<<BD<<C<<EX<<S<<"Exit Program\n\n";
                return 0;
             }
             else {
@@ -156,7 +156,7 @@ int main() {
          std::cout<<"Done\n";
 		}
 		else if(input == "0") {
-         std::cout<<BD<<Y<<EX<<S<<"Exit Program\n\n";
+         std::cout<<BD<<C<<EX<<S<<"Exit Program\n\n";
          return 0;
 		}
 		else {
