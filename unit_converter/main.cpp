@@ -71,10 +71,10 @@ int main() {
                std::cout<<"Done\n";
             }
             else if(unit == "-1") {
-               ctn::main_menu();
+               ctn::defn("main_menu");
             }
             else if(unit == "0") {
-               ctn::exitProgram();
+               ctn::defn("exit_header");
                return 0;
             }
             else {
