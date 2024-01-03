@@ -14,7 +14,7 @@
 
 void header(void) {
    std::cout<<"CPSPace Project\n\n";
-   std::cout<<"This tool is designed to seamlessly convert various units and simplify your calculations.\n\n";
+   std::cout<<"This tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n";
 }
 
 void main_menu(void) {
