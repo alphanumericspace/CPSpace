@@ -7,42 +7,42 @@
 #include "ctn.h"
 
 int main() {
-   ctn::defn("main_header");
-   ctn::defn("main_menu");
+   interface::defn("main_header");
+   interface::defn("main_menu");
 	std::string input;
 	while(!(input == "0")) {
-	   ctn::defn("input_header");
+	   interface::defn("input_header");
 		std::cin>>input;
 		std::cout<<"\n";
 		
 		if(input == "1") {
-         ctn::defn("unit_converter");
+         interface::defn("unit_converter");
          
          std::string unit;
          while(!(unit == "-1")) {
-            ctn::defn("input_header");
+            interface::defn("input_header");
             std::cin>>unit;
             std::cout<<"\n";
             
             if(unit == "1") {
-               ctn::defn("length_units");
+               interface::defn("length_units");
                
                std::string len;
                while(!(len == "-1")) {
-                  ctn::defn("input_header");
+                  interface::defn("input_header");
                   std::cin>>len;
                   std::cout<<"\n";
                   
                   if(len == "-1") {
-                     ctn::defn("unit_converter");
+                     interface::defn("unit_converter");
                   }
                   else if(len == "0") {
-                     ctn::defn("exit_header");
+                     interface::defn("exit_header");
                      return 0;
                   }
                   else {
-                     ctn::defn("error_header", len);
-                     ctn::defn("length_units");
+                     interface::defn("error_header", len);
+                     interface::defn("length_units");
                   }
                }
             }
@@ -71,28 +71,28 @@ int main() {
                std::cout<<"Done\n";
             }
             else if(unit == "-1") {
-               ctn::defn("main_menu");
+               interface::defn("main_menu");
             }
             else if(unit == "0") {
-               ctn::defn("exit_header");
+               interface::defn("exit_header");
                return 0;
             }
             else {
-               ctn::defn("error_header", unit);
-               ctn::defn("unit_converter");
+               interface::defn("error_header", unit);
+               interface::defn("unit_converter");
             }
          }
 		}
 		else if(input == "2") {
-         ctn::defn("information");
+         interface::defn("information");
 		}
 		else if(input == "0") {
-         ctn::defn("exit_header");
+         interface::defn("exit_header");
          return 0;
 		}
 		else {
-         ctn::defn("error_header", input);
-	      ctn::defn("main_menu");
+         interface::defn("error_header", input);
+	      interface::defn("main_menu");
 		}
 	}
 }
