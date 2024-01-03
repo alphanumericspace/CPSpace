@@ -22,11 +22,7 @@ void defn(std::string param) {
      std::string menu_description;
    };
    void printHeader(Header details) {
-      std::cout<<details.style
-               <<details.color
-               <<details.name<<" "
-               <<details.icon
-               <<details.reset<<" ";
+      std::cout<<details.style<<details.color<<details.name<<" "<<details.icon<<details.reset<<" ";
    }
    void printMenu(Menu details) {
       Header head;
