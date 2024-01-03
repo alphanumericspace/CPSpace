@@ -63,7 +63,7 @@ double lengthUnitConversion(std::string option, double input);
 int main() {
    std::cout<<"CPSPace Project\n\n";
    std::cout<<"This tool is designed to seamlessly convert various units and simplify your calculations.\n\n";
-   main_menu();
+   mainMenu::main_menu();
    
 	std::string input;
 	while(!(input == "0")) {
@@ -127,7 +127,7 @@ int main() {
                std::cout<<"Done\n";
             }
             else if(unit == "-1") {
-               main_menu();
+               mainMenu::main_menu();
             }
             else if(unit == "0") {
                std::cout<<BD<<C<<EX<<S<<"Exit Program\n\n";
@@ -148,7 +148,7 @@ int main() {
 		}
 		else {
          std::cout<<BD<<R<<ER<<S<<"Unavailable Option '"<<input<<"'\n\n";
-	      main_menu();
+	      mainMenu::main_menu();
 		}
 	}
 }
