@@ -32,7 +32,7 @@ struct Header {
       for(std::string content : details.menu_contents) {
          std::cout<<content<<"\n";
       }
-      std::cout<<"\n"<<details.menu_description<<"\n\n"
+      std::cout<<"\n"<<details.menu_description<<"\n\n";
    }
 void defn(std::string param) {
    
