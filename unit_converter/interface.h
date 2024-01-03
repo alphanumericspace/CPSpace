@@ -123,6 +123,7 @@ void defn(std::string param, std::string input = "") {
       std::cout<<"Unavailable option '"<<input<<"'\n\n";
    } else {
       std::cout<<BD<<R<<"Parameter '"<<param<<"' Unavailable!"<<S<<"\n\n";
+      exit;
    }
 }
 
