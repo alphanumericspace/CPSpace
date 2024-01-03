@@ -8,6 +8,7 @@
 
 int main() {
    menu::header();
+   
    menu::main_menu();
    
 	std::string input;
@@ -39,7 +40,6 @@ int main() {
                   }
                   else if(len == "0") {
                      menu::exitProgram();
-                     return 0;
                   }
                   else {
                      menu::unavailableOption(len);
@@ -76,7 +76,6 @@ int main() {
             }
             else if(unit == "0") {
                menu::exitProgram();
-               return 0;
             }
             else {
                menu::unavailableOption(unit);
@@ -89,7 +88,6 @@ int main() {
 		}
 		else if(input == "0") {
          menu::exitProgram();
-         return 0;
 		}
 		else {
          menu::unavailableOption(input);
