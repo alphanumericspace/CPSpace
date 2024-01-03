@@ -4,7 +4,7 @@
 #include <vector>
 #include <string>
 
-#include "ctn.h"
+#include "interface.h"
 
 int main() {
    interface::defn("main_header");
