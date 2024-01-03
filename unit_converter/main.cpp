@@ -16,7 +16,7 @@ int main() {
 		std::cout<<"\n";
 		
 		if(input == "1") {
-         interface::defn("unit_converter");
+         interface::defn("unt_converter");
          
          std::string unit;
          while(unit != "-1") {
