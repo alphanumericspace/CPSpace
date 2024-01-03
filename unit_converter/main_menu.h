@@ -1,5 +1,5 @@
-#ifndef mainMenu
-#define mainMenu
+#ifndef menu
+#define menu
 
 #define B "\033[34m" // Blue
 #define G "\033[32m" // Green
