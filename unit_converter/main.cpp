@@ -13,7 +13,7 @@ int main() {
 	while(input != "0") {
 	   interface::defn("input_header");
 		std::cin>>input;
-		std::cout<<"\n";
+		interface::defn("newline");
 		
 		if(input == "1") {
          interface::defn("unit_converter");
@@ -22,7 +22,7 @@ int main() {
          while(unit != "-1") {
             interface::defn("input_header");
             std::cin>>unit;
-            std::cout<<"\n";
+            interface::defn("newline");
             
             if(unit == "1") {
                interface::defn("length_units");
@@ -31,7 +31,7 @@ int main() {
                while(len != "-1") {
                   interface::defn("input_header");
                   std::cin>>len;
-                  std::cout<<"\n";
+                  interface::defn("newline");
                   
                   if(len == "-1") {
                      interface::defn("unit_converter");
@@ -51,7 +51,7 @@ int main() {
                while(are != "-1") {
                   interface::defn("input_header");
                   std::cin>>are;
-                  std::cout<<"\n";
+                  interface::defn("newline");
                   
                   if(are == "-1") {
                      interface::defn("unit_converter");
