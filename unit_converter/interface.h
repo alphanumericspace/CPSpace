@@ -30,7 +30,9 @@ void prefix(const int key) {
    }
 }
 
-struct Menu {
+void defn(const std::string param, const std::string input = "") {
+   
+   struct Menu {
    std::string menu_name;
    std::vector<std::string> menu_contents;
    std::string menu_description;
@@ -51,8 +53,7 @@ struct Menu {
       } else std::cout<<"\n";
    }
 };
-
-void defn(const std::string param, const std::string input = "") {
+   
    if(param == "main_header") {
       std::cout<<BG<<" CPSPace Project "<<S<<"\n\nThis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n";
    } else if(param == "main_menu") {
