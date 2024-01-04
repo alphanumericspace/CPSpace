@@ -11,7 +11,7 @@ int main() {
 	
 	int mainMenu;
 	
-	while(mainMenu == 0) {
+	while(!(mainMenu == 0)) {
 	   cli::def("input");
       std::cin>>mainMenu;
       cli::def("ln");
