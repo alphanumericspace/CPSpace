@@ -9,7 +9,7 @@ int main() {
    cli::def("header");
    cli::def("main");
 	
-	int mainMenu;
+	int mainMenu = 2222;
 	
 	while(mainMenu != 0) {
 	   cli::def("input");
