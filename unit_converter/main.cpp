@@ -8,8 +8,78 @@
 int main() {
    cli::def("header");
    cli::def("main");
-	std::string input;
-	while(input != "0") {
+	
+	int mainMenu;
+	while(mainMenu != 0) {
+      cli::def("input");
+      std::cin<<mainMenu;
+      cli::def("ln");
+      
+      switch(mainMenu) {
+         case 1:
+            cli::def("cvtr");
+            int unitCvtr;
+            while(unitCvtr != 0) {
+               cli::def("input");
+               std::cin<<unitCvtr;
+               cli::def("ln");
+               
+               switch(unitCvtr) {
+                  case 1:
+                     cli::def("length");
+                     int lengthUnits;
+                     while(lengthUnits != 0) {
+                        cli::def("input");
+                        std::cin<<lengthUnits;
+                        cli::def("ln");
+                        
+                        switch(lengthUnits) {
+                           case 0:
+                              cli::def("exit");
+                           default:
+                              cli::def("err_opt");
+                              break;
+                        }
+                     }
+                     break;
+                  case 2:
+                     cli::def("area");
+                     int areaUnits;
+                     while(areaUnits != 0) {
+                        cli::def("input");
+                        std::cin<<areaUnits;
+                        cli::def("ln");
+                        
+                        switch(areaUnits) {
+                           case 0:
+                              cli::def("exit");
+                           default:
+                              cli::def("err_opt");
+                              break;
+                        }
+                     }
+                     break;
+                  case 0:
+                     cli::def("exit");
+                  default:
+                     cli::def("err_opt");
+                     break;
+               }
+            }
+            break;
+         case 2:
+            cli::def("info");
+            break;
+         case 0:
+            cli::def("exit");
+         default:
+            cli::def("err_opt");
+            break;
+      }
+	}
+	return 0;
+	
+	/*while(input != "0") {
 	   cli::def("input");
 		std::cin>>input;
 		cli::def("ln");
@@ -108,5 +178,5 @@ int main() {
 	      cli::def("main");
 		}
 	}
-	return 0;
+	return 0;*/
 }
