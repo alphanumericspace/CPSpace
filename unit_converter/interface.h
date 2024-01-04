@@ -1,34 +1,29 @@
 #ifndef cli
 #define cli
 
+const std::string R ("\033[31m"); // Red
+const std::string S ("\033[0m"); // Reset
+const std::string BG ("\033[48;5;15m\033[38;5;0m"); // Background white & teks black
+
 void defn(const std::string param, const std::string input = "") {
-   const std::string R ("\033[31m"); // Red
-   const std::string S ("\033[0m"); // Reset
-   const std::string BD ("\033[1m"); // Bold
-   const std::string BG ("\033[48;5;15m\033[38;5;0m"); // Background white & teks black
-   
    struct Prefix {
       void prefix(const int key) {
-         const std::string RD (R); // Red
-         const std::string R (S); // Reset
-         const std::string BL (BD); // Bold
-         const std::string BF (BG); // Background white & teks black
          switch(key) {
             case 1:
-               std::cout<<BF<<" >> "<<R<<" ";
+               std::cout<<BG<<" >> "<<S<<" ";
                break;
             case 2:
-               std::cout<<BF<<" << "<<R<<" ";
+               std::cout<<BG<<" << "<<S<<" ";
                break;
             case 3:
-               std::cout<<BF<<" !! "<<R<<" ";
+               std::cout<<BG<<" !! "<<S<<" ";
                break;
             case 4:
-               std::cout<<BF<<" <> "<<R<<" Exit Progam\n\n";
+               std::cout<<BG<<" <> "<<S<<" Exit Progam\n\n";
                exit(0);
             default:
                std::string _key = std::to_string(key);
-               std::cout<<BL<<RD<<"Unavailable key"<<_key<<R<<"\n\n";
+               std::cout<<R<<"Unavailable key"<<_key<<S<<"\n\n";
                exit(0);
          }
       }
@@ -141,11 +136,11 @@ void defn(const std::string param, const std::string input = "") {
    } else if(param == "unavailable_option_prefix") {
       Prefix unop;
       unop.prefix(3);
-      std::cout<<BD<<R<<"Unavailable option '"<<input<<S<<"' \n\n";
+      std::cout<<R<<"Unavailable option '"<<input<<S<<"' \n\n";
    } else if(param == "newline") {
       std::cout<<"\n";
    } else {
-      std::cout<<BD<<R<<"Unavailable '"<<param<<"' parameter!"<<S<<"\n\n";
+      std::cout<<R<<"Unavailable '"<<param<<"' parameter!"<<S<<"\n\n";
       exit(0);
    }
 }
