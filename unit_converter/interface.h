@@ -5,12 +5,11 @@ std::string R;
 std::string S;
 std::string BG;
 
-void prefix(const int key);
-
 void defn(const std::string param, const std::string input = "") {
    R = "\033[31m";
    S = "\033[0m";
    BG = "\033[48;5;15m\033[38;5;0m";
+   struct Prefix {
       void prefix(const int key) {
          switch(key) {
             case 1:
@@ -31,13 +30,15 @@ void defn(const std::string param, const std::string input = "") {
                exit(0);
          }
       }
+   };
    
    struct Menu {
       std::string menu_name;
       std::vector<std::string> menu_contents;
       std::string menu_description;
       void printMenu(void) {
-         prefix(1);
+         Prefix menu;
+         menu.prefix(1);
          if(!menu_name.empty()) {
             std::cout<<menu_name<<"\n\n";
          } else std::cout<<"Unknown\n\n";
@@ -130,11 +131,14 @@ void defn(const std::string param, const std::string input = "") {
    } else if(param == "information") {
       std::cout<<"Done\n\n";
    } else if(param == "input_prefix") {
-      prefix(2);
+      Prefix input;
+      input.prefix(2);
    } else if(param == "exit_prefix") {
-      prefix(4);
+      Prefix ext;
+      ext.prefix(4);
    } else if(param == "unavailable_option_prefix") {
-      prefix(3);
+      Prefix unop;
+      unop.prefix(3);
       std::cout<<R<<"Unavailable option '"<<input<<S<<"' \n\n";
    } else if(param == "newline") {
       std::cout<<"\n";
