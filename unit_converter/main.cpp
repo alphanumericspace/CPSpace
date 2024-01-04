@@ -10,7 +10,6 @@ int main() {
    cli::def("main");
 	
 	int mainMenu;
-	
 	do {
 	   cli::def("input");
       std::cin>>mainMenu;
@@ -18,6 +17,51 @@ int main() {
 	   switch(mainMenu) {
          case 1:
             cli::def("cvtr");
+            int unitCvtr;
+            do {
+               cli::def("input");
+               std::cin>>unitCvtr;
+               cli::def("ln");
+               switch(unitCvtr) {
+                  case 1:
+                     cli::def("length");
+                     int lengthUnit;
+                     do {
+                        cli::def("input");
+                        std::cin>>lengthUnit;
+                        cli::def("ln");
+                        switch(lengthUnit) {
+                           case (-1):
+                              cli::def("cvtr");
+                              break;
+                           case 0:
+                              cli::def("exit");
+                        }
+                     } while(lengthUnit != 0 || lengthUnit != (-1))
+                     break;
+                  case 2:
+                     cli::def("area");
+                     int areaUnit;
+                     do {
+                        cli::def("input");
+                        std::cin>>areaUnit;
+                        cli::def("ln");
+                        switch(lengthUnit) {
+                           case (-1):
+                              cli::def("cvtr");
+                              break;
+                           case 0:
+                              cli::def("exit");
+                        }
+                     } while(areaUnit != 0 || areaUnit != (-1))
+                     break;
+                  case (-1):
+                     cli::def("main");
+                     break;
+                  case 0:
+                     cli::def("exit");
+               }
+            } while(unitCvtr != 0 || unitCvtr != (-1));
             break;
          case 2:
             cli::def("info");
