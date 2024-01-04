@@ -25,7 +25,6 @@ int main() {
             break;
          case 0:
             cli::def("exit");
-            break;
       }
 	}
 	return 0;
