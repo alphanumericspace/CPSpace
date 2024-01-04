@@ -7,7 +7,7 @@
 
 int main() {
    cli::defn("main_header");
-   cli::defn("main_menu");
+   cli::defn("main");
 	std::string input;
 	while(input != "0") {
 	   cli::defn("input_prefix");
@@ -15,7 +15,7 @@ int main() {
 		cli::defn("newline");
 		
 		if(input == "1") {
-         cli::defn("unit_cvtr");
+         cli::defn("cvtr");
          
          std::string unit;
          while(unit != "-1") {
@@ -24,7 +24,7 @@ int main() {
             cli::defn("newline");
             
             if(unit == "1") {
-               cli::defn("length_units");
+               cli::defn("length");
                
                std::string len;
                while(len != "-1") {
@@ -33,18 +33,18 @@ int main() {
                   cli::defn("newline");
                   
                   if(len == "-1") {
-                     cli::defn("unit_cvtr");
+                     cli::defn("cvtr");
                   }
                   else if(len == "0") {
                      cli::defn("exit_prefix");
                   }
                   else {
                      cli::defn("err_opt_prefix");
-                     cli::defn("length_units");
+                     cli::defn("length");
                   }
                }
             } else if(unit == "2") {
-               cli::defn("area_units");
+               cli::defn("area");
                
                std::string are;
                while(are != "-1") {
@@ -53,14 +53,14 @@ int main() {
                   cli::defn("newline");
                   
                   if(are == "-1") {
-                     cli::defn("unit_cvtr");
+                     cli::defn("cvtr");
                   }
                   else if(are == "0") {
                      cli::defn("exit_prefix");
                   }
                   else {
                      cli::defn("err_opt_prefix");
-                     cli::defn("length_units");
+                     cli::defn("length");
                   }
                }
             }
@@ -86,14 +86,14 @@ int main() {
                std::cout<<"Done\n";
             }
             else if(unit == "-1") {
-               cli::defn("main_menu");
+               cli::defn("main");
             }
             else if(unit == "0") {
                cli::defn("exit_prefix");
             }
             else {
                cli::defn("err_opt_prefix");
-               cli::defn("unit_cvtr");
+               cli::defn("cvtr");
             }
          }
 		}
@@ -105,7 +105,7 @@ int main() {
 		}
 		else {
          cli::defn("err_opt_prefix");
-	      cli::defn("main_menu");
+	      cli::defn("main");
 		}
 	}
 	return 0;
