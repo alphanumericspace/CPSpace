@@ -1,22 +1,29 @@
 #ifndef interface
 #define interface
 
-const std::string B = "\033[34m";// Blue
-const std::string G = "\033[32m"; // Green
-const std::string C = "\033[36m"; // Cyan
-const std::string R = "\033[31m"; // Red
-const std::string S = "\033[0m"; // Reset
-const std::string BD = "\033[1m"; // Bold
-const std::string BG = "\033[48;5;15m\033[38;5;0m"; // Background white & teks black
+const std::string B ("\033[34m");// Blue
+const std::string G ("\033[32m"); // Green
+const std::string C ("\033[36m"); // Cyan
+const std::string R ("\033[31m"); // Red
+const std::string S ("\033[0m"); // Reset
+const std::string BD ("\033[1m"); // Bold
+const std::string BG ("\033[48;5;15m\033[38;5;0m"); // Background white & teks black
 
 struct Header {
    std::string name;
-   std::string icon;
-   std::string color;
-   std::string style = BD;
-   std::string reset = S;
    void printHeader(void) {
-      std::cout<<style<<color<<name<<" "<<icon<<reset<<" ";
+      if(name == "HEAD") {
+         std::cout<<BD<<G<<name<<S<<" >> ";
+      } else if(name == "INPUT") {
+         std::cout<<BD<<G<<name<<S<<" << ";
+      } else if(name == "ERROR") {
+         std::cout<<BD<<G<<name<<S<<" >< ";
+      } else if(name == "EXIT") {
+         std::cout<<BD<<G<<name<<S<<" <> ";
+      } else {
+         std::cout<<BD<<R<<"Unavailable '"<<name<<"' parameter!"<<S<<"\n\n";
+         exit(0);
+      }
    } 
 };
 
@@ -27,8 +34,6 @@ struct Menu {
    void printMenu(void) {
       Header head;
       head.name = "HEAD";
-      head.icon = ">>";
-      head.color = G;
       head.printHeader();
       std::cout<<BG<<" "<<menu_name<<" "<<S<<"\n\n";
       for(std::string content : menu_contents) {
@@ -119,28 +124,22 @@ void defn(const std::string param, const std::string input = "") {
    } else if(param == "input_header") {
       Header input;
       input.name = "INPUT";
-      input.icon = "<<";
-      input.color = B;
       input.printHeader();
    } else if(param == "exit_header") {
       Header ext;
       ext.name = "EXIT";
-      ext.icon = "<>";
-      ext.color = C;
       ext.printHeader();
       std::cout<<BG<<" Exit Program "<<S<<"\n\n";
       exit(0);
    } else if(param == "error_header") {
       Header error;
       error.name = "ERROR";
-      error.icon = "><";
-      error.color = R;
       error.printHeader();
       std::cout<<BG<<" Unavailable option '"<<input<<"' "<<S<<"\n\n";
    } else if(param == "newline") {
       std::cout<<"\n";
    } else {
-      std::cout<<BD<<R<<"Parameter '"<<param<<"' Unavailable!"<<S<<"\n\n";
+      std::cout<<BD<<R<<"Unavailable '"<<param<<"' parameter!"<<S<<"\n\n";
       exit(0);
    }
 }
