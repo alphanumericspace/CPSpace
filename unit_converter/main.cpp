@@ -85,7 +85,7 @@ int main() {
             cli::def("err_opt");
             break;
       }
-	} while(mainMenu != 0);
+	} while(mainMenu != "0");
 	
 	return 0;
 	
