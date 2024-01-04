@@ -136,7 +136,7 @@ const void defn(const std::string key) {
       Prefix unop;
       unop.prefix(3);
       std::cout<<"Unavailable option\n\n";
-   } else if(key == "line") {
+   } else if(key == "ln") {
       std::cout<<"\n";
    } else {
       std::cout<<"Unavailable '"<<key<<"' keyeter!\n\n";
