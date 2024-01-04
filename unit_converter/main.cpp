@@ -72,6 +72,7 @@ int main() {
                      cli::def("err_opt");
                      break;
                }
+               break;
             }
             break;
          case 2:
