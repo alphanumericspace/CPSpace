@@ -1,11 +1,14 @@
 #ifndef cli
 #define cli
 
-const std::string R ("\033[31m"); // Red
-const std::string S ("\033[0m"); // Reset
-const std::string BG ("\033[48;5;15m\033[38;5;0m"); // Background white & teks black
+const std::string R;
+const std::string S;
+const std::string BG;
 
 void defn(const std::string param, const std::string input = "") {
+   R ("\033[31m");
+   S ("\033[0m");
+   BG ("\033[48;5;15m\033[38;5;0m");
    struct Prefix {
       void prefix(const int key) {
          switch(key) {
