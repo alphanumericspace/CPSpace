@@ -1,5 +1,5 @@
-#ifndef interface
-#define interface
+#ifndef cli
+#define cli
 
 const std::string B ("\033[34m");// Blue
 const std::string G ("\033[32m"); // Green
