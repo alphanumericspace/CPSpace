@@ -10,11 +10,12 @@ int main() {
    cli::def("main");
 	
 	int mainMenu;
-	cli::def("input");
-   std::cin>>mainMenu;
-   cli::def("ln");
 	
 	while(mainMenu != 0) {
+	   cli::def("input");
+      std::cin>>mainMenu;
+      cli::def("ln");
+      
       switch(mainMenu) {
          case 1:
             cli::def("cvtr");
