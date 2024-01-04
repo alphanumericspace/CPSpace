@@ -37,6 +37,9 @@ int main() {
                            case 0:
                               cli::def("exit");
                               break;
+                           default:
+                              cli::def("err_opt");
+                              break;
                         }
                      } while(lengthUnit != 0 || lengthUnit != 99);
                      break;
@@ -54,6 +57,9 @@ int main() {
                            case 0:
                               cli::def("exit");
                               break;
+                           default:
+                              cli::def("err_opt");
+                              break;
                         }
                      } while(areaUnit != 0 || areaUnit != 99);
                      break;
@@ -62,6 +68,9 @@ int main() {
                      break;
                   case 0:
                      cli::def("exit");
+                  default:
+                     cli::def("err_opt");
+                     break;
                }
             } while(unitCvtr != 0 || unitCvtr != 99);
             break;
@@ -70,6 +79,9 @@ int main() {
             break;
          case 0:
             cli::def("exit");
+            break;
+         default:
+            cli::def("err_opt");
             break;
       }
 	} while(mainMenu != 0);
