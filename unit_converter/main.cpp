@@ -36,6 +36,8 @@ int main() {
                         switch(lengthUnits) {
                            case 0:
                               cli::def("exit");
+                           case -1:
+                              cli::def("cvtr");
                            default:
                               cli::def("err_opt");
                               break;
@@ -53,6 +55,9 @@ int main() {
                         switch(areaUnits) {
                            case 0:
                               cli::def("exit");
+                           case -1:
+                              cli::def("cvtr");
+                              break;
                            default:
                               cli::def("err_opt");
                               break;
