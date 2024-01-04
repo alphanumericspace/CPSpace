@@ -23,7 +23,7 @@ struct Header {
 struct Menu {
    std::string menu_name;
    std::vector<std::string> menu_contents;
-   std::string menu_description = "\n";
+   std::string menu_description;
    void printMenu(void) {
       Header head;
       head.name = "HEAD";
@@ -34,9 +34,9 @@ struct Menu {
       for(std::string content : menu_contents) {
          std::cout<<content<<"\n";
       }
-      if(!(menu_description)) {
+      if(!menu_description.empty()) {
          std::cout<<"\n"<<menu_description<<"\n\n";
-      }
+      } else std::cout<<"\n";
    }
 };
 
