@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-#include "cli"
+#include "cli.h"
 
 int main() {
    cli::defn("main_header");
