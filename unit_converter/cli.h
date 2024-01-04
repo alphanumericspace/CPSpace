@@ -126,9 +126,9 @@ void defn(const std::string param) {
       };
       volume.description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
       volume.menu();
-   } else if(param == "information") {
+   } else if(param == "info") {
       std::cout<<"Done\n\n";
-   } else if(param == "exit") {
+   } else if(param == "input") {
       Prefix input;
       input.prefix(2);
    } else if(param == "exit") {
