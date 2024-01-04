@@ -9,12 +9,13 @@ int main() {
    cli::def("header");
    cli::def("main");
 	
-	int mainMenu;
+	std::string mainMenu;
 	do {
 	   cli::def("input");
       std::cin>>mainMenu;
       cli::def("ln");
-	   switch(mainMenu) {
+      int _mainMenu = std::stoi(mainMenu);
+	   switch(_mainMenu) {
          case 1:
             cli::def("cvtr");
             int unitCvtr;
