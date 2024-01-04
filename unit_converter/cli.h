@@ -18,7 +18,8 @@ void def(std::string key) {
                highl("!!");
                break;
             case 4:
-               highl("<>")<<"Exit Program\n\n";
+               highl("<>");
+               std::cout<<"Exit Program\n\n";
                exit(0);
             default:
                std::string _key = std::to_string(key);
