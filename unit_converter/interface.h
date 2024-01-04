@@ -15,8 +15,8 @@ struct Header {
    std::string color;
    std::string style = BD;
    std::string reset = S;
-   std::string printHeader() {
-      return std::cout<<style<<color<<name<<" "<<icon<<reset<<" ";
+   void printHeader(void) {
+      std::cout<<style<<color<<name<<" "<<icon<<reset<<" ";
    } 
 };
 
@@ -24,17 +24,17 @@ struct Menu {
    std::string menu_name;
    std::vector<std::string> menu_contents;
    std::string menu_description;
-   std::string printMenu() {
+   void printMenu(void) {
       Header head;
       head.name = "HEAD";
       head.icon = ">>";
       head.color = G;
       head.printHeader();
-      std::cout<<BG<<" "<<det.menu_name<<" "<<S<<"\n\n";
-      for(std::string content : det.menu_contents) {
+      std::cout<<BG<<" "<<menu_name<<" "<<S<<"\n\n";
+      for(std::string content : menu_contents) {
          std::cout<<content<<"\n";
       }
-      return std::cout<<"\n"<<det.menu_description<<"\n\n";
+      std::cout<<"\n"<<menu_description<<"\n\n";
    }
 };
 
