@@ -43,7 +43,7 @@ struct Menu {
          for(std::string content : menu_contents) {
             std::cout<<content<<"\n";
          }
-      } else std::cout<<menu_contents<<"\n";
+      } else std::cout<<menu_contents[0]<<"\n";
       
       if(!menu_description.empty()) {
          std::cout<<"\n"<<menu_description<<"\n\n";
