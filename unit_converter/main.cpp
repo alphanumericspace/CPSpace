@@ -6,61 +6,61 @@
 #include "cli.h"
 
 int main() {
-   cli::defn("header");
-   cli::defn("main");
+   cli::def("header");
+   cli::def("main");
 	std::string input;
 	while(input != "0") {
-	   cli::defn("input");
+	   cli::def("input");
 		std::cin>>input;
-		cli::defn("ln");
+		cli::def("ln");
 		
 		if(input == "1") {
-         cli::defn("cvtr");
+         cli::def("cvtr");
          
          std::string unit;
          while(unit != "-1") {
-            cli::defn("input");
+            cli::def("input");
             std::cin>>unit;
-            cli::defn("ln");
+            cli::def("ln");
             
             if(unit == "1") {
-               cli::defn("length");
+               cli::def("length");
                
                std::string len;
                while(len != "-1") {
-                  cli::defn("input");
+                  cli::def("input");
                   std::cin>>len;
-                  cli::defn("ln");
+                  cli::def("ln");
                   
                   if(len == "-1") {
-                     cli::defn("cvtr");
+                     cli::def("cvtr");
                   }
                   else if(len == "0") {
-                     cli::defn("exit");
+                     cli::def("exit");
                   }
                   else {
-                     cli::defn("err_opt");
-                     cli::defn("length");
+                     cli::def("err_opt");
+                     cli::def("length");
                   }
                }
             } else if(unit == "2") {
-               cli::defn("area");
+               cli::def("area");
                
                std::string are;
                while(are != "-1") {
-                  cli::defn("input");
+                  cli::def("input");
                   std::cin>>are;
-                  cli::defn("ln");
+                  cli::def("ln");
                   
                   if(are == "-1") {
-                     cli::defn("cvtr");
+                     cli::def("cvtr");
                   }
                   else if(are == "0") {
-                     cli::defn("exit");
+                     cli::def("exit");
                   }
                   else {
-                     cli::defn("err_opt");
-                     cli::defn("length");
+                     cli::def("err_opt");
+                     cli::def("length");
                   }
                }
             }
@@ -86,26 +86,26 @@ int main() {
                std::cout<<"Done\n";
             }
             else if(unit == "-1") {
-               cli::defn("main");
+               cli::def("main");
             }
             else if(unit == "0") {
-               cli::defn("exit");
+               cli::def("exit");
             }
             else {
-               cli::defn("err_opt");
-               cli::defn("cvtr");
+               cli::def("err_opt");
+               cli::def("cvtr");
             }
          }
 		}
 		else if(input == "2") {
-         cli::defn("info");
+         cli::def("info");
 		}
 		else if(input == "0") {
-         cli::defn("exit");
+         cli::def("exit");
 		}
 		else {
-         cli::defn("err_opt");
-	      cli::defn("main");
+         cli::def("err_opt");
+	      cli::def("main");
 		}
 	}
 	return 0;
