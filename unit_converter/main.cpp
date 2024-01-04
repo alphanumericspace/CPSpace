@@ -37,7 +37,7 @@ int main() {
                            case 0:
                               cli::def("exit");
                         }
-                     } while(lengthUnit != 0 || lengthUnit != (-1))
+                     } while(lengthUnit != 0 || lengthUnit != (-1));
                      break;
                   case 2:
                      cli::def("area");
@@ -53,7 +53,7 @@ int main() {
                            case 0:
                               cli::def("exit");
                         }
-                     } while(areaUnit != 0 || areaUnit != (-1))
+                     } while(areaUnit != 0 || areaUnit != (-1));
                      break;
                   case (-1):
                      cli::def("main");
