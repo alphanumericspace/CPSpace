@@ -76,7 +76,6 @@ int main() {
                      break;
                }
             }
-            break;
          case 2:
             cli::def("info");
             break;
