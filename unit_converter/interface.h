@@ -35,10 +35,16 @@ struct Menu {
       Header head;
       head.name = "HEAD";
       head.printHeader();
-      std::cout<<BG<<" "<<menu_name<<" "<<S<<"\n\n";
-      for(std::string content : menu_contents) {
-         std::cout<<content<<"\n";
-      }
+      if(!menu_name.empty()) {
+         std::cout<<BG<<" "<<menu_name<<" "<<S<<"\n\n";
+      } else std::cout<<BG<<" Unknown "<<" "<<S<<"\n\n";
+      
+      if(menu_contents.size() > 1) {
+         for(std::string content : menu_contents) {
+            std::cout<<content<<"\n";
+         }
+      } else std::cout<<content<<"\n";
+      
       if(!menu_description.empty()) {
          std::cout<<"\n"<<menu_description<<"\n\n";
       } else std::cout<<"\n";
