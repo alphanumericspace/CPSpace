@@ -26,6 +26,7 @@ int main() {
             cli::def("exit");
       }
 	} while(mainMenu != 0);
+	
 	return 0;
 	
 	/*while(input != "0") {
