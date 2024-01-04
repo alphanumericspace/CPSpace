@@ -18,7 +18,7 @@ const void def(const std::string key) {
                std::cout<<highl("!!");
                break;
             case 4:
-               std::cout<<highl("<>")<<"Exit Progam\n\n";
+               std::cout<<highl("<>")<<"Exit Program\n\n";
                exit(0);
             default:
                std::string _key = std::to_string(key);
