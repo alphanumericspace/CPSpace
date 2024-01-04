@@ -38,7 +38,7 @@ void defn(const std::string param, const std::string input = "") {
       std::vector<std::string> menu_contents;
       std::string menu_description;
       void printMenu(void) {
-         Prefix::prefix(1);
+         Prefix.prefix(1);
          if(!menu_name.empty()) {
             std::cout<<menu_name<<"\n\n";
          } else std::cout<<"Unknown\n\n";
