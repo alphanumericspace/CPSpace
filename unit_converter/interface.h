@@ -37,7 +37,7 @@ struct Menu {
    void printMenu(void) {
       prefix(1);
       if(!menu_name.empty()) {
-         std::cout<<BG<<" "<<menu_name<<" "<<S<<"\n\n";
+         std::cout<<menu_name<<"\n\n";
       } else std::cout<<"Unknown\n\n";
       
       if(menu_contents.size() > 1) {
