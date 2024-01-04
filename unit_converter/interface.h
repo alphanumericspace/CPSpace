@@ -39,14 +39,14 @@ void defn(const std::string param, const std::string input = "") {
          prefix(1);
          if(!menu_name.empty()) {
             std::cout<<menu_name<<"\n\n";
-         } else {std::cout<<"Unknown\n\n";}
-         else if(menu_contents.size() > 1) {
+         } else std::cout<<"Unknown\n\n";
+         if(menu_contents.size() > 1) {
             for(std::string content : menu_contents) {
                std::cout<<content<<"\n";
             }
-         } else {std::cout<<menu_contents[0]<<"\n";}
-         else if(!menu_description.empty()) {
-         std::cout<<"\n"<<menu_description<<"\n\n";
+         } else std::cout<<menu_contents[0]<<"\n";
+         if(!menu_description.empty()) {
+            std::cout<<"\n"<<menu_description<<"\n\n";
          } else std::cout<<"\n";
       }
    };
