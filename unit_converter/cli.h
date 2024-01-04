@@ -1,12 +1,11 @@
 #ifndef cli
 #define cli
 
-const std::string S = "\033[0m";
-const std::string BG = "\033[48;5;15m\033[38;5;0m";
-
 void defn(const std::string param) {
    struct Prefix {
       void prefix(const int key) {
+         const std::string S = "\033[0m";
+         const std::string BG = "\033[48;5;15m\033[38;5;0m";
          switch(key) {
             case 1:
                std::cout<<BG<<" >> "<<S<<" ";
@@ -52,7 +51,7 @@ void defn(const std::string param) {
    };
    
    if(param == "main_header") {
-      std::cout<<BG<<" CPSPace Project "<<S<<"\n\nThis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n";
+      std::cout<<"CPSPace Project\n\nThis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n";
    } else if(param == "main") {
       Menu main;
       main.name = "Main Menu";
