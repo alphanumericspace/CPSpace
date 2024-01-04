@@ -15,7 +15,7 @@ int main() {
 		cli::defn("newline");
 		
 		if(input == "1") {
-         cli::defn("unit_converter");
+         cli::defn("unit_cvtr");
          
          std::string unit;
          while(unit != "-1") {
@@ -33,13 +33,13 @@ int main() {
                   cli::defn("newline");
                   
                   if(len == "-1") {
-                     cli::defn("unit_converter");
+                     cli::defn("unit_cvtr");
                   }
                   else if(len == "0") {
                      cli::defn("exit_prefix");
                   }
                   else {
-                     cli::defn("unavailable_option_prefix");
+                     cli::defn("err_opt_prefix");
                      cli::defn("length_units");
                   }
                }
@@ -53,13 +53,13 @@ int main() {
                   cli::defn("newline");
                   
                   if(are == "-1") {
-                     cli::defn("unit_converter");
+                     cli::defn("unit_cvtr");
                   }
                   else if(are == "0") {
                      cli::defn("exit_prefix");
                   }
                   else {
-                     cli::defn("unavailable_option_prefix");
+                     cli::defn("err_opt_prefix");
                      cli::defn("length_units");
                   }
                }
@@ -92,8 +92,8 @@ int main() {
                cli::defn("exit_prefix");
             }
             else {
-               cli::defn("unavailable_option_prefix");
-               cli::defn("unit_converter");
+               cli::defn("err_opt_prefix");
+               cli::defn("unit_cvtr");
             }
          }
 		}
@@ -104,7 +104,7 @@ int main() {
          cli::defn("exit_prefix");
 		}
 		else {
-         cli::defn("unavailable_option_prefix");
+         cli::defn("err_opt_prefix");
 	      cli::defn("main_menu");
 		}
 	}
