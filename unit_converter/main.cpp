@@ -39,7 +39,7 @@ int main() {
                      cli::defn("exit_prefix");
                   }
                   else {
-                     cli::defn("unavailable_option_prefix", len);
+                     cli::defn("unavailable_option_prefix");
                      cli::defn("length_units");
                   }
                }
@@ -59,7 +59,7 @@ int main() {
                      cli::defn("exit_prefix");
                   }
                   else {
-                     cli::defn("unavailable_option_prefix", are);
+                     cli::defn("unavailable_option_prefix");
                      cli::defn("length_units");
                   }
                }
@@ -92,7 +92,7 @@ int main() {
                cli::defn("exit_prefix");
             }
             else {
-               cli::defn("unavailable_option_prefix", unit);
+               cli::defn("unavailable_option_prefix");
                cli::defn("unit_converter");
             }
          }
@@ -104,7 +104,7 @@ int main() {
          cli::defn("exit_prefix");
 		}
 		else {
-         cli::defn("unavailable_option_prefix", input);
+         cli::defn("unavailable_option_prefix");
 	      cli::defn("main_menu");
 		}
 	}
