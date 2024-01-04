@@ -9,16 +9,16 @@ void def(std::string key) {
       void prefix(int key) {
          switch(key) {
             case 1:
-               std::cout<<highl(">>");
+               highl(">>");
                break;
             case 2:
-               std::cout<<highl("<<");
+               highl("<<");
                break;
             case 3:
-               std::cout<<highl("!!");
+               highl("!!");
                break;
             case 4:
-               std::cout<<highl("<>")<<"Exit Program\n\n";
+               highl("<>")<<"Exit Program\n\n";
                exit(0);
             default:
                std::string _key = std::to_string(key);
