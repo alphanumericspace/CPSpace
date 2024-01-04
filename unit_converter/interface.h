@@ -35,7 +35,6 @@ struct Menu {
          std::cout<<content<<"\n";
       }
       std::cout<<"\n"<<menu_description<<"\n\n";
-      }
    }
 };
 
