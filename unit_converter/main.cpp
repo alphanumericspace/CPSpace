@@ -23,7 +23,7 @@ int main() {
             std::cin>>unitCvtr;
             cli::def("ln");
                
-            while(unitCvtr != 0 || unitCvtr != -1) {
+            while(unitCvtr != 0 or unitCvtr != -1) {
                switch(unitCvtr) {
                   case 1:
                      cli::def("length");
@@ -32,7 +32,7 @@ int main() {
                      std::cin>>lengthUnits;
                      cli::def("ln");
                         
-                     while(lengthUnits != 0 || lengthUnits != -1) {
+                     while(lengthUnits != 0 or lengthUnits != -1) {
                         switch(lengthUnits) {
                            case 0:
                               cli::def("exit");
@@ -51,7 +51,7 @@ int main() {
                      cli::def("input");
                      std::cin>>areaUnits;
                      cli::def("ln");
-                     while(areaUnits != 0 || areaUnits != -1) {
+                     while(areaUnits != 0 or areaUnits != -1) {
                         switch(areaUnits) {
                            case 0:
                               cli::def("exit");
