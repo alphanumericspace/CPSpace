@@ -1,12 +1,10 @@
 #ifndef cli
 #define cli
 
-std::string R;
 std::string S;
 std::string BG;
 
 void defn(const std::string param) {
-   R = "\033[31m";
    S = "\033[0m";
    BG = "\033[48;5;15m\033[38;5;0m";
    struct Prefix {
