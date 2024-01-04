@@ -21,7 +21,7 @@ void prefix(const int key) {
          std::cout<<BG<<" !! "<<S<<" ";
          break;
       case 4:
-         std::cout<<BG<<" <> "<<S<<" Exit Progam";
+         std::cout<<BG<<" <> "<<S<<" Exit Progam\n\n";
          exit(0);
       default:
          std::string _key = std::to_string(key);
