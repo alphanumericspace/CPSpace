@@ -18,7 +18,7 @@ int main() {
       
       switch(mainMenu) {
          case 1:
-            std::cout<<"test\n\n";
+            cli::def("cvtr");
             break;
          case 2:
             cli::def("info");
