@@ -36,6 +36,7 @@ int main() {
                               break;
                            case 0:
                               cli::def("exit");
+                              break;
                         }
                      } while(lengthUnit != 0 || lengthUnit != 99);
                      break;
@@ -52,6 +53,7 @@ int main() {
                               break;
                            case 0:
                               cli::def("exit");
+                              break;
                         }
                      } while(areaUnit != 0 || areaUnit != 99);
                      break;
@@ -68,6 +70,7 @@ int main() {
             break;
          case 0:
             cli::def("exit");
+            break;
       }
 	} while(mainMenu != 0);
 	
