@@ -12,7 +12,7 @@ int main() {
 	int mainMenu;
 	while(mainMenu != 0) {
       cli::def("input");
-      std::cin<<mainMenu;
+      std::cin>>mainMenu;
       cli::def("ln");
       
       switch(mainMenu) {
@@ -21,7 +21,7 @@ int main() {
             int unitCvtr;
             while(unitCvtr != 0) {
                cli::def("input");
-               std::cin<<unitCvtr;
+               std::cin>>unitCvtr;
                cli::def("ln");
                
                switch(unitCvtr) {
@@ -30,7 +30,7 @@ int main() {
                      int lengthUnits;
                      while(lengthUnits != 0) {
                         cli::def("input");
-                        std::cin<<lengthUnits;
+                        std::cin>>lengthUnits;
                         cli::def("ln");
                         
                         switch(lengthUnits) {
@@ -47,7 +47,7 @@ int main() {
                      int areaUnits;
                      while(areaUnits != 0) {
                         cli::def("input");
-                        std::cin<<areaUnits;
+                        std::cin>>areaUnits;
                         cli::def("ln");
                         
                         switch(areaUnits) {
@@ -81,7 +81,7 @@ int main() {
 	
 	/*while(input != "0") {
 	   cli::def("input");
-		std::cin<<input;
+		std::cin>>input;
 		cli::def("ln");
 		
 		if(input == "1") {
@@ -90,7 +90,7 @@ int main() {
          std::string unit;
          while(unit != "-1") {
             cli::def("input");
-            std::cin<<unit;
+            std::cin>>unit;
             cli::def("ln");
             
             if(unit == "1") {
@@ -99,7 +99,7 @@ int main() {
                std::string len;
                while(len != "-1") {
                   cli::def("input");
-                  std::cin<<len;
+                  std::cin>>len;
                   cli::def("ln");
                   
                   if(len == "-1") {
@@ -119,7 +119,7 @@ int main() {
                std::string are;
                while(are != "-1") {
                   cli::def("input");
-                  std::cin<<are;
+                  std::cin>>are;
                   cli::def("ln");
                   
                   if(are == "-1") {
