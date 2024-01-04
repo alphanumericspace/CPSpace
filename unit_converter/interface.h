@@ -1,9 +1,9 @@
 #ifndef cli
 #define cli
 
-const std::string R;
-const std::string S;
-const std::string BG;
+std::string R;
+std::string S;
+std::string BG;
 
 void defn(const std::string param, const std::string input = "") {
    R = "\033[31m";
