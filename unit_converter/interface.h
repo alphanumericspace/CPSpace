@@ -38,16 +38,17 @@ void defn(const std::string param, const std::string input = "") {
       std::vector<std::string> menu_contents;
       std::string menu_description;
       void printMenu(void) {
-         Prefix menu;
-         menu.prefix(1);
+         Prefix x.prefix(1);
          if(!menu_name.empty()) {
             std::cout<<menu_name<<"\n\n";
          } else std::cout<<"Unknown\n\n";
+         
          if(menu_contents.size() > 1) {
             for(std::string content : menu_contents) {
                std::cout<<content<<"\n";
             }
          } else std::cout<<menu_contents[0]<<"\n";
+         
          if(!menu_description.empty()) {
             std::cout<<"\n"<<menu_description<<"\n\n";
          } else std::cout<<"\n";
@@ -130,14 +131,11 @@ void defn(const std::string param, const std::string input = "") {
    } else if(param == "information") {
       std::cout<<"Done\n\n";
    } else if(param == "input_prefix") {
-      Prefix input;
-      input.prefix(2);
+      Prefix x.prefix(2);
    } else if(param == "exit_prefix") {
-      Prefix ext;
-      ext.prefix(4);
+      Prefix x.prefix(4);
    } else if(param == "unavailable_option_prefix") {
-      Prefix unop;
-      unop.prefix(3);
+      Prefix x.prefix(3);
       std::cout<<BD<<R<<"Unavailable option '"<<input<<S<<"' \n\n";
    } else if(param == "newline") {
       std::cout<<"\n";
