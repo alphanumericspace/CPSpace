@@ -56,7 +56,7 @@ void defn(const std::string param, const std::string input = "") {
       std::cout<<BG<<"CPSPace Project"<<S<<"\n\nThis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n";
    } else if(param == "main_menu") {
       Menu main_menu;
-      main_menu.menu_name = "Main Menu";
+      //main_menu.menu_name = "Main Menu";
       main_menu.menu_contents = {
          "(1) Unit Converter",
          "(2) Information",
