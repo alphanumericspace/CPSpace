@@ -70,12 +70,11 @@ int main() {
                   case 0:
                      cli::def("exit");
                   case 99:
-                     return main();
+                     cli::def("main");
                   default:
                      cli::def("err_opt");
                      break;
                }
-               break;
             }
             break;
          case 2:
