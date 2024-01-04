@@ -34,7 +34,7 @@ void defn(const std::string param) {
       std::string name;
       std::vector<std::string> contents;
       std::string description;
-      void printMenu(void) {
+      void menu(void) {
          Prefix menu;
          menu.prefix(1);
          if(!name.empty()) {
@@ -64,7 +64,7 @@ void defn(const std::string param) {
          "(0) Exit Program"
       };
       main_menu.description = "Enter available options.";
-      main_menu.printMenu();
+      main_menu.menu();
    } else if(param == "unit_cvtr") {
       Menu unit_cvtr;
       unit_cvtr.name = "Unit Converter";
@@ -77,7 +77,7 @@ void defn(const std::string param) {
          "(0) Exit Program"
       };
       unit_cvtr.description = "Enter available options.";
-      unit_cvtr.printMenu();
+      unit_cvtr.menu();
    } else if(param == "length_units") {
       Menu length_units;
       length_units.name = "Length";
@@ -95,7 +95,7 @@ void defn(const std::string param) {
          "(0) Exit Program"
       };
       length_units.description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
-      length_units.printMenu();
+      length_units.menu();
    } else if(param == "area_units") {
       Menu area_units;
       area_units.name = "Area";
@@ -111,7 +111,7 @@ void defn(const std::string param) {
          "(0) Exit Program"
       };
       area_units.description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
-      area_units.printMenu();
+      area_units.menu();
    } else if(param == "volume_units") {
       Menu volume_units;
       volume_units.name = "Unit Converter";
@@ -125,7 +125,7 @@ void defn(const std::string param) {
          "(0) Exit Program"
       };
       volume_units.description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
-      volume_units.printMenu();
+      volume_units.menu();
    } else if(param == "information") {
       std::cout<<"Done\n\n";
    } else if(param == "input_prefix") {
