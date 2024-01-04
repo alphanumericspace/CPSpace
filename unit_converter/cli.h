@@ -67,10 +67,10 @@ void defn(const std::string param) {
       };
       main_menu.menu_description = "Enter available options.";
       main_menu.printMenu();
-   } else if(param == "unit_converter") {
-      Menu unit_converter;
-      unit_converter.menu_name = "Unit Converter";
-      unit_converter.menu_contents = {
+   } else if(param == "unit_cvtr") {
+      Menu unit_cvtr;
+      unit_cvtr.menu_name = "Unit Converter";
+      unit_cvtr.menu_contents = {
          "(1) Length       |  (2) Area",
          "(3) Volume       |  (4) Weight",
          "(5) Temperature  |  (6) Speed",
@@ -78,8 +78,8 @@ void defn(const std::string param) {
          "(9) Data Size    |  (-1) Previous",
          "(0) Exit Program"
       };
-      unit_converter.menu_description = "Enter available options.";
-      unit_converter.printMenu();
+      unit_cvtr.menu_description = "Enter available options.";
+      unit_cvtr.printMenu();
    } else if(param == "length_units") {
       Menu length_units;
       length_units.menu_name = "Length";
@@ -136,7 +136,7 @@ void defn(const std::string param) {
    } else if(param == "exit_prefix") {
       Prefix ext;
       ext.prefix(4);
-   } else if(param == "unavailable_option_prefix") {
+   } else if(param == "err_opt_prefix") {
       Prefix unop;
       unop.prefix(3);
       std::cout<<R<<"Unavailable option\n\n";
