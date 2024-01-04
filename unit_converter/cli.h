@@ -5,7 +5,7 @@ std::string R;
 std::string S;
 std::string BG;
 
-void defn(const std::string param, const std::string input = "") {
+void defn(const std::string param) {
    R = "\033[31m";
    S = "\033[0m";
    BG = "\033[48;5;15m\033[38;5;0m";
@@ -139,7 +139,7 @@ void defn(const std::string param, const std::string input = "") {
    } else if(param == "unavailable_option_prefix") {
       Prefix unop;
       unop.prefix(3);
-      std::cout<<R<<"Unavailable option '"<<input<<S<<"' \n\n";
+      std::cout<<R<<"Unavailable option\n\n";
    } else if(param == "newline") {
       std::cout<<"\n";
    } else {
