@@ -31,28 +31,25 @@ void prefix(const int key) {
 }
 
 void defn(const std::string param, const std::string input = "") {
-   
    struct Menu {
-   std::string menu_name;
-   std::vector<std::string> menu_contents;
-   std::string menu_description;
-   void printMenu(void) {
-      prefix(1);
-      if(!menu_name.empty()) {
-         std::cout<<menu_name<<"\n\n";
-      } else std::cout<<"Unknown\n\n";
-      
-      if(menu_contents.size() > 1) {
-         for(std::string content : menu_contents) {
-            std::cout<<content<<"\n";
-         }
-      } else std::cout<<menu_contents[0]<<"\n";
-      
-      if(!menu_description.empty()) {
+      std::string menu_name;
+      std::vector<std::string> menu_contents;
+      std::string menu_description;
+      void printMenu(void) {
+         prefix(1);
+         if(!menu_name.empty()) {
+            std::cout<<menu_name<<"\n\n";
+         } else std::cout<<"Unknown\n\n";
+         else if(menu_contents.size() > 1) {
+            for(std::string content : menu_contents) {
+               std::cout<<content<<"\n";
+            }
+         } else std::cout<<menu_contents[0]<<"\n";
+         else if(!menu_description.empty()) {
          std::cout<<"\n"<<menu_description<<"\n\n";
-      } else std::cout<<"\n";
-   }
-};
+         } else std::cout<<"\n";
+      }
+   };
    
    if(param == "main_header") {
       std::cout<<BG<<" CPSPace Project "<<S<<"\n\nThis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n";
