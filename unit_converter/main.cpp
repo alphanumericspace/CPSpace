@@ -14,7 +14,7 @@ int main() {
    std::cin>>mainMenu;
    cli::def("ln");
 	
-	while(!(mainMenu == 0)) {
+	do {
 	   switch(mainMenu) {
          case 1:
             cli::def("cvtr");
@@ -25,7 +25,7 @@ int main() {
          case 0:
             cli::def("exit");
       }
-	}
+	} while(mainMenu != 0);
 	return 0;
 	
 	/*while(input != "0") {
