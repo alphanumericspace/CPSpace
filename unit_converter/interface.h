@@ -49,7 +49,7 @@ void defn(const std::string param, const std::string input = "") {
          "(2) Information",
          "(0) Exit Program"
       };
-      main_menu.menu_description = "Enter available options.";
+      //main_menu.menu_description = "Enter available options.";
       main_menu.printMenu();
    } else if(param == "unit_converter") {
       Menu unit_converter;
