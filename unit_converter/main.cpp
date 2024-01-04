@@ -19,7 +19,7 @@ int main() {
       switch(mainMenu) {
          case 1:
             cli::def("cvtr");
-            int unitCvtr;
+            int unitCvtr = 2222;
                
             while(unitCvtr != 0 or unitCvtr != 99) {
                cli::def("input");
@@ -29,7 +29,7 @@ int main() {
                switch(unitCvtr) {
                   case 1:
                      cli::def("length");
-                     int lengthUnits;
+                     int lengthUnits = 2222;
                         
                      while(lengthUnits != 0 or lengthUnits != 99) {
                         cli::def("input");
@@ -50,7 +50,7 @@ int main() {
                      break;
                   case 2:
                      cli::def("area");
-                     int areaUnits;
+                     int areaUnits = 2222;
                      
                      while(areaUnits != 0 or areaUnits != 99) {
                         cli::def("input");
@@ -74,6 +74,7 @@ int main() {
                      break;
                   case 99:
                      cli::def("main");
+                     break;
                   default:
                      cli::def("err_opt");
                      break;
