@@ -31,13 +31,13 @@ int main() {
                         std::cin>>lengthUnit;
                         cli::def("ln");
                         switch(lengthUnit) {
-                           case -1:
+                           case 99:
                               cli::def("cvtr");
                               break;
                            case 0:
                               cli::def("exit");
                         }
-                     } while(lengthUnit != 0 || lengthUnit != -1);
+                     } while(lengthUnit != 0 || lengthUnit != 99);
                      break;
                   case 2:
                      cli::def("area");
@@ -47,21 +47,21 @@ int main() {
                         std::cin>>areaUnit;
                         cli::def("ln");
                         switch(lengthUnit) {
-                           case -1:
+                           case 99:
                               cli::def("cvtr");
                               break;
                            case 0:
                               cli::def("exit");
                         }
-                     } while(areaUnit != 0 || areaUnit != -1);
+                     } while(areaUnit != 0 || areaUnit != 99);
                      break;
-                  case -1:
+                  case 99:
                      cli::def("main");
                      break;
                   case 0:
                      cli::def("exit");
                }
-            } while(unitCvtr != 0 || unitCvtr != -1);
+            } while(unitCvtr != 0 || unitCvtr != 99);
             break;
          case 2:
             cli::def("info");
