@@ -50,7 +50,7 @@ int main() {
                      cli::def("input");
                      std::cin>>areaUnits;
                      cli::def("ln");
-                     while(areaUnits != 0 areaUnits != -1) {
+                     while(areaUnits != 0 || areaUnits != -1) {
                         switch(areaUnits) {
                            case 0:
                               cli::def("exit");
