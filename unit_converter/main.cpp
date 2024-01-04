@@ -19,20 +19,20 @@ int main() {
          case 1:
             cli::def("cvtr");
             int unitCvtr;
-            while(unitCvtr != 0) {
-               cli::def("input");
-               std::cin>>unitCvtr;
-               cli::def("ln");
+            cli::def("input");
+            std::cin>>unitCvtr;
+            cli::def("ln");
                
+            while(unitCvtr != 0 || unitCvtr != -1) {
                switch(unitCvtr) {
                   case 1:
                      cli::def("length");
                      int lengthUnits;
-                     while(lengthUnits != 0) {
-                        cli::def("input");
-                        std::cin>>lengthUnits;
-                        cli::def("ln");
+                     cli::def("input");
+                     std::cin>>lengthUnits;
+                     cli::def("ln");
                         
+                     while(lengthUnits != 0 || lengthUnits != -1) {
                         switch(lengthUnits) {
                            case 0:
                               cli::def("exit");
@@ -47,11 +47,10 @@ int main() {
                   case 2:
                      cli::def("area");
                      int areaUnits;
-                     while(areaUnits != 0) {
-                        cli::def("input");
-                        std::cin>>areaUnits;
-                        cli::def("ln");
-                        
+                     cli::def("input");
+                     std::cin>>areaUnits;
+                     cli::def("ln");
+                     while(areaUnits != 0 areaUnits != -1) {
                         switch(areaUnits) {
                            case 0:
                               cli::def("exit");
