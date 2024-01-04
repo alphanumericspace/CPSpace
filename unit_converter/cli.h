@@ -1,7 +1,7 @@
 #ifndef cli
 #define cli
 
-void def(std::string key, std::string input = nullptr) {
+void def(std::string key, std::string input = "") {
    struct Prefix {
       void highl(std::string icon) {
          std::cout<<"\033[48;5;15m\033[38;5;0m "<<icon<<" \033[0m ";
