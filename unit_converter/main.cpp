@@ -6,7 +6,7 @@
 #include "cli.h"
 
 int main() {
-   cli::defn("main_header");
+   cli::defn("header");
    cli::defn("main");
 	std::string input;
 	while(input != "0") {
