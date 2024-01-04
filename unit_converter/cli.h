@@ -3,7 +3,7 @@
 
 void defn(const std::string key) {
    struct Prefix {
-      std::string highl(const std::string icon) {
+      const std::string highl(const std::string icon) {
          return "\033[48;5;15m\033[38;5;0m "+icon+" \033[0m ";
       }
       void prefix(const int key) {
