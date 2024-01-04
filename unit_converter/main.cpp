@@ -10,7 +10,7 @@ int main() {
    cli::defn("main");
 	std::string input;
 	while(input != "0") {
-	   cli::defn("exit");
+	   cli::defn("input");
 		std::cin>>input;
 		cli::defn("line");
 		
@@ -19,7 +19,7 @@ int main() {
          
          std::string unit;
          while(unit != "-1") {
-            cli::defn("exit");
+            cli::defn("input");
             std::cin>>unit;
             cli::defn("line");
             
@@ -28,7 +28,7 @@ int main() {
                
                std::string len;
                while(len != "-1") {
-                  cli::defn("exit");
+                  cli::defn("input");
                   std::cin>>len;
                   cli::defn("line");
                   
@@ -48,7 +48,7 @@ int main() {
                
                std::string are;
                while(are != "-1") {
-                  cli::defn("exit");
+                  cli::defn("input");
                   std::cin>>are;
                   cli::defn("line");
                   
@@ -98,7 +98,7 @@ int main() {
          }
 		}
 		else if(input == "2") {
-         cli::defn("information");
+         cli::defn("info");
 		}
 		else if(input == "0") {
          cli::defn("exit");
