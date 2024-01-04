@@ -20,7 +20,7 @@ int main() {
             cli::def("cvtr");
             int unitCvtr;
                
-            while(unitCvtr != 0 or unitCvtr != -1) {
+            while(unitCvtr != 0 or unitCvtr != 99) {
                cli::def("input");
                std::cin>>unitCvtr;
                cli::def("ln");
@@ -30,14 +30,14 @@ int main() {
                      cli::def("length");
                      int lengthUnits;
                         
-                     while(lengthUnits != 0 or lengthUnits != -1) {
+                     while(lengthUnits != 0 or lengthUnits != 99) {
                         cli::def("input");
                         std::cin>>lengthUnits;
                         cli::def("ln");
                         switch(lengthUnits) {
                            case 0:
                               cli::def("exit");
-                           case -1:
+                           case 99:
                               cli::def("cvtr");
                               break;
                            default:
@@ -50,14 +50,14 @@ int main() {
                      cli::def("area");
                      int areaUnits;
                      
-                     while(areaUnits != 0 or areaUnits != -1) {
+                     while(areaUnits != 0 or areaUnits != 99) {
                         cli::def("input");
                         std::cin>>areaUnits;
                         cli::def("ln");
                         switch(areaUnits) {
                            case 0:
                               cli::def("exit");
-                           case -1:
+                           case 99:
                               cli::def("cvtr");
                               break;
                            default:
@@ -68,7 +68,7 @@ int main() {
                      break;
                   case 0:
                      cli::def("exit");
-                  case -1:
+                  case 99:
                      cli::def("main");
                      break;
                   default:
