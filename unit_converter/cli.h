@@ -1,11 +1,12 @@
 #ifndef cli
 #define cli
 
-void defn(const std::string param) {
+void defn(const std::string key) {
    struct Prefix {
+      std::string highl(std::string icon) {
+         return "\033[48;5;15m\033[38;5;0m "+icon+" \033[0m";
+      }
       void prefix(const int key) {
-         const std::string S = "\033[0m";
-         const std::string BG = "\033[48;5;15m\033[38;5;0m";
          switch(key) {
             case 1:
                std::cout<<BG<<" >> "<<S<<" ";
@@ -50,9 +51,9 @@ void defn(const std::string param) {
       }
    };
    
-   if(param == "main_header") {
+   if(key == "main_header") {
       std::cout<<"CPSPace Project\n\nThis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n";
-   } else if(param == "main") {
+   } else if(key == "main") {
       Menu main;
       main.name = "Main Menu";
       main.contents = {
@@ -62,7 +63,7 @@ void defn(const std::string param) {
       };
       main.description = "Enter available options.";
       main.menu();
-   } else if(param == "cvtr") {
+   } else if(key == "cvtr") {
       Menu cvtr;
       cvtr.name = "Unit Converter";
       cvtr.contents = {
@@ -75,7 +76,7 @@ void defn(const std::string param) {
       };
       cvtr.description = "Enter available options.";
       cvtr.menu();
-   } else if(param == "length") {
+   } else if(key == "length") {
       Menu length;
       length.name = "Length";
       length.contents = {
@@ -91,9 +92,9 @@ void defn(const std::string param) {
          "(19) Lunar Distance(ld)    |  (-1) Previous",
          "(0) Exit Program"
       };
-      length.description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
+      length.description = "Enter available options. Select one of the units that will be used as the conversion keyeter for all units.";
       length.menu();
-   } else if(param == "area") {
+   } else if(key == "area") {
       Menu area;
       area.name = "Area";
       area.contents = {
@@ -107,9 +108,9 @@ void defn(const std::string param) {
          "(15) Sq. Rod(rd2)        |   (-1) Previous",
          "(0) Exit Program"
       };
-      area.description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
+      area.description = "Enter available options. Select one of the units that will be used as the conversion keyeter for all units.";
       area.menu();
-   } else if(param == "volume") {
+   } else if(key == "volume") {
       Menu volume;
       volume.name = "Unit Converter";
       volume.contents = {
@@ -121,24 +122,24 @@ void defn(const std::string param) {
          "(9)     |  (-1) Previous",
          "(0) Exit Program"
       };
-      volume.description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
+      volume.description = "Enter available options. Select one of the units that will be used as the conversion keyeter for all units.";
       volume.menu();
-   } else if(param == "info") {
+   } else if(key == "info") {
       std::cout<<"Done\n\n";
-   } else if(param == "input") {
+   } else if(key == "input") {
       Prefix input;
       input.prefix(2);
-   } else if(param == "exit") {
+   } else if(key == "exit") {
       Prefix ext;
       ext.prefix(4);
-   } else if(param == "err_opt") {
+   } else if(key == "err_opt") {
       Prefix unop;
       unop.prefix(3);
       std::cout<<"Unavailable option\n\n";
-   } else if(param == "line") {
+   } else if(key == "line") {
       std::cout<<"\n";
    } else {
-      std::cout<<"Unavailable '"<<param<<"' parameter!\n\n";
+      std::cout<<"Unavailable '"<<key<<"' keyeter!\n\n";
       exit(0);
    }
 }
