@@ -10,7 +10,7 @@ int main() {
    interface::defn("main_menu");
 	std::string input;
 	while(input != "0") {
-	   interface::defn("input_header");
+	   interface::defn("input_prefix");
 		std::cin>>input;
 		interface::defn("newline");
 		
@@ -19,7 +19,7 @@ int main() {
          
          std::string unit;
          while(unit != "-1") {
-            interface::defn("input_header");
+            interface::defn("input_prefix");
             std::cin>>unit;
             interface::defn("newline");
             
@@ -28,7 +28,7 @@ int main() {
                
                std::string len;
                while(len != "-1") {
-                  interface::defn("input_header");
+                  interface::defn("input_prefix");
                   std::cin>>len;
                   interface::defn("newline");
                   
@@ -36,10 +36,10 @@ int main() {
                      interface::defn("unit_converter");
                   }
                   else if(len == "0") {
-                     interface::defn("exit_header");
+                     interface::defn("exit_prefix");
                   }
                   else {
-                     interface::defn("error_header", len);
+                     interface::defn("unavailable_option_prefix", len);
                      interface::defn("length_units");
                   }
                }
@@ -48,7 +48,7 @@ int main() {
                
                std::string are;
                while(are != "-1") {
-                  interface::defn("input_header");
+                  interface::defn("input_prefix");
                   std::cin>>are;
                   interface::defn("newline");
                   
@@ -56,10 +56,10 @@ int main() {
                      interface::defn("unit_converter");
                   }
                   else if(are == "0") {
-                     interface::defn("exit_header");
+                     interface::defn("exit_prefix");
                   }
                   else {
-                     interface::defn("error_header", are);
+                     interface::defn("unavailable_option_prefix", are);
                      interface::defn("length_units");
                   }
                }
@@ -89,10 +89,10 @@ int main() {
                interface::defn("main_menu");
             }
             else if(unit == "0") {
-               interface::defn("exit_header");
+               interface::defn("exit_prefix");
             }
             else {
-               interface::defn("error_header", unit);
+               interface::defn("unavailable_option_prefix", unit);
                interface::defn("unit_converter");
             }
          }
@@ -101,10 +101,10 @@ int main() {
          interface::defn("information");
 		}
 		else if(input == "0") {
-         interface::defn("exit_header");
+         interface::defn("exit_prefix");
 		}
 		else {
-         interface::defn("error_header", input);
+         interface::defn("unavailable_option_prefix", input);
 	      interface::defn("main_menu");
 		}
 	}
