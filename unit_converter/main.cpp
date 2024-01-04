@@ -25,7 +25,7 @@ int main() {
          case 0:
             cli::def("exit");
       }
-	} while(mainMenu != 0);
+	} while(mainMenu != 0)
 	
 	return 0;
 	
