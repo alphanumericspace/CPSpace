@@ -11,9 +11,8 @@ const std::string BG ("\033[48;5;15m\033[38;5;0m"); // Background white & teks b
 
 void defn(const std::string param, const std::string input = "") {
    struct Prefix {
-      int key;
-      void prefix(const int _key = key) {
-         switch(_key) {
+      void prefix(const int key) {
+         switch(key) {
             case 1:
                std::cout<<BG<<" >> "<<S<<" ";
                break;
@@ -27,8 +26,8 @@ void defn(const std::string param, const std::string input = "") {
                std::cout<<BG<<" <> "<<S<<" Exit Progam\n\n";
                exit(0);
             default:
-               std::string _key_ = std::to_string(_key);
-               std::cout<<BD<<R<<"Unavailable key"<<_key_<<S<<"\n\n";
+               std::string _key = std::to_string(key);
+               std::cout<<BD<<R<<"Unavailable key"<<_key<<S<<"\n\n";
                exit(0);
          }
       }
@@ -38,7 +37,8 @@ void defn(const std::string param, const std::string input = "") {
       std::vector<std::string> menu_contents;
       std::string menu_description;
       void printMenu(void) {
-         prefix(1);
+         Prefix menu;
+         menu.prefix(1);
          if(!menu_name.empty()) {
             std::cout<<menu_name<<"\n\n";
          } else std::cout<<"Unknown\n\n";
