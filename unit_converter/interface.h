@@ -36,6 +36,8 @@ struct Menu {
       }
       if(!menu_description.empty()) {
          std::cout<<"\n"<<menu_description<<"\n\n";
+      } else {
+         std::cout<<"\n\n";
       }
    }
 };
