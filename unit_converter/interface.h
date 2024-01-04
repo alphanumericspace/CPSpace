@@ -39,7 +39,7 @@ void defn(const std::string param, const std::string input = "") {
          prefix(1);
          if(!menu_name.empty()) {
             std::cout<<menu_name<<"\n\n";
-         } else {std::cout<<"Unknown\n\n";}
+         } {else std::cout<<"Unknown\n\n";}
          else if(menu_contents.size() > 1) {
             for(std::string content : menu_contents) {
                std::cout<<content<<"\n";
