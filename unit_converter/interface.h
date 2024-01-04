@@ -34,7 +34,7 @@ struct Menu {
       for(std::string content : menu_contents) {
          std::cout<<content<<"\n";
       }
-      if(!menu_description.empty()) {
+      if(!menu_description) {
          std::cout<<"\n"<<menu_description<<"\n\n";
       }
    }
