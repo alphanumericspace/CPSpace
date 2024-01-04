@@ -2,9 +2,6 @@
 #define cli
 
 void defn(const std::string param, const std::string input = "") {
-   const std::string B ("\033[34m");// Blue
-   const std::string G ("\033[32m"); // Green
-   const std::string C ("\033[36m"); // Cyan
    const std::string R ("\033[31m"); // Red
    const std::string S ("\033[0m"); // Reset
    const std::string BD ("\033[1m"); // Bold
@@ -12,13 +9,9 @@ void defn(const std::string param, const std::string input = "") {
    
    struct Prefix {
       void prefix(const int key) {
-         const std::string B ("\033[34m");// Blue
-         const std::string G ("\033[32m"); // Green
-         const std::string C ("\033[36m"); // Cyan
-         const std::string R ("\033[31m"); // Red
-         const std::string S ("\033[0m"); // Reset
-         const std::string BD ("\033[1m"); // Bold
-         const std::string BG ("\033[48;5;15m\033[38;5;0m"); // Background white & teks black
+         const std::string S (S); // Reset
+         const std::string BD (BD); // Bold
+         const std::string BG (BG); // Background white & teks black
          switch(key) {
             case 1:
                std::cout<<BG<<" >> "<<S<<" ";
