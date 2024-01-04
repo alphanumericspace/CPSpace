@@ -3,22 +3,22 @@
 
 void defn(const std::string key) {
    struct Prefix {
-      std::string highl(std::string icon) {
-         return "\033[48;5;15m\033[38;5;0m "+icon+" \033[0m";
+      std::string highl(const std::string icon) {
+         return "\033[48;5;15m\033[38;5;0m "+icon+" \033[0m ";
       }
       void prefix(const int key) {
          switch(key) {
             case 1:
-               std::cout<<BG<<" >> "<<S<<" ";
+               std::cout<<highl(">>");
                break;
             case 2:
-               std::cout<<BG<<" << "<<S<<" ";
+               std::cout<<highl("<<");
                break;
             case 3:
-               std::cout<<BG<<" !! "<<S<<" ";
+               std::cout<<highl("!!");
                break;
             case 4:
-               std::cout<<BG<<" <> "<<S<<" Exit Progam\n\n";
+               std::cout<<highl("<>")<<"Exit Progam\n\n";
                exit(0);
             default:
                std::string _key = std::to_string(key);
