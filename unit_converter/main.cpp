@@ -12,7 +12,7 @@ int main() {
 	while(input != "0") {
 	   cli::defn("input");
 		std::cin>>input;
-		cli::defn("line");
+		cli::defn("ln");
 		
 		if(input == "1") {
          cli::defn("cvtr");
@@ -21,7 +21,7 @@ int main() {
          while(unit != "-1") {
             cli::defn("input");
             std::cin>>unit;
-            cli::defn("line");
+            cli::defn("ln");
             
             if(unit == "1") {
                cli::defn("length");
@@ -30,7 +30,7 @@ int main() {
                while(len != "-1") {
                   cli::defn("input");
                   std::cin>>len;
-                  cli::defn("line");
+                  cli::defn("ln");
                   
                   if(len == "-1") {
                      cli::defn("cvtr");
@@ -50,7 +50,7 @@ int main() {
                while(are != "-1") {
                   cli::defn("input");
                   std::cin>>are;
-                  cli::defn("line");
+                  cli::defn("ln");
                   
                   if(are == "-1") {
                      cli::defn("cvtr");
