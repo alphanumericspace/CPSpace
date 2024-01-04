@@ -129,11 +129,14 @@ void defn(const std::string param, const std::string input = "") {
    } else if(param == "information") {
       std::cout<<"Done\n\n";
    } else if(param == "input_prefix") {
-      prefix(2);
+      Prefix input;
+      input.prefix(2);
    } else if(param == "exit_prefix") {
-      prefix(4);
+      Prefix ext;
+      ext.prefix(4);
    } else if(param == "unavailable_option_prefix") {
-      prefix(3);
+      Prefix unop;
+      unop.prefix(3);
       std::cout<<BD<<R<<"Unavailable option '"<<input<<S<<"' \n\n";
    } else if(param == "newline") {
       std::cout<<"\n";
