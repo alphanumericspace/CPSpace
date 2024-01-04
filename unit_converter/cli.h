@@ -139,7 +139,7 @@ const void def(const std::string key) {
    } else if(key == "ln") {
       std::cout<<"\n";
    } else {
-      std::cout<<"Unavailable '"<<key<<"' keyeter!\n\n";
+      std::cout<<"Unavailable '"<<key<<"' parameter!\n\n";
       exit(0);
    }
 }
