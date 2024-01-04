@@ -139,11 +139,11 @@ void defn(const std::string param) {
    } else if(param == "err_opt_prefix") {
       Prefix unop;
       unop.prefix(3);
-      std::cout<<R<<"Unavailable option\n\n";
+      std::cout<<"Unavailable option\n\n";
    } else if(param == "newline") {
       std::cout<<"\n";
    } else {
-      std::cout<<R<<"Unavailable '"<<param<<"' parameter!"<<S<<"\n\n";
+      std::cout<<"Unavailable '"<<param<<"' parameter!\n\n";
       exit(0);
    }
 }
