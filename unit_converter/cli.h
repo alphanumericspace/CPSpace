@@ -3,8 +3,8 @@
 
 void def(std::string key) {
    struct Prefix {
-      std::string highl(std::string icon) {
-         return "\033[48;5;15m\033[38;5;0m "+icon+" \033[0m ";
+      void highl(std::string icon) {
+         std::cout<<"\033[48;5;15m\033[38;5;0m "<<icon<<" \033[0m ";
       }
       void prefix(int key) {
          switch(key) {
@@ -32,7 +32,7 @@ void def(std::string key) {
       std::string name;
       std::vector<std::string> contents;
       std::string description;
-      void menu(void) {
+      void printMenu(void) {
          Prefix menu;
          menu.prefix(1);
          if(!name.empty()) {
@@ -62,7 +62,7 @@ void def(std::string key) {
          "(0) Exit Program"
       };
       main.description = "Enter available options.";
-      main.menu();
+      main.printMenu();
    } else if(key == "cvtr") {
       Menu cvtr;
       cvtr.name = "Unit Converter";
@@ -75,7 +75,7 @@ void def(std::string key) {
          "(0) Exit Program"
       };
       cvtr.description = "Enter available options.";
-      cvtr.menu();
+      cvtr.printMenu();
    } else if(key == "length") {
       Menu length;
       length.name = "Length";
@@ -93,7 +93,7 @@ void def(std::string key) {
          "(0) Exit Program"
       };
       length.description = "Enter available options. Select one of the units that will be used as the conversion keyeter for all units.";
-      length.menu();
+      length.printMenu();
    } else if(key == "area") {
       Menu area;
       area.name = "Area";
@@ -109,7 +109,7 @@ void def(std::string key) {
          "(0) Exit Program"
       };
       area.description = "Enter available options. Select one of the units that will be used as the conversion keyeter for all units.";
-      area.menu();
+      area.printMenu();
    } else if(key == "volume") {
       Menu volume;
       volume.name = "Unit Converter";
@@ -123,7 +123,7 @@ void def(std::string key) {
          "(0) Exit Program"
       };
       volume.description = "Enter available options. Select one of the units that will be used as the conversion keyeter for all units.";
-      volume.menu();
+      volume.printMenu();
    } else if(key == "info") {
       std::cout<<"Done\n\n";
    } else if(key == "input") {
