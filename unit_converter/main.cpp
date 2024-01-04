@@ -77,7 +77,6 @@ int main() {
             break;
       }
 	}
-	return 0;
 	
 	/*while(input != "0") {
 	   cli::def("input");
