@@ -128,17 +128,17 @@ void defn(const std::string param) {
       volume.menu();
    } else if(param == "information") {
       std::cout<<"Done\n\n";
-   } else if(param == "input_prefix") {
+   } else if(param == "exit") {
       Prefix input;
       input.prefix(2);
-   } else if(param == "exit_prefix") {
+   } else if(param == "exit") {
       Prefix ext;
       ext.prefix(4);
-   } else if(param == "err_opt_prefix") {
+   } else if(param == "err_opt") {
       Prefix unop;
       unop.prefix(3);
       std::cout<<"Unavailable option\n\n";
-   } else if(param == "newline") {
+   } else if(param == "line") {
       std::cout<<"\n";
    } else {
       std::cout<<"Unavailable '"<<param<<"' parameter!\n\n";
