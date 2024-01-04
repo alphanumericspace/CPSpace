@@ -15,30 +15,28 @@ struct Header {
    std::string color;
    std::string style = BD;
    std::string reset = S;
+   std::string printHeader() {
+      return std::cout<<style<<color<<name<<" "<<icon<<reset<<" ";
+   } 
 };
 
 struct Menu {
    std::string menu_name;
    std::vector<std::string> menu_contents;
    std::string menu_description;
-};
-
-void printHeader(Header det) {
-   std::cout<<det.style<<det.color<<det.name<<" "<<det.icon<<det.reset<<" ";
-}
-
-void printMenu(Menu det) {
-   Header head;
-   head.name = "HEAD";
-   head.icon = ">>";
-   head.color = G;
-   printHeader(head);
-   std::cout<<BG<<" "<<det.menu_name<<" "<<S<<"\n\n";
-   for(std::string content : det.menu_contents) {
-      std::cout<<content<<"\n";
+   std::string printMenu() {
+      Header head;
+      head.name = "HEAD";
+      head.icon = ">>";
+      head.color = G;
+      head.printHeader();
+      std::cout<<BG<<" "<<det.menu_name<<" "<<S<<"\n\n";
+      for(std::string content : det.menu_contents) {
+         std::cout<<content<<"\n";
+      }
+      return std::cout<<"\n"<<det.menu_description<<"\n\n";
    }
-   std::cout<<"\n"<<det.menu_description<<"\n\n";
-}
+};
 
 void defn(const std::string param, const std::string input = "") {
    if(param == "main_header") {
@@ -52,7 +50,7 @@ void defn(const std::string param, const std::string input = "") {
          "(0) Exit Program"
       };
       main_menu.menu_description = "Enter available options.";
-      printMenu(main_menu);
+      main_menu.printMenu();
    } else if(param == "unit_converter") {
       Menu unit_converter;
       unit_converter.menu_name = "Unit Converter";
@@ -65,7 +63,7 @@ void defn(const std::string param, const std::string input = "") {
          "(0) Exit Program"
       };
       unit_converter.menu_description = "Enter available options.";
-      printMenu(unit_converter);
+      unit_converter.printMenu();
    } else if(param == "length_units") {
       Menu length_units;
       length_units.menu_name = "Length";
@@ -83,7 +81,7 @@ void defn(const std::string param, const std::string input = "") {
          "(0) Exit Program"
       };
       length_units.menu_description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
-      printMenu(length_units);
+      length_units.printMenu();
    } else if(param == "area_units") {
       Menu area_units;
       area_units.menu_name = "Area";
@@ -99,7 +97,7 @@ void defn(const std::string param, const std::string input = "") {
          "(0) Exit Program"
       };
       area_units.menu_description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
-      printMenu(area_units);
+      area_units.printMenu();
    } else if(param == "volume_units") {
       Menu volume_units;
       volume_units.menu_name = "Unit Converter";
@@ -113,7 +111,7 @@ void defn(const std::string param, const std::string input = "") {
          "(0) Exit Program"
       };
       volume_units.menu_description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
-      printMenu(volume_units);
+      volume_units.printMenu();
    } else if(param == "information") {
       std::cout<<"Done\n\n";
    } else if(param == "input_header") {
@@ -121,13 +119,13 @@ void defn(const std::string param, const std::string input = "") {
       input.name = "INPUT";
       input.icon = "<<";
       input.color = B;
-      printHeader(input);
+      input.printHeader();
    } else if(param == "exit_header") {
       Header ext;
       ext.name = "EXIT";
       ext.icon = "<>";
       ext.color = C;
-      printHeader(ext);
+      ext.printHeader();
       std::cout<<BG<<" Exit Program "<<S<<"\n\n";
       exit(0);
    } else if(param == "error_header") {
@@ -135,7 +133,7 @@ void defn(const std::string param, const std::string input = "") {
       error.name = "ERROR";
       error.icon = "><";
       error.color = R;
-      printHeader(error);
+      error.printHeader();
       std::cout<<BG<<" Unavailable option '"<<input<<"' "<<S<<"\n\n";
    } else if(param == "newline") {
       std::cout<<"\n";
