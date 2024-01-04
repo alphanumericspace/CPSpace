@@ -34,11 +34,8 @@ struct Menu {
       for(std::string content : menu_contents) {
          std::cout<<content<<"\n";
       }
-      if(!menu_description.empty()) {
-         std::cout<<"\n"<<menu_description<<"\n\n";
-      } /*else {
-         std::cout<<"\n";
-      }*/
+      std::cout<<"\n"<<menu_description<<"\n\n";
+      }
    }
 };
 
