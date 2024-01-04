@@ -72,11 +72,13 @@ int main() {
             break;
          case 0:
             cli::def("exit");
+            break;
          default:
             cli::def("err_opt");
             break;
       }
 	}
+	return 0;
 	
 	/*while(input != "0") {
 	   cli::def("input");
