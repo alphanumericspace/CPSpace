@@ -38,6 +38,7 @@ int main() {
                               cli::def("exit");
                            case -1:
                               cli::def("cvtr");
+                              break;
                            default:
                               cli::def("err_opt");
                               break;
