@@ -9,35 +9,36 @@ const std::string S ("\033[0m"); // Reset
 const std::string BD ("\033[1m"); // Bold
 const std::string BG ("\033[48;5;15m\033[38;5;0m"); // Background white & teks black
 
-struct Header {
-   std::string name;
-   void printHeader(void) {
-      if(name == "HEAD") {
-         std::cout<<BD<<G<<name<<S<<" >> ";
-      } else if(name == "INPUT") {
-         std::cout<<BD<<B<<name<<S<<" << ";
-      } else if(name == "ERROR") {
-         std::cout<<BD<<R<<name<<S<<" >< ";
-      } else if(name == "EXIT") {
-         std::cout<<BD<<C<<name<<S<<" <> ";
-      } else {
-         std::cout<<BD<<R<<"Unavailable '"<<name<<"' parameter!"<<S<<"\n\n";
+void prefix(const int key) {
+   switch(key) {
+      case 1:
+         std::cout<<BG<<" >> "<<S<<" ";
+         break;
+      case 2:
+         std::cout<<BG<<" << "<<S<<" ";
+         break;
+      case 3:
+         std::cout<<BG<<" !! "<<S<<" ";
+         break;
+      case 4:
+         std::cout<<BG<<" <> "<<S<<" Exit Progam";
          exit(0);
-      }
-   } 
-};
+      default:
+         std::string _key = std::to_string(key);
+         std::cout<<BD<<R<<"Unavailable key"<<_key<<S<<"\n\n";
+         exit(0);
+   }
+}
 
 struct Menu {
    std::string menu_name;
    std::vector<std::string> menu_contents;
    std::string menu_description;
    void printMenu(void) {
-      Header head;
-      head.name = "HEAD";
-      head.printHeader();
+      prefix(1);
       if(!menu_name.empty()) {
          std::cout<<BG<<" "<<menu_name<<" "<<S<<"\n\n";
-      } else std::cout<<BG<<" Unknown "<<S<<"\n\n";
+      } else std::cout<<"Unknown\n\n";
       
       if(menu_contents.size() > 1) {
          for(std::string content : menu_contents) {
@@ -128,20 +129,12 @@ void defn(const std::string param, const std::string input = "") {
    } else if(param == "information") {
       std::cout<<"Done\n\n";
    } else if(param == "input_header") {
-      Header input;
-      input.name = "INPUT";
-      input.printHeader();
+      prefix(2);
    } else if(param == "exit_header") {
-      Header ext;
-      ext.name = "EXIT";
-      ext.printHeader();
-      std::cout<<BG<<" Exit Program "<<S<<"\n\n";
-      exit(0);
+      prefix(4);
    } else if(param == "error_header") {
-      Header error;
-      error.name = "ERROR";
-      error.printHeader();
-      std::cout<<BG<<" Unavailable option '"<<input<<"' "<<S<<"\n\n";
+      prefix(3);
+      std::cout<<BD<<R<<"Unavailable option '"<<input<<S<<"' \n\n";
    } else if(param == "newline") {
       std::cout<<"\n";
    } else {
