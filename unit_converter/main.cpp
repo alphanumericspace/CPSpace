@@ -61,6 +61,9 @@ int main() {
                      break;
                   case 0:
                      cli::def("exit");
+                  case -1:
+                     cli::def("main");
+                     break;
                   default:
                      cli::def("err_opt");
                      break;
