@@ -66,7 +66,7 @@ void defn(const std::string param, const std::string input = "") {
          "(9) Data Size    |  (-1) Previous",
          "(0) Exit Program"
       };
-      // unit_converter.menu_description = "Enter available options.";
+      unit_converter.menu_description = "Enter available options.";
       unit_converter.printMenu();
    } else if(param == "length_units") {
       Menu length_units;
