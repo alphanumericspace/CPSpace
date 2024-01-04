@@ -11,7 +11,7 @@ void defn(const std::string param, const std::string input = "") {
    const std::string BG ("\033[48;5;15m\033[38;5;0m"); // Background white & teks black
    
    struct Prefix {
-      int key;
+      void prefix(const int key) {
          switch(key) {
             case 1:
                std::cout<<BG<<" >> "<<S<<" ";
@@ -30,7 +30,7 @@ void defn(const std::string param, const std::string input = "") {
                std::cout<<BD<<R<<"Unavailable key"<<_key<<S<<"\n\n";
                exit(0);
          }
-      
+      }
    };
    
    struct Menu {
@@ -39,7 +39,7 @@ void defn(const std::string param, const std::string input = "") {
       std::string menu_description;
       void printMenu(void) {
          Prefix menu;
-         menu.key = 1;
+         menu.prefix(1);
          if(!menu_name.empty()) {
             std::cout<<menu_name<<"\n\n";
          } else std::cout<<"Unknown\n\n";
