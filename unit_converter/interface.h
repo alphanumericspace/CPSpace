@@ -9,25 +9,26 @@ void defn(const std::string param, const std::string input = "") {
    
    struct Prefix {
       void prefix(const int key) {
-         const std::string S (S); // Reset
-         const std::string BD (BD); // Bold
-         const std::string BG (BG); // Background white & teks black
+         const std::string RD (R); // Red
+         const std::string R (S); // Reset
+         const std::string BL (BD); // Bold
+         const std::string BF (BG); // Background white & teks black
          switch(key) {
             case 1:
-               std::cout<<BG<<" >> "<<S<<" ";
+               std::cout<<BF<<" >> "<<R<<" ";
                break;
             case 2:
-               std::cout<<BG<<" << "<<S<<" ";
+               std::cout<<BF<<" << "<<R<<" ";
                break;
             case 3:
-               std::cout<<BG<<" !! "<<S<<" ";
+               std::cout<<BF<<" !! "<<R<<" ";
                break;
             case 4:
-               std::cout<<BG<<" <> "<<S<<" Exit Progam\n\n";
+               std::cout<<BF<<" <> "<<R<<" Exit Progam\n\n";
                exit(0);
             default:
                std::string _key = std::to_string(key);
-               std::cout<<BD<<R<<"Unavailable key"<<_key<<S<<"\n\n";
+               std::cout<<BL<<RD<<"Unavailable key"<<_key<<R<<"\n\n";
                exit(0);
          }
       }
