@@ -9,85 +9,22 @@ int main() {
    cli::def("header");
    cli::def("main");
 	
-	int mainMenu = 2222;
+	int mainMenu;
 	
-	while(mainMenu != 0) {
+	while(mainMenu == 0) {
 	   cli::def("input");
       std::cin>>mainMenu;
       cli::def("ln");
       
       switch(mainMenu) {
          case 1:
-            cli::def("cvtr");
-            int unitCvtr = 2222;
-               
-            while(unitCvtr != 0 or unitCvtr != 99) {
-               cli::def("input");
-               std::cin>>unitCvtr;
-               cli::def("ln");
-               
-               switch(unitCvtr) {
-                  case 1:
-                     cli::def("length");
-                     int lengthUnits = 2222;
-                        
-                     while(lengthUnits != 0 or lengthUnits != 99) {
-                        cli::def("input");
-                        std::cin>>lengthUnits;
-                        cli::def("ln");
-                        switch(lengthUnits) {
-                           case 0:
-                              cli::def("exit");
-                              break;
-                           case 99:
-                              cli::def("cvtr");
-                              break;
-                           default:
-                              cli::def("err_opt");
-                              break;
-                        }
-                     }
-                     break;
-                  case 2:
-                     cli::def("area");
-                     int areaUnits = 2222;
-                     
-                     while(areaUnits != 0 or areaUnits != 99) {
-                        cli::def("input");
-                        std::cin>>areaUnits;
-                        cli::def("ln");
-                        switch(areaUnits) {
-                           case 0:
-                              cli::def("exit");
-                              break;
-                           case 99:
-                              cli::def("cvtr");
-                              break;
-                           default:
-                              cli::def("err_opt");
-                              break;
-                        }
-                     }
-                     break;
-                  case 0:
-                     cli::def("exit");
-                     break;
-                  case 99:
-                     cli::def("main");
-                     break;
-                  default:
-                     cli::def("err_opt");
-                     break;
-               }
-            }
+            std::cout<<"test\n\n";
+            break;
          case 2:
             cli::def("info");
             break;
          case 0:
             cli::def("exit");
-            break;
-         default:
-            cli::def("err_opt");
             break;
       }
 	}
