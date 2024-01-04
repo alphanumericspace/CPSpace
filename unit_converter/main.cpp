@@ -10,10 +10,11 @@ int main() {
    cli::def("main");
 	
 	int mainMenu;
-	while(mainMenu != 0) {
-      cli::def("input");
+	cli::def("input");
       std::cin>>mainMenu;
       cli::def("ln");
+	while(mainMenu != 0) {
+      
       
       switch(mainMenu) {
          case 1:
