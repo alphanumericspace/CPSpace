@@ -9,7 +9,7 @@ int main() {
    cli::defn("main_header");
    cli::defn("main_menu");
 	std::string input;
-	while(input != "0") {
+	/*while(input != "0") {
 	   cli::defn("input_prefix");
 		std::cin>>input;
 		cli::defn("newline");
@@ -107,6 +107,6 @@ int main() {
          cli::defn("unavailable_option_prefix", input);
 	      cli::defn("main_menu");
 		}
-	}
+	}*/
 	return 0;
 }
