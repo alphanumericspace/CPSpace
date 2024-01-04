@@ -40,7 +40,7 @@ int main() {
                      cli::def("exit");
                   }
                   else {
-                     cli::def("err_opt");
+                     cli::def("err_opt", length);
                      cli::def("length");
                   }
                }
@@ -60,7 +60,7 @@ int main() {
                      cli::def("exit");
                   }
                   else {
-                     cli::def("err_opt");
+                     cli::def("err_opt", area);
                      cli::def("length");
                   }
                }
@@ -93,7 +93,7 @@ int main() {
                cli::def("exit");
             }
             else {
-               cli::def("err_opt");
+               cli::def("err_opt", unitCvtr);
                cli::def("cvtr");
             }
          }
@@ -105,7 +105,7 @@ int main() {
          cli::def("exit");
 		}
 		else {
-         cli::def("err_opt");
+         cli::def("err_opt", input);
 	      cli::def("main");
 		}
 	}
