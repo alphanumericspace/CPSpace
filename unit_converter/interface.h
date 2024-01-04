@@ -5,11 +5,12 @@ std::string R;
 std::string S;
 std::string BG;
 
+void prefix(const int key);
+
 void defn(const std::string param, const std::string input = "") {
    R = "\033[31m";
    S = "\033[0m";
    BG = "\033[48;5;15m\033[38;5;0m";
-   struct Prefix {
       void prefix(const int key) {
          switch(key) {
             case 1:
@@ -30,7 +31,6 @@ void defn(const std::string param, const std::string input = "") {
                exit(0);
          }
       }
-   };
    
    struct Menu {
       std::string menu_name;
