@@ -24,7 +24,7 @@ void defn(const std::string param) {
                exit(0);
             default:
                std::string _key = std::to_string(key);
-               std::cout<<R<<"Unavailable key"<<_key<<S<<"\n\n";
+               std::cout<<"Unavailable key"<<_key<<"\n\n";
                exit(0);
          }
       }
