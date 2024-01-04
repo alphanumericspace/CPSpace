@@ -1,7 +1,7 @@
 #ifndef cli
 #define cli
 
-void def(std::string key) {
+void def(std::string key, std::string input="") {
    struct Prefix {
       void highl(std::string icon) {
          std::cout<<"\033[48;5;15m\033[38;5;0m "<<icon<<" \033[0m ";
@@ -136,7 +136,7 @@ void def(std::string key) {
    } else if(key == "err_opt") {
       Prefix unop;
       unop.prefix(3);
-      std::cout<<"Unavailable option\n\n";
+      std::cout<<"Unavailable option '"<<input<<"'\n\n";
    } else if(key == "ln") {
       std::cout<<"\n";
    } else {
