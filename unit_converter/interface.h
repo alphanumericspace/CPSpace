@@ -15,11 +15,11 @@ struct Header {
       if(name == "HEAD") {
          std::cout<<BD<<G<<name<<S<<" >> ";
       } else if(name == "INPUT") {
-         std::cout<<BD<<G<<name<<S<<" << ";
+         std::cout<<BD<<B<<name<<S<<" << ";
       } else if(name == "ERROR") {
-         std::cout<<BD<<G<<name<<S<<" >< ";
+         std::cout<<BD<<R<<name<<S<<" >< ";
       } else if(name == "EXIT") {
-         std::cout<<BD<<G<<name<<S<<" <> ";
+         std::cout<<BD<<C<<name<<S<<" <> ";
       } else {
          std::cout<<BD<<R<<"Unavailable '"<<name<<"' parameter!"<<S<<"\n\n";
          exit(0);
