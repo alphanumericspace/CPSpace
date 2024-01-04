@@ -58,9 +58,9 @@ void defn(const std::string param, const std::string input = "") {
       Menu main_menu;
       main_menu.menu_name = "Main Menu";
       main_menu.menu_contents = {
-         "(1) Unit Converter"/*,
+         "(1) Unit Converter",
          "(2) Information",
-         "(0) Exit Program"*/
+         "(0) Exit Program"
       };
       main_menu.menu_description = "Enter available options.";
       main_menu.printMenu();
