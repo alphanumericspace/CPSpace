@@ -9,7 +9,8 @@ const std::string S ("\033[0m"); // Reset
 const std::string BD ("\033[1m"); // Bold
 const std::string BG ("\033[48;5;15m\033[38;5;0m"); // Background white & teks black
 
-void prefix(const int key) {
+void defn(const std::string param, const std::string input = "") {
+   std::string prefix(const int key) {
    switch(key) {
       case 1:
          std::cout<<BG<<" >> "<<S<<" ";
@@ -29,8 +30,6 @@ void prefix(const int key) {
          exit(0);
    }
 }
-
-void defn(const std::string param, const std::string input = "") {
    struct Menu {
       std::string menu_name;
       std::vector<std::string> menu_contents;
