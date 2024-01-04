@@ -10,36 +10,36 @@ int main() {
    cli::defn("main");
 	std::string input;
 	while(input != "0") {
-	   cli::defn("input_prefix");
+	   cli::defn("exit");
 		std::cin>>input;
-		cli::defn("newline");
+		cli::defn("line");
 		
 		if(input == "1") {
          cli::defn("cvtr");
          
          std::string unit;
          while(unit != "-1") {
-            cli::defn("input_prefix");
+            cli::defn("exit");
             std::cin>>unit;
-            cli::defn("newline");
+            cli::defn("line");
             
             if(unit == "1") {
                cli::defn("length");
                
                std::string len;
                while(len != "-1") {
-                  cli::defn("input_prefix");
+                  cli::defn("exit");
                   std::cin>>len;
-                  cli::defn("newline");
+                  cli::defn("line");
                   
                   if(len == "-1") {
                      cli::defn("cvtr");
                   }
                   else if(len == "0") {
-                     cli::defn("exit_prefix");
+                     cli::defn("exit");
                   }
                   else {
-                     cli::defn("err_opt_prefix");
+                     cli::defn("err_opt");
                      cli::defn("length");
                   }
                }
@@ -48,18 +48,18 @@ int main() {
                
                std::string are;
                while(are != "-1") {
-                  cli::defn("input_prefix");
+                  cli::defn("exit");
                   std::cin>>are;
-                  cli::defn("newline");
+                  cli::defn("line");
                   
                   if(are == "-1") {
                      cli::defn("cvtr");
                   }
                   else if(are == "0") {
-                     cli::defn("exit_prefix");
+                     cli::defn("exit");
                   }
                   else {
-                     cli::defn("err_opt_prefix");
+                     cli::defn("err_opt");
                      cli::defn("length");
                   }
                }
@@ -89,10 +89,10 @@ int main() {
                cli::defn("main");
             }
             else if(unit == "0") {
-               cli::defn("exit_prefix");
+               cli::defn("exit");
             }
             else {
-               cli::defn("err_opt_prefix");
+               cli::defn("err_opt");
                cli::defn("cvtr");
             }
          }
@@ -101,10 +101,10 @@ int main() {
          cli::defn("information");
 		}
 		else if(input == "0") {
-         cli::defn("exit_prefix");
+         cli::defn("exit");
 		}
 		else {
-         cli::defn("err_opt_prefix");
+         cli::defn("err_opt");
 	      cli::defn("main");
 		}
 	}
