@@ -31,7 +31,7 @@ void defn(const std::string param, const std::string input = "") {
                exit(0);
          }
       }
-   }
+   };
    struct Menu {
       std::string menu_name;
       std::vector<std::string> menu_contents;
