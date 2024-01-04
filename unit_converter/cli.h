@@ -55,20 +55,20 @@ void defn(const std::string param) {
    
    if(param == "main_header") {
       std::cout<<BG<<" CPSPace Project "<<S<<"\n\nThis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n";
-   } else if(param == "main_menu") {
-      Menu main_menu;
-      main_menu.name = "Main Menu";
-      main_menu.contents = {
+   } else if(param == "main") {
+      Menu main;
+      main.name = "Main Menu";
+      main.contents = {
          "(1) Unit Converter",
          "(2) Information",
          "(0) Exit Program"
       };
-      main_menu.description = "Enter available options.";
-      main_menu.menu();
-   } else if(param == "unit_cvtr") {
-      Menu unit_cvtr;
-      unit_cvtr.name = "Unit Converter";
-      unit_cvtr.contents = {
+      main.description = "Enter available options.";
+      main.menu();
+   } else if(param == "cvtr") {
+      Menu cvtr;
+      cvtr.name = "Unit Converter";
+      cvtr.contents = {
          "(1) Length       |  (2) Area",
          "(3) Volume       |  (4) Weight",
          "(5) Temperature  |  (6) Speed",
@@ -76,12 +76,12 @@ void defn(const std::string param) {
          "(9) Data Size    |  (-1) Previous",
          "(0) Exit Program"
       };
-      unit_cvtr.description = "Enter available options.";
-      unit_cvtr.menu();
-   } else if(param == "length_units") {
-      Menu length_units;
-      length_units.name = "Length";
-      length_units.contents = {
+      cvtr.description = "Enter available options.";
+      cvtr.menu();
+   } else if(param == "length") {
+      Menu length;
+      length.name = "Length";
+      length.contents = {
          "(1) Kilometer(km)          |  (2) Hectometer(hm)",
          "(3) Decameter(dam)         |  (4) Meter(m)",
          "(5) Decimeter(dm)          |  (6) Centimeter(cm)",
@@ -94,12 +94,12 @@ void defn(const std::string param) {
          "(19) Lunar Distance(ld)    |  (-1) Previous",
          "(0) Exit Program"
       };
-      length_units.description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
-      length_units.menu();
-   } else if(param == "area_units") {
-      Menu area_units;
-      area_units.name = "Area";
-      area_units.contents = {
+      length.description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
+      length.menu();
+   } else if(param == "area") {
+      Menu area;
+      area.name = "Area";
+      area.contents = {
          "(1) Sq. Kilometer(km2)   |   (2) Sq. Hectometer(hm2)",
          "(3) Sq. Decameter(dam2)  |   (4) Sq. Meter(m2)",
          "(5) Sq. Decimeter(dm2)   |   (6) Sq. Centimeter(cm2)",
@@ -110,12 +110,12 @@ void defn(const std::string param) {
          "(15) Sq. Rod(rd2)        |   (-1) Previous",
          "(0) Exit Program"
       };
-      area_units.description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
-      area_units.menu();
-   } else if(param == "volume_units") {
-      Menu volume_units;
-      volume_units.name = "Unit Converter";
-      volume_units.contents = {
+      area.description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
+      area.menu();
+   } else if(param == "volume") {
+      Menu volume;
+      volume.name = "Unit Converter";
+      volume.contents = {
          "(1) Cb. Kilometer(m3)     |  (2) Cb. Hectometer(hm3)",
          "(3) Cb. Decameter(dam3)   |  (4) Cb. Meter(m3)",
          "(5) Cb. Decimeter(dm3)    |  (6) Cb. Centimeter(cm3)",
@@ -124,8 +124,8 @@ void defn(const std::string param) {
          "(9)     |  (-1) Previous",
          "(0) Exit Program"
       };
-      volume_units.description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
-      volume_units.menu();
+      volume.description = "Enter available options. Select one of the units that will be used as the conversion parameter for all units.";
+      volume.menu();
    } else if(param == "information") {
       std::cout<<"Done\n\n";
    } else if(param == "input_prefix") {
