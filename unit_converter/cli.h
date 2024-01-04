@@ -1,12 +1,12 @@
 #ifndef cli
 #define cli
 
-const void def(const std::string key) {
+void def(std::string key) {
    struct Prefix {
-      const std::string highl(const std::string icon) {
+      std::string highl(std::string icon) {
          return "\033[48;5;15m\033[38;5;0m "+icon+" \033[0m ";
       }
-      const void prefix(const int key) {
+      void prefix(int key) {
          switch(key) {
             case 1:
                std::cout<<highl(">>");
