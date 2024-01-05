@@ -1,8 +1,8 @@
 #ifndef cli
 #define cli
 
-const std::string highl(const std::string key) {
-   return std::cout<<"\033[48;5;15m\033[38;5;0m "<<key<<" \033[0m ";
+const void highl(const std::string key) {
+   std::cout<<"\033[48;5;15m\033[38;5;0m "<<key<<" \033[0m ";
 }
 
 const std::string prefix(const std::string key) {
