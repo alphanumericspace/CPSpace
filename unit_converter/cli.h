@@ -4,7 +4,7 @@
 const void def(const std::string key, const std::string input = "") {
    struct Prefix {
       std::string highl(std::string icon) {
-         return "\033[48;5;15m\033[38;5;0m "+icon+" \033[0m ";
+         std::cout<<"\033[48;5;15m\033[38;5;0m "<<icon<<" \033[0m ";
       }
       std::string prefix(std::string _key) {
          if(_key == "head") return highl(">>");
