@@ -6,16 +6,16 @@ const void def(const std::string key, const std::string input = "") {
       std::string highl(std::string icon) {
          return "\033[48;5;15m\033[38;5;0m "+icon+" \033[0m ";
       }
-      std::string prefix(std::string key) {
-         if(key == "head") return std::cout<<highl(">>");
-         if(key == "input") return std::cout<<highl("<<");
-         if(key == "error") return std::cout<<highl("!!");
-         if(key == "exit") {
+      std::string prefix(std::string _key) {
+         if(_key == "head") return std::cout<<highl(">>");
+         if(_key == "input") return std::cout<<highl("<<");
+         if(_key == "error") return std::cout<<highl("!!");
+         if(_key == "exit") {
             std::cout<<highl("<>");
             std::cout<<"Exit Program\n\n";
             return 0;
          }
-         std::cout<<"Unavailable key"<<key<<"\n\n";
+         std::cout<<"Unavailable key"<<_key<<"\n\n";
          return 0;
       }
    };
