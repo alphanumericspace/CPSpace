@@ -1,7 +1,7 @@
 #ifndef cli
 #define cli
 
-const void highl(const std::string key) {
+const void highl(std::string key) {
    std::cout<<"\033[48;5;15m\033[38;5;0m "<<key<<" \033[0m ";
 }
 
