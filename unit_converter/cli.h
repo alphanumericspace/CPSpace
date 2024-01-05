@@ -5,7 +5,7 @@ void highl(std::string key) {
    std::cout<<"\033[48;5;15m\033[38;5;0m "<<key<<" \033[0m ";
 }
 
-const std::string prefix(const std::string key) {
+std::string prefix(const std::string key) {
    if(key == "head") return highl(">>");
    if(key == "input") return highl("<<");
    if(key == "error") return highl("!!");
