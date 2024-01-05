@@ -6,18 +6,6 @@ const void def(const std::string key, const std::string input = "") {
       std::string highl(std::string icon) {
          std::cout<<"\033[48;5;15m\033[38;5;0m "<<icon<<" \033[0m ";
       }
-      std::string prefix(std::string _key) {
-         if(_key == "head") return highl(">>");
-         if(_key == "input") return highl("<<");
-         if(_key == "error") return highl("!!");
-         if(_key == "exit") {
-            highl("<>");
-            std::cout<<"Exit Program\n\n";
-            exit(0);
-         }
-         std::cout<<"Unavailable key"<<_key<<"\n\n";
-         exit(0);
-      }
    };
    
    struct Menu {
