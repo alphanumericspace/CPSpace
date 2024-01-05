@@ -1,46 +1,24 @@
 #ifndef cli
 #define cli
 
-void highl(std::string key) {
-   std::cout<<"\033[48;5;15m\033[38;5;0m "<<key<<" \033[0m ";
-}
-
-void prefix(std::string key) {
-   if(key == "head") highl(">>");
-   if(key == "input") highl("<<");
-   if(key == "error") highl("!!");
-   if(key == "exit") highl("<>");
-   std::cout<<"Unavailable key"<<key<<"\n\n";
-   exit(0);
-}
-
 const void def(const std::string key, const std::string input = "") {
-   /*struct Prefix {
+   struct Prefix {
       void highl(std::string icon) {
          std::cout<<"\033[48;5;15m\033[38;5;0m "<<icon<<" \033[0m ";
       }
-      void prefix(int key) {
-         switch(key) {
-            case 1:
-               highl(">>");
-               break;
-            case 2:
-               highl("<<");
-               break;
-            case 3:
-               highl("!!");
-               break;
-            case 4:
-               highl("<>");
-               std::cout<<"Exit Program\n\n";
-               exit(0);
-            default:
-               std::string _key = std::to_string(key);
-               std::cout<<"Unavailable key"<<_key<<"\n\n";
-               exit(0);
+      std::string prefix(std::string key) {
+         if(key == "head") return highl(">>");
+         if(key == "input") return highl("<<");
+         if(key == "error") return highl("!!");
+         if(key == "exit") {
+            highl("<>");
+            std::cout<<"Exit Program\n\n";
+            return 0;
          }
+         std::cout<<"Unavailable key"<<key<<"\n\n";
+         return 0;
       }
-   };*/
+   };
    
    struct Menu {
       std::string name;
