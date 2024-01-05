@@ -13,10 +13,10 @@ const void def(const std::string key, const std::string input = "") {
          if(_key == "exit") {
             highl("<>");
             std::cout<<"Exit Program\n\n";
-            return 0;
+            exit(0);
          }
          std::cout<<"Unavailable key"<<_key<<"\n\n";
-         return 0;
+         exit(0);
       }
    };
    
