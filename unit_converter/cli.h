@@ -5,11 +5,11 @@ void highl(std::string key) {
    std::cout<<"\033[48;5;15m\033[38;5;0m "<<key<<" \033[0m ";
 }
 
-std::string prefix(std::string key) {
-   if(key == "head") return highl(">>");
-   if(key == "input") return highl("<<");
-   if(key == "error") return highl("!!");
-   if(key == "exit") return highl("<>");
+void prefix(std::string key) {
+   if(key == "head") highl(">>");
+   if(key == "input") highl("<<");
+   if(key == "error") highl("!!");
+   if(key == "exit") highl("<>");
    std::cout<<"Unavailable key"<<key<<"\n\n";
    exit(0);
 }
