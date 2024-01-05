@@ -3,15 +3,15 @@
 
 const void def(const std::string key, const std::string input = "") {
    struct Prefix {
-      void highl(std::string icon) {
-         std::cout<<"\033[48;5;15m\033[38;5;0m "<<icon<<" \033[0m ";
+      std::string highl(std::string icon) {
+         return "\033[48;5;15m\033[38;5;0m "+icon+" \033[0m ";
       }
       std::string prefix(std::string key) {
-         if(key == "head") return highl(">>");
-         if(key == "input") return highl("<<");
-         if(key == "error") return highl("!!");
+         if(key == "head") return std::cout<<highl(">>");
+         if(key == "input") return std::cout<<highl("<<");
+         if(key == "error") return std::cout<<highl("!!");
          if(key == "exit") {
-            highl("<>");
+            std::cout<<highl("<>");
             std::cout<<"Exit Program\n\n";
             return 0;
          }
