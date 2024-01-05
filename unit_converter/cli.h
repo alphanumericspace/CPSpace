@@ -11,7 +11,7 @@ const std::string prefix(const std::string key) {
    if(key == "error") return highl("!!");
    if(key == "exit") return highl("<>");
    std::cout<<"Unavailable key"<<key<<"\n\n";
-   return exit(0);
+   exit(0);
 }
 
 const void def(const std::string key, const std::string input = "") {
