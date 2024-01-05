@@ -1,8 +1,21 @@
 #ifndef cli
 #define cli
 
+const std::string highl(const std::string key) {
+   return std::cout<<"\033[48;5;15m\033[38;5;0m "<<key<<" \033[0m ";
+}
+
+const std::string prefix(const std::string key) {
+   if(key == "head") return highl(">>");
+   if(key == "input") return highl("<<");
+   if(key == "error") return highl("!!");
+   if(key == "exit") return highl("<>");
+   std::cout<<"Unavailable key"<<key<<"\n\n";
+   return exit(0);
+}
+
 const void def(const std::string key, const std::string input = "") {
-   struct Prefix {
+   /*struct Prefix {
       void highl(std::string icon) {
          std::cout<<"\033[48;5;15m\033[38;5;0m "<<icon<<" \033[0m ";
       }
@@ -27,7 +40,7 @@ const void def(const std::string key, const std::string input = "") {
                exit(0);
          }
       }
-   };
+   };*/
    
    struct Menu {
       std::string name;
