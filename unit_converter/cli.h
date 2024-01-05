@@ -25,7 +25,8 @@ const void def(const std::string key, const std::string input = "") {
       std::vector<std::string> contents;
       std::string description;
       void printMenu(void) {
-         prefix("head");
+         Prefix menu;
+         menu.prefix("head");
          if(!name.empty()) {
             std::cout<<name<<"\n\n";
          } else std::cout<<"Unknown\n\n";
@@ -118,11 +119,14 @@ const void def(const std::string key, const std::string input = "") {
    } else if(key == "info") {
       std::cout<<"Done\n\n";
    } else if(key == "input") {
-      prefix("input");
+      Prefix input;
+      input.prefix("input");
    } else if(key == "exit") {
-      prefix("exit");
+      Prefix ext;
+      ext.prefix("exit");
    } else if(key == "err_opt") {
-      prefix("error");
+      Prefix error;
+      error.prefix("error");
       std::cout<<"Unavailable option '"<<input<<"'\n\n";
    } else if(key == "ln") {
       std::cout<<"\n";
