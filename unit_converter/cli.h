@@ -26,8 +26,8 @@ void def(std::string key) {
    
    if(key == "main") {
       List cvtr;
-      cvtr.name = "Main Menu";
-      cvtr.list = {
+      cvtr.head = "Main Menu";
+      cvtr.lists = {
          "(1) Length       |  (2) Area",
          "(3) Volume       |  (4) Weight",
          "(5) Temperature  |  (6) Speed",
@@ -38,8 +38,8 @@ void def(std::string key) {
       cvtr.print(true);
    } else if(key == "length") {
       List length;
-      length.name = "Length";
-      length.list = {
+      length.head = "Length";
+      length.lists = {
          "(1) Kilometer(km)          |  (2) Hectometer(hm)",
          "(3) Decameter(dam)         |  (4) Meter(m)",
          "(5) Decimeter(dm)          |  (6) Centimeter(cm)",
@@ -56,8 +56,8 @@ void def(std::string key) {
       length.print(true);
    } else if(key == "area") {
       List area;
-      area.name = "Area";
-      area.list = {
+      area.head = "Area";
+      area.lists = {
          "(1) Sq. Kilometer(km2)   |   (2) Sq. Hectometer(hm2)",
          "(3) Sq. Decameter(dam2)  |   (4) Sq. Meter(m2)",
          "(5) Sq. Decimeter(dm2)   |   (6) Sq. Centimeter(cm2)",
@@ -72,8 +72,8 @@ void def(std::string key) {
       area.print(true);
    } else if(key == "volume") {
       List volume;
-      volume.name = "Unit Converter";
-      volume.list = {
+      volume.head = "Unit Converter";
+      volume.lists = {
          "(1) Cb. Kilometer(m3)     |  (2) Cb. Hectometer(hm3)",
          "(3) Cb. Decameter(dam3)   |  (4) Cb. Meter(m3)",
          "(5) Cb. Decimeter(dm3)    |  (6) Cb. Centimeter(cm3)",
