@@ -52,7 +52,7 @@ void def(std::string key) {
          "(19) Lunar Distance(ld)    |  (-1) Previous",
          "(0) Exit Program"
       };
-      length.desc = "Select one of the units that will be used as the conversion keyeter for all units.";
+      length.desc = "Select one of the units that will be used as the conversion keyeter for all units";
       length.print(true);
    } else if(key == "area") {
       List area;
@@ -82,7 +82,7 @@ void def(std::string key) {
          "(9)     |  (-1) Previous",
          "(0) Exit Program"
       };
-      volume.desc = "Select one of the units that will be used as the conversion keyeter for all units.";
+      volume.desc = "Select one of the units that will be used as the conversion keyeter for all units";
       volume.print(true);
    } else exit(0);
 }
