@@ -34,7 +34,7 @@ void def(std::string key) {
          "(7) Pressure     |  (8) Power",
          "(9) Data Size    |  (0) Exit Program"
       };
-      cvtr.desc = "Enter a choice from one of the available unit options above.";
+      cvtr.desc = "Enter a choice from one of the available unit options";
       cvtr.print(true);
    } else if(key == "length") {
       List length;
