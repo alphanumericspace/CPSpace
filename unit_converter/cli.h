@@ -1,65 +1,45 @@
 #ifndef cli
 #define cli
 
-const void def(const std::string key, const std::string input = "") {
-   struct Prefix {
-      std::string highl(std::string icon) {
-         std::cout<<"\033[48;5;15m\033[38;5;0m "<<icon<<" \033[0m ";
-      }
-   };
-   
-   struct Menu {
-      std::string name;
-      std::vector<std::string> contents;
-      std::string description;
-      void printMenu(void) {
-         Prefix menu;
-         menu.prefix("head");
-         if(!name.empty()) {
-            std::cout<<name<<"\n\n";
-         } else std::cout<<"Unknown\n\n";
-         
-         if(contents.size() > 1) {
-            for(std::string content : contents) {
-               std::cout<<content<<"\n";
+void def(std::string key) {
+   struct List {
+      std::string head;
+      std::vector<std::string> lists;
+      std::string desc;
+      
+      void print(bool isWithDescription) {
+         if(isWithDescription == true) {
+            std::cout<<head<"\n\n";
+            for(std::string list : lists) {
+               std::cout<<list<<"\n";
             }
-         } else std::cout<<contents[0]<<"\n";
-         
-         if(!description.empty()) {
-            std::cout<<"\n"<<description<<"\n\n";
-         } else std::cout<<"\n";
+            std::cout<<"\n"<<desc<<"\n\n";
+         } else {
+            std::cout<<head<"\n\n";
+            for(std::string list : lists) {
+               std::cout<<list<<"\n";
+            }
+            std::cout<<"\n";
+         }
       }
    };
    
-   if(key == "header") {
-      std::cout<<"CPSPace Project\n\nThis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n";
-   } else if(key == "main") {
-      Menu main;
-      main.name = "Main Menu";
-      main.contents = {
-         "(1) Unit Converter",
-         "(2) Information",
-         "(0) Exit Program"
-      };
-      main.description = "Enter available options.";
-      main.printMenu();
-   } else if(key == "cvtr") {
-      Menu cvtr;
-      cvtr.name = "Unit Converter";
-      cvtr.contents = {
+   if(key == "main") {
+      List cvtr;
+      cvtr.name = "Main Menu";
+      cvtr.list = {
          "(1) Length       |  (2) Area",
          "(3) Volume       |  (4) Weight",
          "(5) Temperature  |  (6) Speed",
          "(7) Pressure     |  (8) Power",
-         "(9) Data Size    |  (-1) Previous",
-         "(0) Exit Program"
+         "(9) Data Size    |  (0) Exit Program"
       };
-      cvtr.description = "Enter available options.";
-      cvtr.printMenu();
+      cvtr.desc = "Enter a choice from one of the available unit options above.";
+      cvtr.print(true);
    } else if(key == "length") {
-      Menu length;
+      List length;
       length.name = "Length";
-      length.contents = {
+      length.list = {
          "(1) Kilometer(km)          |  (2) Hectometer(hm)",
          "(3) Decameter(dam)         |  (4) Meter(m)",
          "(5) Decimeter(dm)          |  (6) Centimeter(cm)",
@@ -72,12 +52,12 @@ const void def(const std::string key, const std::string input = "") {
          "(19) Lunar Distance(ld)    |  (-1) Previous",
          "(0) Exit Program"
       };
-      length.description = "Enter available options. Select one of the units that will be used as the conversion keyeter for all units.";
-      length.printMenu();
+      length.desc = "Select one of the units that will be used as the conversion keyeter for all units.";
+      length.print(true);
    } else if(key == "area") {
-      Menu area;
+      List area;
       area.name = "Area";
-      area.contents = {
+      area.list = {
          "(1) Sq. Kilometer(km2)   |   (2) Sq. Hectometer(hm2)",
          "(3) Sq. Decameter(dam2)  |   (4) Sq. Meter(m2)",
          "(5) Sq. Decimeter(dm2)   |   (6) Sq. Centimeter(cm2)",
@@ -88,12 +68,12 @@ const void def(const std::string key, const std::string input = "") {
          "(15) Sq. Rod(rd2)        |   (-1) Previous",
          "(0) Exit Program"
       };
-      area.description = "Enter available options. Select one of the units that will be used as the conversion keyeter for all units.";
-      area.printMenu();
+      area.desc = "Select one of the units that will be used as the conversion keyeter for all units.";
+      area.print(true);
    } else if(key == "volume") {
-      Menu volume;
+      List volume;
       volume.name = "Unit Converter";
-      volume.contents = {
+      volume.list = {
          "(1) Cb. Kilometer(m3)     |  (2) Cb. Hectometer(hm3)",
          "(3) Cb. Decameter(dam3)   |  (4) Cb. Meter(m3)",
          "(5) Cb. Decimeter(dm3)    |  (6) Cb. Centimeter(cm3)",
@@ -102,26 +82,9 @@ const void def(const std::string key, const std::string input = "") {
          "(9)     |  (-1) Previous",
          "(0) Exit Program"
       };
-      volume.description = "Enter available options. Select one of the units that will be used as the conversion keyeter for all units.";
-      volume.printMenu();
-   } else if(key == "info") {
-      std::cout<<"Done\n\n";
-   } else if(key == "input") {
-      Prefix input;
-      input.prefix("input");
-   } else if(key == "exit") {
-      Prefix ext;
-      ext.prefix("exit");
-   } else if(key == "err_opt") {
-      Prefix error;
-      error.prefix("error");
-      std::cout<<"Unavailable option '"<<input<<"'\n\n";
-   } else if(key == "ln") {
-      std::cout<<"\n";
-   } else {
-      std::cout<<"Unavailable '"<<key<<"' parameter!\n\n";
-      exit(0);
-   }
+      volume.desc = "Select one of the units that will be used as the conversion keyeter for all units.";
+      volume.print(true);
+   } else exit(0);
 }
 
 #endif
