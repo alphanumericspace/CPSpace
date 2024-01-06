@@ -9,7 +9,7 @@ void def(std::string key) {
       
       void print(bool isWithDescription) {
          if(isWithDescription == true) {
-            std::cout<<head<"\n\n";
+            std::cout<<head<<"\n\n";
             for(std::string list : lists) {
                std::cout<<list<<"\n";
             }
