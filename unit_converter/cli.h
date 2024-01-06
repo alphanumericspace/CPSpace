@@ -1,25 +1,25 @@
 #ifndef cli
 #define cli
 
-void def(string key) {
+void def(std::string key) {
    struct List {
-      string head;
-      vector<string> lists;
-      string desc;
+      std::string head;
+      std::vector<std::string> lists;
+      std::string desc;
       
       void print(bool isWithDescription) {
          if(isWithDescription == true) {
-            cout<<head<<"\n\n";
-            for(string list : lists) {
-               cout<<list<<"\n";
+            std::cout<<head<<"\n\n";
+            for(std::string list : lists) {
+               std::cout<<list<<"\n";
             }
-            cout<<"\n"<<desc<<"\n\n";
+            std::cout<<"\n"<<desc<<"\n\n";
          } else {
-            cout<<head<<"\n\n";
-            for(string list : lists) {
-               cout<<list<<"\n";
+            std::cout<<head<<"\n\n";
+            for(std::string list : lists) {
+               std::cout<<list<<"\n";
             }
-            cout<<"\n";
+            std::cout<<"\n";
          }
       }
    };
