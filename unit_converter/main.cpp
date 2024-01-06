@@ -6,7 +6,7 @@
 #include "cli.h"
 
 int main() {
-   cli::def("header");
+   std::cout<<"CPSPace Project\n\nThis tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n";
    cli::def("main");
    
    std::string input;
