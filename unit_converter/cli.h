@@ -103,8 +103,8 @@ void def(std::string key, std::string opt="") {
          "(13) Quarter(qtr)         |  (14) Stone(st)",
          "(15) Pound(lb)            |  (16) Ounce(oz)",
          "(17) Dram(dr)             |  (18) Grain(grn)",
-         "(19) Troy Pound(lb t)     | (20) Troy Ounce(oz t)",
-         "(21) Pennyweight(dwt)     | (-1) Previous",
+         "(19) Troy Pound(lb t)     |  (20) Troy Ounce(oz t)",
+         "(21) Pennyweight(dwt)     |  (-1) Previous",
          "(0) Exit Program"
       };
       weight.desc = "Select one of the units that will\nbe used as the conversion keyeter for all units";
