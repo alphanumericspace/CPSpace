@@ -32,7 +32,7 @@ void def(std::string key) {
          "(3) Volume       |  (4) Weight",
          "(5) Temperature  |  (6) Speed",
          "(7) Pressure     |  (8) Power",
-         "(9) Data Size    |  (0) Exit Program"
+         "(9) Data Size    |  (0/exit) Exit Program"
       };
       cvtr.desc = "Enter available options";
       cvtr.print(true);
@@ -50,7 +50,7 @@ void def(std::string key) {
          "(15) Nautical Mile(nm)     |  (16) Light Year(ly)",
          "(17) Astronomical Unit(au) |  (18) Parsec(pc)",
          "(19) Lunar Distance(ld)    |  (-1) Previous",
-         "(0) Exit Program"
+         "(0/exit) Exit Program"
       };
       length.desc = "Select one of the units that will be used as the conversion keyeter for all units";
       length.print(true);
@@ -66,7 +66,7 @@ void def(std::string key) {
          "(11) Sq. Mile(mi2)       |   (12) Sq. Yard(yd2)",
          "(13) Sq. Foot(ft2)       |   (14) Sq. Inch(in2)",
          "(15) Sq. Rod(rd2)        |   (-1) Previous",
-         "(0) Exit Program"
+         "(0/exit) Exit Program"
       };
       area.desc = "Select one of the units that will be used as the conversion keyeter for all units.";
       area.print(true);
@@ -80,7 +80,7 @@ void def(std::string key) {
          "(7) Cb. Millimeter(m3)    |  (8) Kiloliter(kl)",
          "(8) Hectoliter(hl)",
          "(9)     |  (-1) Previous",
-         "(0) Exit Program"
+         "(0/exit) Exit Program"
       };
       volume.desc = "Select one of the units that will be used as the conversion keyeter for all units";
       volume.print(true);
