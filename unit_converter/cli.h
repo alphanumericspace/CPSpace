@@ -97,7 +97,7 @@ void def(std::string key, std::string opt="") {
          "(1) Gigatonne(Gt)         |  (2) Megatonne(Mt)",
          "(3) Tonne(t)              |  (4) Kilogram(kg)",
          "(5) Gram(gr)              |  (6) Milligram(mg)",
-         "(7) Microgram(um)         |  (8) Nanogram(ng)",
+         "(7) Microgram(μg)         |  (8) Nanogram(ng)",
          "(9) Picogram(pg)          |  (10) UK Ton(t)",
          "(11) US Ton(t)            |  (12) Hundredweight(cwt)",
          "(13) Quarter(qtr)         |  (14) Stone(st)",
