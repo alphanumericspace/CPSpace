@@ -140,7 +140,7 @@ void def(std::string key, std::string opt="") {
       std::cout<<"Exit Program...\n\n";
       exit(0);
    }
-   else std::cout<<"\nInvlaid key '"<<key<<"'\n\n";
+   else std::cout<<"Invlaid key '"<<key<<"'\n\n";
 }
 
 #endif
