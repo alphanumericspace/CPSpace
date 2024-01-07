@@ -84,9 +84,10 @@ void def(std::string key) {
       };
       volume.desc = "Select one of the units that will be used as the conversion keyeter for all units";
       volume.print(true);
-   } else if(key == "cin") {
-      std::cout<<"Enter options: ";
-   } else std::cout<<"\nInvlaid key '"<<key<<"'\n\n";
+   }
+   else if(key == "in") std::cout<<"Enter options: ";
+   else if(key == "ln") std::cout<<"\n"; 
+   else std::cout<<"\nInvlaid key '"<<key<<"'\n\n";
 }
 
 #endif
