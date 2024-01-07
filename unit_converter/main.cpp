@@ -27,7 +27,7 @@ int main() {
             def("ln");
             if(length == "0") def("exit");
             else def("unav", length);
-         } while(length != "-1")
+         } while(length != "-1");
          def("main");
       } else if(main == "2") {
          def("area");
@@ -38,7 +38,7 @@ int main() {
             def("ln");
             if(area == "0") def("exit");
             else def("unav", area);
-         } while(area != "-1")
+         } while(area != "-1");
          def("main");
       } else if(main == "3") {
          def("volume");
@@ -49,7 +49,7 @@ int main() {
             def("ln");
             if(volume == "0") def("exit");
             else def("unav", volume);
-         } while(volume != "-1")
+         } while(volume != "-1");
          def("main");
       } else if(main == "4") {
          def("weight");
@@ -60,7 +60,7 @@ int main() {
             def("ln");
             if(weight == "0") def("exit");
             else def("unav", weight);
-         } while(weight != "-1")
+         } while(weight != "-1");
          def("main");
       } else if(main == "5") {
          def("temp");
@@ -71,7 +71,7 @@ int main() {
             def("ln");
             if(temp == "0") def("exit");
             else def("unav", temp);
-         } while(temp != "-1")
+         } while(temp != "-1");
          def("main");
       } else if(main == "6") {
          def("speed");
@@ -82,7 +82,7 @@ int main() {
             def("ln");
             if(speed == "0") def("exit");
             else def("unav", speed);
-         } while(speed != "-1")
+         } while(speed != "-1");
          def("main");
       } else if(main == "7") {
          def("press");
@@ -93,7 +93,7 @@ int main() {
             def("ln");
             if(press == "0") def("exit");
             else def("unav", press);
-         } while(press != "-1")
+         } while(press != "-1");
          def("main");
       } else if(main == "8") {
          def("power");
@@ -104,7 +104,7 @@ int main() {
             def("ln");
             if(power == "0") def("exit");
             else def("unav", power);
-         } while(power != "-1")
+         } while(power != "-1");
          def("main");
       } else if(main == "9") {
          def("data");
@@ -115,12 +115,12 @@ int main() {
             def("ln");
             if(data == "0") def("exit");
             else def("unav", data);
-         } while(data != "-1")
+         } while(data != "-1");
          def("main");
       } else if(main == "0") def("exit");
       else def("unav", main);
       
-   } while(main != "0")
+   } while(main != "0");
    
 	return 0;
 }
