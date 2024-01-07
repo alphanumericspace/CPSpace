@@ -17,7 +17,7 @@ int main() {
       cli::def("ln");
       
       if(main == "1") {
-         cli::def("lenght");
+         cli::def("length");
          std::string length;
          do {
             cli::def("in");
