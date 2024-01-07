@@ -126,7 +126,7 @@ void def(std::string key, std::string opt='') {
       power.print(true);
    } else if(key == "data") {
       List data;
-      Data.head = "Data Size";
+      data.head = "Data Size";
       data.lists = {
          "(-1) Previous   |  (0) Exit Program"
       };
