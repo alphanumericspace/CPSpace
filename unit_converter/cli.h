@@ -72,7 +72,7 @@ void def(std::string key) {
       area.print(true);
    } else if(key == "volume") {
       List volume;
-      volume.head = "Unit Converter";
+      volume.head = "Volume";
       volume.lists = {
          "(1) Cb. Kilometer(m3)     |  (2) Cb. Hectometer(hm3)",
          "(3) Cb. Decameter(dam3)   |  (4) Cb. Meter(m3)",
@@ -84,7 +84,9 @@ void def(std::string key) {
       };
       volume.desc = "Select one of the units that will be used as the conversion keyeter for all units";
       volume.print(true);
-   } else exit(0);
+   } else if(key == "cin") {
+      std::cout<<"Enter options: ";
+   } else std::cout<<"\nInvlaid key '"<<key<<"'\n\n";
 }
 
 #endif
