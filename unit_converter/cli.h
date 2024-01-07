@@ -78,9 +78,15 @@ void def(std::string key, std::string opt="") {
          "(3) Cb. Decameter(dam3)   |  (4) Cb. Meter(m3)",
          "(5) Cb. Decimeter(dm3)    |  (6) Cb. Centimeter(cm3)",
          "(7) Cb. Millimeter(m3)    |  (8) Kiloliter(kl)",
-         "(8) Hectoliter(hl)",
-         "(9)     |  (-1) Previous",
-         "(0) Exit Program"
+         "(9) Hectoliter(hl)        |  (10) Liter(l)",
+         "(11) Deciliter(dl)        |  (12) Milliliter(ml)",
+         "(13) Cb. Foot(ft3)        |  (14) Cb. Inch(in3)",
+         "(15) Cb. Yard(yd3)        |  (16) Acre Foot(af3)",
+         "(17) Barrel(bbl)          |  (18) Cup(c)",
+         "(19) Pint(pt)             |  (20) Quart(qt)",
+         "(21) US Gallon(us gal)    |  (22) UK Gallon(uk gal)",
+         "(23) Fluid Ounce (fl oz)  |  (24) Bushel (bu)",
+         "(-1) Previous             |  (0) Exit Program"
       };
       volume.desc = "Select one of the units that will\nbe used as the conversion keyeter for all units";
       volume.print(true);
