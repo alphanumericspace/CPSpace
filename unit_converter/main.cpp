@@ -118,7 +118,7 @@ int main() {
       } else if(home == "0") cli::def("exit");
       else cli::def("unav", home);
       
-   } while(main != "0");
+   } while(home != "0");
    
 	return 0;
 }
