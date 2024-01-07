@@ -8,7 +8,7 @@ int main() {
             <<"This tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n"
             <<"GitHub: https://github.com/alphanumericspace/CPSpace/ \n\n";
    
-   cli::def("main");
+   cli::def("home");
    
    std::string home;
    do {
@@ -24,7 +24,7 @@ int main() {
             std::cin>>length;
             cli::def("ln");
             if(length == "0") cli::def("exit");
-            else if(length == "-1") return main();
+            else if(length == "-1") cli::def("home");
             else cli::def("unav", length);
          } while(length != "-1");
       } else if(home == "2") {
@@ -35,7 +35,7 @@ int main() {
             std::cin>>area;
             cli::def("ln");
             if(area == "0") cli::def("exit");
-            else if(area == "-1") return main();
+            else if(area == "-1") cli::def("home");
             else cli::def("unav", area);
          } while(area != "-1");
       } else if(home == "3") {
@@ -46,7 +46,7 @@ int main() {
             std::cin>>volume;
             cli::def("ln");
             if(volume == "0") cli::def("exit");
-            else if(volume == "-1") return main();
+            else if(volume == "-1") cli::def("home");
             else cli::def("unav", volume);
          } while(volume != "-1");
       } else if(home == "4") {
@@ -57,7 +57,7 @@ int main() {
             std::cin>>weight;
             cli::def("ln");
             if(weight == "0") cli::def("exit");
-            else if(weight == "-1") return main();
+            else if(weight == "-1") cli::def("home");
             else cli::def("unav", weight);
          } while(weight != "-1");
       } else if(home == "5") {
@@ -68,7 +68,7 @@ int main() {
             std::cin>>temp;
             cli::def("ln");
             if(temp == "0") cli::def("exit");
-            else if(temp == "-1") return main();
+            else if(temp == "-1") cli::def("home");
             else cli::def("unav", temp);
          } while(temp != "-1");
       } else if(home == "6") {
@@ -79,7 +79,7 @@ int main() {
             std::cin>>speed;
             cli::def("ln");
             if(speed == "0") cli::def("exit");
-            else if(speed == "-1") return main();
+            else if(speed == "-1") cli::def("home");
             else cli::def("unav", speed);
          } while(speed != "-1");
       } else if(home == "7") {
@@ -90,7 +90,7 @@ int main() {
             std::cin>>press;
             cli::def("ln");
             if(press == "0") cli::def("exit");
-            else if(press == "-1") return main();
+            else if(press == "-1") cli::def("home");
             else cli::def("unav", press);
          } while(press != "-1");
       } else if(home == "8") {
@@ -101,7 +101,7 @@ int main() {
             std::cin>>power;
             cli::def("ln");
             if(power == "0") cli::def("exit");
-            else if(power == "-1") return main();
+            else if(power == "-1") cli::def("home");
             else cli::def("unav", power);
          } while(power != "-1");
       } else if(home == "9") {
@@ -112,7 +112,7 @@ int main() {
             std::cin>>data;
             cli::def("ln");
             if(data == "0") cli::def("exit");
-            else if(data == "-1") return main();
+            else if(data == "-1") cli::def("home");
             else cli::def("unav", data);
          } while(data != "-1");
       } else if(home == "0") cli::def("exit");
