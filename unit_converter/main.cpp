@@ -10,13 +10,13 @@ int main() {
    
    cli::def("main");
    
-   std::string main;
+   std::string home;
    do {
       cli::def("in");
       std::cin>>main;
       cli::def("ln");
       
-      if(main == "1") {
+      if(home == "1") {
          cli::def("length");
          std::string length;
          do {
@@ -27,7 +27,7 @@ int main() {
             else if(length == "-1") return main();
             else cli::def("unav", length);
          } while(length != "-1");
-      } else if(main == "2") {
+      } else if(home == "2") {
          cli::def("area");
          std::string area;
          do {
@@ -38,7 +38,7 @@ int main() {
             else if(area == "-1") return main();
             else cli::def("unav", area);
          } while(area != "-1");
-      } else if(main == "3") {
+      } else if(home == "3") {
          cli::def("volume");
          std::string volume;
          do {
@@ -49,7 +49,7 @@ int main() {
             else if(volume == "-1") return main();
             else cli::def("unav", volume);
          } while(volume != "-1");
-      } else if(main == "4") {
+      } else if(home == "4") {
          cli::def("weight");
          std::string weight;
          do {
@@ -60,7 +60,7 @@ int main() {
             else if(weight == "-1") return main();
             else cli::def("unav", weight);
          } while(weight != "-1");
-      } else if(main == "5") {
+      } else if(home == "5") {
          cli::def("temp");
          std::string temp;
          do {
@@ -71,7 +71,7 @@ int main() {
             else if(temp == "-1") return main();
             else cli::def("unav", temp);
          } while(temp != "-1");
-      } else if(main == "6") {
+      } else if(home == "6") {
          cli::def("speed");
          std::string speed;
          do {
@@ -82,7 +82,7 @@ int main() {
             else if(speed == "-1") return main();
             else cli::def("unav", speed);
          } while(speed != "-1");
-      } else if(main == "7") {
+      } else if(home == "7") {
          cli::def("press");
          std::string press;
          do {
@@ -93,7 +93,7 @@ int main() {
             else if(press == "-1") return main();
             else cli::def("unav", press);
          } while(press != "-1");
-      } else if(main == "8") {
+      } else if(home == "8") {
          cli::def("power");
          std::string power;
          do {
@@ -104,7 +104,7 @@ int main() {
             else if(power == "-1") return main();
             else cli::def("unav", power);
          } while(power != "-1");
-      } else if(main == "9") {
+      } else if(home == "9") {
          cli::def("data");
          std::string data;
          do {
@@ -115,8 +115,8 @@ int main() {
             else if(data == "-1") return main();
             else cli::def("unav", data);
          } while(data != "-1");
-      } else if(main == "0") cli::def("exit");
-      else cli::def("unav", main);
+      } else if(home == "0") cli::def("exit");
+      else cli::def("unav", home);
       
    } while(main != "0");
    
