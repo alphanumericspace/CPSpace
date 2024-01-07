@@ -52,7 +52,7 @@ void def(std::string key, std::string opt="") {
          "(19) Lunar Distance(ld)    |  (-1) Previous",
          "(0) Exit Program"
       };
-      length.desc = "Select one of the units that will be used as the conversion keyeter for all units";
+      length.desc = "Select one of the units that will\nbe used as the conversion keyeter for all units";
       length.print(true);
    } else if(key == "area") {
       List area;
@@ -68,7 +68,7 @@ void def(std::string key, std::string opt="") {
          "(15) Sq. Rod(rd2)        |   (-1) Previous",
          "(0) Exit Program"
       };
-      area.desc = "Select one of the units that will be used as the conversion keyeter for all units.";
+      area.desc = "Select one of the units that will\nbe used as the conversion keyeter for all units.";
       area.print(true);
    } else if(key == "volume") {
       List volume;
@@ -82,7 +82,7 @@ void def(std::string key, std::string opt="") {
          "(9)     |  (-1) Previous",
          "(0) Exit Program"
       };
-      volume.desc = "Select one of the units that will be used as the conversion keyeter for all units";
+      volume.desc = "Select one of the units that will\nbe used as the conversion keyeter for all units";
       volume.print(true);
    }  else if(key == "weight") {
       List weight;
@@ -90,7 +90,7 @@ void def(std::string key, std::string opt="") {
       weight.lists = {
          "(-1) Previous   |  (0) Exit Program"
       };
-      weight.desc = "Select one of the units that will be used as the conversion keyeter for all units";
+      weight.desc = "Select one of the units that will\nbe used as the conversion keyeter for all units";
       weight.print(true);
    } else if(key == "temp") {
       List temp;
@@ -98,7 +98,7 @@ void def(std::string key, std::string opt="") {
       temp.lists = {
          "(-1) Previous   |  (0) Exit Program"
       };
-      temp.desc = "Select one of the units that will be used as the conversion keyeter for all units.";
+      temp.desc = "Select one of the units that will\nbe used as the conversion keyeter for all units.";
       temp.print(true);
    } else if(key == "speed") {
       List speed;
@@ -106,7 +106,7 @@ void def(std::string key, std::string opt="") {
       speed.lists = {
          "(-1) Previous   |  (0) Exit Program"
       };
-      speed.desc = "Select one of the units that will be used as the conversion keyeter for all units";
+      speed.desc = "Select one of the units that will\nbe used as the conversion keyeter for all units";
       speed.print(true);
    }  else if(key == "press") {
       List press;
@@ -114,7 +114,7 @@ void def(std::string key, std::string opt="") {
       press.lists = {
          "(-1) Previous   |  (0) Exit Program"
       };
-      press.desc = "Select one of the units that will be used as the conversion keyeter for all units";
+      press.desc = "Select one of the units that will\nbe used as the conversion keyeter for all units";
       press.print(true);
    } else if(key == "power") {
       List power;
@@ -122,7 +122,7 @@ void def(std::string key, std::string opt="") {
       power.lists = {
          "(-1) Previous   |  (0) Exit Program"
       };
-      power.desc = "Select one of the units that will be used as the conversion keyeter for all units.";
+      power.desc = "Select one of the units that will\nbe used as the conversion keyeter for all units.";
       power.print(true);
    } else if(key == "data") {
       List data;
@@ -130,7 +130,7 @@ void def(std::string key, std::string opt="") {
       data.lists = {
          "(-1) Previous   |  (0) Exit Program"
       };
-      data.desc = "Select one of the units that will be used as the conversion keyeter for all units";
+      data.desc = "Select one of the units that will\nbe used as the conversion keyeter for all units";
       data.print(true);
    }
    else if(key == "in") std::cout<<"Enter options: ";
