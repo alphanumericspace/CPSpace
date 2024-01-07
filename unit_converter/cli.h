@@ -1,7 +1,7 @@
 #ifndef cli
 #define cli
 
-void def(std::string key) {
+void def(std::string key, std::string opt='') {
    struct List {
       std::string head;
       std::vector<std::string> lists;
@@ -86,7 +86,12 @@ void def(std::string key) {
       volume.print(true);
    }
    else if(key == "in") std::cout<<"Enter options: ";
-   else if(key == "ln") std::cout<<"\n"; 
+   else if(key == "ln") std::cout<<"\n";
+   else if(key == "unav") std::cout<<"Unavailable option: '"<<opt<<"'\n\n";
+   else if(key == "exit") {
+      std::cout<<"Exit Program...\n\n";
+      exit(0);
+   }
    else std::cout<<"\nInvlaid key '"<<key<<"'\n\n";
 }
 
