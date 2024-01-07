@@ -13,7 +13,7 @@ int main() {
    std::string home;
    do {
       cli::def("in");
-      std::cin>>main;
+      std::cin>>home;
       cli::def("ln");
       
       if(home == "1") {
