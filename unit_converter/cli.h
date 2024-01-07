@@ -1,7 +1,7 @@
 #ifndef cli
 #define cli
 
-void def(std::string key, std::string opt='') {
+void def(std::string key, std::string opt="") {
    struct List {
       std::string head;
       std::vector<std::string> lists;
