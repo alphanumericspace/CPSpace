@@ -94,7 +94,18 @@ void def(std::string key, std::string opt="") {
       List weight;
       weight.head = "Weight";
       weight.lists = {
-         "(-1) Previous   |  (0) Exit Program"
+         "(1) Gigatonne(Gt)         |  (2) Megatonne(Mt)",
+         "(3) Tonne(t)              |  (4) Kilogram(kg)",
+         "(5) Gram(gr)              |  (6) Milligram(mg)",
+         "(7) Microgram(um)         |  (8) Nanogram(ng)",
+         "(9) Picogram(pg)          |  (10) UK Ton(t)",
+         "(11) US Ton(t)            |  (12) Hundredweight(cwt)",
+         "(13) Quarter(qtr)         |  (14) Stone(st)",
+         "(15) Pound(lb)            |  (16) Ounce(oz)",
+         "(17) Dram(dr)             |  (18) Grain(grn)",
+         "(19) Troy Pound(lb t)     | (20) Troy Ounce(oz t)",
+         "(21) Pennyweight(dwt)     | (-1) Previous",
+         "(0) Exit Program"
       };
       weight.desc = "Select one of the units that will\nbe used as the conversion keyeter for all units";
       weight.print(true);
