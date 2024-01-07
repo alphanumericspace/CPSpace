@@ -84,6 +84,54 @@ void def(std::string key, std::string opt='') {
       };
       volume.desc = "Select one of the units that will be used as the conversion keyeter for all units";
       volume.print(true);
+   }  else if(key == "weight") {
+      List weight;
+      weight.head = "Weight";
+      weight.lists = {
+         "(-1) Previous   |  (0) Exit Program"
+      };
+      weight.desc = "Select one of the units that will be used as the conversion keyeter for all units";
+      weight.print(true);
+   } else if(key == "temp") {
+      List temp;
+      temp.head = "Temperature";
+      temp.lists = {
+         "(-1) Previous   |  (0) Exit Program"
+      };
+      temp.desc = "Select one of the units that will be used as the conversion keyeter for all units.";
+      temp.print(true);
+   } else if(key == "speed") {
+      List speed;
+      speed.head = "Speed";
+      speed.lists = {
+         "(-1) Previous   |  (0) Exit Program"
+      };
+      speed.desc = "Select one of the units that will be used as the conversion keyeter for all units";
+      speed.print(true);
+   }  else if(key == "press") {
+      List press;
+      press.head = "Pressure";
+      press.lists = {
+         "(-1) Previous   |  (0) Exit Program"
+      };
+      press.desc = "Select one of the units that will be used as the conversion keyeter for all units";
+      press.print(true);
+   } else if(key == "power") {
+      List power;
+      power.head = "Power";
+      power.lists = {
+         "(-1) Previous   |  (0) Exit Program"
+      };
+      power.desc = "Select one of the units that will be used as the conversion keyeter for all units.";
+      power.print(true);
+   } else if(key == "data") {
+      List data;
+      Data.head = "Data Size";
+      data.lists = {
+         "(-1) Previous   |  (0) Exit Program"
+      };
+      data.desc = "Select one of the units that will be used as the conversion keyeter for all units";
+      data.print(true);
    }
    else if(key == "in") std::cout<<"Enter options: ";
    else if(key == "ln") std::cout<<"\n";
