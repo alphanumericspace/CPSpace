@@ -13,7 +13,7 @@ int main() {
    std::string main;
    do {
       
-   } while(main != "0" or main !="exit")
+   } while(main != "0" or main != "exit")
    
 	return 0;
 }
