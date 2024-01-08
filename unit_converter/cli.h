@@ -165,6 +165,15 @@ void def(std::string key, std::string opt="") {
       data.desc = "Select one of the units that will be used as\n  the conversion parameter for all units";
       data.Print(true);
    }
+   else if(key == "dttm") {
+      List dttm;
+      dttm.head = "Date and Time";
+      dttm.list = {
+         "(-1) Previous   |  (0) Exit Program"
+      };
+      dttm.desc = "Select one of the units that will be used as\n  the conversion parameter for all units";
+      dttm.Print(true);
+   }
    else if(key == "in") std::cout<<"\033[1m> Enter option: \033[0m";
    else if(key == "uo") std::cout<<"\033[91m\033[1m< Unavailable option: '"<<opt<<"'\033[0m\n\n";
    else if(key == "ex") {
