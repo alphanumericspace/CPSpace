@@ -7,15 +7,18 @@ void def(std::string key, std::string opt="") {
       std::vector<std::string> lists;
       std::string desc;
       
-      void print(bool isWithDescription) {
+      void Print(bool isWithDescription) {
          if(isWithDescription == true) {
             std::cout<<"\033[1m< "<<head<<"\033[0m\n\n";
+            
             for(std::string list : lists) {
                std::cout<<list<<"\n";
             }
             std::cout<<"\n"<<desc<<"\n\n";
-         } else {
+         }
+         else {
             std::cout<<"\033[1m< "<<head<<"\033[0m\n\n";
+            
             for(std::string list : lists) {
                std::cout<<list<<"\n";
             }
@@ -34,8 +37,9 @@ void def(std::string key, std::string opt="") {
          "(7) Pressure     |  (8) Power",
          "(9) Data Size    |  (0) Exit Program"
       };
-      cvtr.print(false);
-   } else if(key == "length") {
+      cvtr.Print(false);
+   }
+   else if(key == "length") {
       List length;
       length.head = "Length";
       length.lists = {
@@ -52,8 +56,9 @@ void def(std::string key, std::string opt="") {
          "(0) Exit Program"
       };
       length.desc = "Select one of the units that will\nbe used as the conversion parameter for all units";
-      length.print(true);
-   } else if(key == "area") {
+      length.Print(true);
+   }
+   else if(key == "area") {
       List area;
       area.head = "Area";
       area.lists = {
@@ -68,8 +73,9 @@ void def(std::string key, std::string opt="") {
          "(0) Exit Program"
       };
       area.desc = "Select one of the units that will\nbe used as the conversion parameter for all units.";
-      area.print(true);
-   } else if(key == "volume") {
+      area.Print(true);
+   }
+   else if(key == "volume") {
       List volume;
       volume.head = "Volume";
       volume.lists = {
@@ -88,8 +94,9 @@ void def(std::string key, std::string opt="") {
          "(-1) Previous             |  (0) Exit Program"
       };
       volume.desc = "Select one of the units that will\nbe used as the conversion parameter for all units";
-      volume.print(true);
-   }  else if(key == "weight") {
+      volume.Print(true);
+   }
+   else if(key == "weight") {
       List weight;
       weight.head = "Weight";
       weight.lists = {
@@ -107,47 +114,52 @@ void def(std::string key, std::string opt="") {
          "(0) Exit Program"
       };
       weight.desc = "Select one of the units that will\nbe used as the conversion parameter for all units";
-      weight.print(true);
-   } else if(key == "temp") {
+      weight.Print(true);
+   }
+   else if(key == "temp") {
       List temp;
       temp.head = "Temperature";
       temp.lists = {
          "(-1) Previous   |  (0) Exit Program"
       };
       temp.desc = "Select one of the units that will\nbe used as the conversion parameter for all units.";
-      temp.print(true);
-   } else if(key == "speed") {
+      temp.Print(true);
+   }
+   else if(key == "speed") {
       List speed;
       speed.head = "Speed";
       speed.lists = {
          "(-1) Previous   |  (0) Exit Program"
       };
       speed.desc = "Select one of the units that will\nbe used as the conversion parameter for all units";
-      speed.print(true);
-   }  else if(key == "press") {
+      speed.Print(true);
+   } 
+   else if(key == "press") {
       List press;
       press.head = "Pressure";
       press.lists = {
          "(-1) Previous   |  (0) Exit Program"
       };
       press.desc = "Select one of the units that will\nbe used as the conversion parameter for all units";
-      press.print(true);
-   } else if(key == "power") {
+      press.Print(true);
+   }
+   else if(key == "power") {
       List power;
       power.head = "Power";
       power.lists = {
          "(-1) Previous   |  (0) Exit Program"
       };
       power.desc = "Select one of the units that will\nbe used as the conversion parameter for all units.";
-      power.print(true);
-   } else if(key == "data") {
+      power.Print(true);
+   }
+   else if(key == "data") {
       List data;
       data.head = "Data Size";
       data.lists = {
          "(-1) Previous   |  (0) Exit Program"
       };
       data.desc = "Select one of the units that will\nbe used as the conversion parameter for all units";
-      data.print(true);
+      data.Print(true);
    }
    else if(key == "in") std::cout<<"\033[1m> Enter option: \033[0m";
    else if(key == "uo") std::cout<<"\033[91m\033[1m< Unavailable option: '"<<opt<<"'\033[0m\n\n";
