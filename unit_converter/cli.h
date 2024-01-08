@@ -55,7 +55,7 @@ void def(std::string key, std::string opt="") {
          "(19) Lunar Distance(ld)    |  (-1) Previous",
          "(0) Exit Program"
       };
-      length.desc = "Select one of the units that will\nbe used as the conversion parameter for all units";
+      length.desc = "Select one of the units that will be used as\n  the conversion parameter for all units";
       length.Print(true);
    }
    else if(key == "area") {
@@ -72,7 +72,7 @@ void def(std::string key, std::string opt="") {
          "(15) Sq. Rod(rd2)        |   (-1) Previous",
          "(0) Exit Program"
       };
-      area.desc = "Select one of the units that will\nbe used as the conversion parameter for all units.";
+      area.desc = "Select one of the units that will be used as\n  the conversion parameter for all units.";
       area.Print(true);
    }
    else if(key == "volume") {
@@ -93,7 +93,7 @@ void def(std::string key, std::string opt="") {
          "(23) Fluid Ounce (fl oz)  |  (24) Bushel (bu)",
          "(-1) Previous             |  (0) Exit Program"
       };
-      volume.desc = "Select one of the units that will\nbe used as the conversion parameter for all units";
+      volume.desc = "Select one of the units that will be used as\n  the conversion parameter for all units";
       volume.Print(true);
    }
    else if(key == "weight") {
@@ -113,7 +113,7 @@ void def(std::string key, std::string opt="") {
          "(21) Pennyweight(dwt)     |  (-1) Previous",
          "(0) Exit Program"
       };
-      weight.desc = "Select one of the units that will\nbe used as the conversion parameter for all units";
+      weight.desc = "Select one of the units that will be used as\n  the conversion parameter for all units";
       weight.Print(true);
    }
    else if(key == "temp") {
@@ -122,7 +122,7 @@ void def(std::string key, std::string opt="") {
       temp.list = {
          "(-1) Previous   |  (0) Exit Program"
       };
-      temp.desc = "Select one of the units that will\nbe used as the conversion parameter for all units.";
+      temp.desc = "Select one of the units that will be used as\n  the conversion parameter for all units.";
       temp.Print(true);
    }
    else if(key == "speed") {
@@ -131,7 +131,7 @@ void def(std::string key, std::string opt="") {
       speed.list = {
          "(-1) Previous   |  (0) Exit Program"
       };
-      speed.desc = "Select one of the units that will\nbe used as the conversion parameter for all units";
+      speed.desc = "Select one of the units that will be used as\n  the conversion parameter for all units";
       speed.Print(true);
    } 
    else if(key == "press") {
@@ -140,7 +140,7 @@ void def(std::string key, std::string opt="") {
       press.list = {
          "(-1) Previous   |  (0) Exit Program"
       };
-      press.desc = "Select one of the units that will\nbe used as the conversion parameter for all units";
+      press.desc = "Select one of the units that will be used as\n  the conversion parameter for all units";
       press.Print(true);
    }
    else if(key == "power") {
@@ -149,7 +149,7 @@ void def(std::string key, std::string opt="") {
       power.list = {
          "(-1) Previous   |  (0) Exit Program"
       };
-      power.desc = "Select one of the units that will\nbe used as the conversion parameter for all units.";
+      power.desc = "Select one of the units that will be used as\n  the conversion parameter for all units.";
       power.Print(true);
    }
    else if(key == "data") {
@@ -158,7 +158,7 @@ void def(std::string key, std::string opt="") {
       data.list = {
          "(-1) Previous   |  (0) Exit Program"
       };
-      data.desc = "Select one of the units that will\nbe used as the conversion parameter for all units";
+      data.desc = "Select one of the units that will be used as\n  the conversion parameter for all units";
       data.Print(true);
    }
    else if(key == "in") std::cout<<"\033[1m> Enter option: \033[0m";
