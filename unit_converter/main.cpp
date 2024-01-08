@@ -7,15 +7,15 @@ int main() {
    std::cout<<"  \033[1mAlphanumeric Space Project @CPSpace\033[0m\n\n"
             <<"  This tool is designed to seamlessly convert\n  various units and simplify your calculations.\n\n";
    
-   cli::def("home");
-   std::string home;
+   cli::def("cvtr");
+   std::string cvtr;
    
    do {
       cli::def("in");
-      std::cin>>home;
+      std::cin>>cvtr;
       cli::def("ln");
    
-      if(home == "1") {
+      if(cvtr == "1") {
          cli::def("length");
          std::string length;
          
@@ -30,7 +30,7 @@ int main() {
          }
          while(length != "-1");
       }
-      else if(home == "2") {
+      else if(cvtr == "2") {
          cli::def("area");
          std::string area;
          
@@ -45,7 +45,7 @@ int main() {
          }
          while(area != "-1");
       }
-      else if(home == "3") {
+      else if(cvtr == "3") {
          cli::def("volume");
          std::string volume;
          
@@ -60,7 +60,7 @@ int main() {
          }
          while(volume != "-1");
       }
-      else if(home == "4") {
+      else if(cvtr == "4") {
          cli::def("weight");
          std::string weight;
          
@@ -75,7 +75,7 @@ int main() {
          }
          while(weight != "-1");
       }
-      else if(home == "5") {
+      else if(cvtr == "5") {
          cli::def("temp");
          std::string temp;
          
@@ -90,7 +90,7 @@ int main() {
          }
          while(temp != "-1");
       }
-      else if(home == "6") {
+      else if(cvtr == "6") {
          cli::def("speed");
          std::string speed;
          
@@ -105,7 +105,7 @@ int main() {
          }
          while(speed != "-1");
       }
-      else if(home == "7") {
+      else if(cvtr == "7") {
          cli::def("press");
          std::string press;
          
@@ -120,7 +120,7 @@ int main() {
          }
          while(press != "-1");
       }
-      else if(home == "8") {
+      else if(cvtr == "8") {
          cli::def("power");
          std::string power;
          
@@ -135,7 +135,7 @@ int main() {
          }
          while(power != "-1");
       }
-      else if(home == "9") {
+      else if(cvtr == "9") {
          cli::def("data");
          std::string data;
          
@@ -150,7 +150,7 @@ int main() {
          }
          while(data != "-1");
       }
-      else if(home == "10") {
+      else if(cvtr == "10") {
          cli::def("dttm");
          std::string dttm;
          
@@ -165,10 +165,10 @@ int main() {
          }
          while(dttm != "-1");
       }
-      else if(home == "0") cli::def("ex");
+      else if(cvtr == "0") cli::def("ex");
       else cli::def("uo", home);
    }
-   while(home != "0");
+   while(cvtr != "0");
    
 	return 0;
 }
