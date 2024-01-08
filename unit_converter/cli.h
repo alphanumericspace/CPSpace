@@ -35,7 +35,8 @@ void def(std::string key, std::string opt="") {
          "(3) Volume       |  (4) Weight",
          "(5) Temperature  |  (6) Speed",
          "(7) Pressure     |  (8) Power",
-         "(9) Data Size    |  (0) Exit Program"
+         "(9) Data Size    |  (10) Date and Time",
+         "(0) Exit Program"
       };
       cvtr.Print(false);
    }
