@@ -34,8 +34,7 @@ void def(std::string key, std::string opt="") {
          "(7) Pressure     |  (8) Power",
          "(9) Data Size    |  (0) Exit Program"
       };
-      cvtr.desc = "Enter available options";
-      cvtr.print(true);
+      cvtr.print(false);
    } else if(key == "length") {
       List length;
       length.head = "Length";
