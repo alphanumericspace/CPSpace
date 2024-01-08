@@ -4,23 +4,23 @@
 void def(std::string key, std::string opt="") {
    struct List {
       std::string head;
-      std::vector<std::string> lists;
+      std::vector<std::string> list;
       std::string desc;
       
       void Print(bool isWithDescription) {
          if(isWithDescription == true) {
             std::cout<<"\033[1m< "<<head<<"\033[0m\n\n";
             
-            for(std::string list : lists) {
-               std::cout<<list<<"\n";
+            for(std::string item : list) {
+               std::cout<<item<<"\n";
             }
             std::cout<<"\n"<<desc<<"\n\n";
          }
          else {
             std::cout<<"\033[1m< "<<head<<"\033[0m\n\n";
             
-            for(std::string list : lists) {
-               std::cout<<list<<"\n";
+            for(std::string item : list) {
+               std::cout<<item<<"\n";
             }
             std::cout<<"\n";
          }
@@ -30,7 +30,7 @@ void def(std::string key, std::string opt="") {
    if(key == "home") {
       List cvtr;
       cvtr.head = "Main Menu";
-      cvtr.lists = {
+      cvtr.list = {
          "(1) Length       |  (2) Area",
          "(3) Volume       |  (4) Weight",
          "(5) Temperature  |  (6) Speed",
@@ -42,7 +42,7 @@ void def(std::string key, std::string opt="") {
    else if(key == "length") {
       List length;
       length.head = "Length";
-      length.lists = {
+      length.list = {
          "(1) Kilometer(km)          |  (2) Hectometer(hm)",
          "(3) Decameter(dam)         |  (4) Meter(m)",
          "(5) Decimeter(dm)          |  (6) Centimeter(cm)",
@@ -61,7 +61,7 @@ void def(std::string key, std::string opt="") {
    else if(key == "area") {
       List area;
       area.head = "Area";
-      area.lists = {
+      area.list = {
          "(1) Sq. Kilometer(km2)   |   (2) Sq. Hectometer(hm2)",
          "(3) Sq. Decameter(dam2)  |   (4) Sq. Meter(m2)",
          "(5) Sq. Decimeter(dm2)   |   (6) Sq. Centimeter(cm2)",
@@ -78,7 +78,7 @@ void def(std::string key, std::string opt="") {
    else if(key == "volume") {
       List volume;
       volume.head = "Volume";
-      volume.lists = {
+      volume.list = {
          "(1) Cb. Kilometer(m3)     |  (2) Cb. Hectometer(hm3)",
          "(3) Cb. Decameter(dam3)   |  (4) Cb. Meter(m3)",
          "(5) Cb. Decimeter(dm3)    |  (6) Cb. Centimeter(cm3)",
@@ -99,7 +99,7 @@ void def(std::string key, std::string opt="") {
    else if(key == "weight") {
       List weight;
       weight.head = "Weight";
-      weight.lists = {
+      weight.list = {
          "(1) Gigatonne(Gt)         |  (2) Megatonne(Mt)",
          "(3) Tonne(t)              |  (4) Kilogram(kg)",
          "(5) Gram(gr)              |  (6) Milligram(mg)",
@@ -119,7 +119,7 @@ void def(std::string key, std::string opt="") {
    else if(key == "temp") {
       List temp;
       temp.head = "Temperature";
-      temp.lists = {
+      temp.list = {
          "(-1) Previous   |  (0) Exit Program"
       };
       temp.desc = "Select one of the units that will\nbe used as the conversion parameter for all units.";
@@ -128,7 +128,7 @@ void def(std::string key, std::string opt="") {
    else if(key == "speed") {
       List speed;
       speed.head = "Speed";
-      speed.lists = {
+      speed.list = {
          "(-1) Previous   |  (0) Exit Program"
       };
       speed.desc = "Select one of the units that will\nbe used as the conversion parameter for all units";
@@ -137,7 +137,7 @@ void def(std::string key, std::string opt="") {
    else if(key == "press") {
       List press;
       press.head = "Pressure";
-      press.lists = {
+      press.list = {
          "(-1) Previous   |  (0) Exit Program"
       };
       press.desc = "Select one of the units that will\nbe used as the conversion parameter for all units";
@@ -146,7 +146,7 @@ void def(std::string key, std::string opt="") {
    else if(key == "power") {
       List power;
       power.head = "Power";
-      power.lists = {
+      power.list = {
          "(-1) Previous   |  (0) Exit Program"
       };
       power.desc = "Select one of the units that will\nbe used as the conversion parameter for all units.";
@@ -155,7 +155,7 @@ void def(std::string key, std::string opt="") {
    else if(key == "data") {
       List data;
       data.head = "Data Size";
-      data.lists = {
+      data.list = {
          "(-1) Previous   |  (0) Exit Program"
       };
       data.desc = "Select one of the units that will\nbe used as the conversion parameter for all units";
