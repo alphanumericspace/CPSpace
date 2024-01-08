@@ -15,7 +15,7 @@ void def(std::string key, std::string opt="") {
             }
             std::cout<<"\n"<<desc<<"\n\n";
          } else {
-            std::cout<<head<<"\n\n";
+            std::cout<<"\033[1m@"<<head<<"\033[0m\n\n";
             for(std::string list : lists) {
                std::cout<<list<<"\n";
             }
