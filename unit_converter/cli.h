@@ -43,7 +43,7 @@ void def(std::string key, std::string opt="") {
    }
    else if(key == "cvtr") {
       List cvtr;
-      cvtr.head = "Main Menu";
+      cvtr.head = "Unit Converter";
       cvtr.list = {
          "(1) Length       |  (2) Area",
          "(3) Volume       |  (4) Weight",
