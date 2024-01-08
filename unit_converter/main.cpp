@@ -199,6 +199,4 @@ int main() {
       else cli::def("uo", home);
    }
    while(home != "0");
-   
-	return 0;
 }
