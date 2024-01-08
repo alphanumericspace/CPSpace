@@ -166,7 +166,7 @@ int main() {
          while(dttm != "-1");
       }
       else if(cvtr == "0") cli::def("ex");
-      else cli::def("uo", home);
+      else cli::def("uo", cvtr);
    }
    while(cvtr != "0");
    
