@@ -123,7 +123,7 @@ void def(std::string key, std::string opt="") {
          "(1) Degrees Celsius(°C)   |  (2) Degrees Fahrenheit(°F)",
          "(3) Degrees Rankine(°R)   |  (4) Degrees Réaumur(°Re)",
          "(5) Kelvin(K)             |  (-1) Previous",
-         "(-1) Previous"
+         "(0) Exit Program"
       };
       temp.desc = "Select one of the units that will be used as\n  the conversion parameter for all units.";
       temp.Print(true);
