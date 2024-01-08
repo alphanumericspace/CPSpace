@@ -150,6 +150,21 @@ int main() {
          }
          while(data != "-1");
       }
+      else if(home == "10") {
+         cli::def("dttm");
+         std::string dttm;
+         
+         do {
+            cli::def("in");
+            std::cin>>dttm;
+            cli::def("ln");
+            
+            if(dttm == "0") cli::def("ex");
+            else if(dttm == "-1") cli::def("home");
+            else cli::def("uo", dttm);
+         }
+         while(dttm != "-1");
+      }
       else if(home == "0") cli::def("ex");
       else cli::def("uo", home);
    }
