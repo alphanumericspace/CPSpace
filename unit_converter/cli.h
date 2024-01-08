@@ -38,7 +38,7 @@ void def(std::string key, std::string opt="") {
          "(5) User Settings",
          "(6) License",
          "(0) Exit Program"
-      }
+      };
       home.Print(false);
    }
    else if(key == "cvtr") {
