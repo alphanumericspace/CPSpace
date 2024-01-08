@@ -6,8 +6,8 @@
 int main() {
    std::cout<<"\033[1mAlphanumeric Space Project @CPSpace\033[0m\n\n"
             <<"This tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n"
-            <<"Type: \033[1m'00'\033[0m or \033[1m'help'\033[0m for help.\n\n"
-            <<"\033[1mGitHub @https://github.com/alphanumericspace/CPSpace/\033[0m\n\n";
+            <<"GitHub @https://github.com/alphanumericspace/CPSpace/\n\n"
+            <<"Type: \033[1m'00'\033[0m or \033[1m'help'\033[0m for help.\n\n";
    
    cli::def("home");
    
