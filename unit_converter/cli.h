@@ -27,7 +27,20 @@ void def(std::string key, std::string opt="") {
       }
    };
    
-   if(key == "cvtr") {
+   if(key == "home") {
+      List home;
+      home.head = "Main Menu";
+      home.list = {
+         "(1) Unit Converter",
+         "(2) Information About This Project",
+         "(3) Documentation",
+         "(4) Changelog",
+         "(5) User Settings",
+         "(6) License",
+         "(0) Exit Program"
+      }
+   }
+   else if(key == "cvtr") {
       List cvtr;
       cvtr.head = "Main Menu";
       cvtr.list = {
