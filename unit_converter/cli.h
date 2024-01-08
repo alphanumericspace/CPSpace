@@ -168,7 +168,7 @@ void def(std::string key, std::string opt="") {
       exit(0);
    }
    else if(key == "ln") std::cout<<"\n";
-   else std::cout<<"\033[91m\033[1m< Unavailable key '"<<key<<"'\033[0m\n\n";
+   else std::cout<<"\033[91m\033[1m< Unavailable key: '"<<key<<"'\033[0m\n\n";
 }
 
 #endif
