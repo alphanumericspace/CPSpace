@@ -152,12 +152,12 @@ void def(std::string key, std::string opt="") {
    }
    else if(key == "in") std::cout<<"Enter options: ";
    else if(key == "ln") std::cout<<"\n";
-   else if(key == "unav") std::cout<<"Unavailable option: '"<<opt<<"'\n\n";
+   else if(key == "unav") std::cout<<"\033[91mUnavailable option: '"<<opt<<"'\033[0m\n\n";
    else if(key == "exit") {
       std::cout<<"Exit Program...\n\n";
       exit(0);
    }
-   else std::cout<<"Invlaid key '"<<key<<"'\n\n";
+   else std::cout<<"\033[91mInvlaid key '"<<key<<"'\033[0m\n\n";
 }
 
 #endif
