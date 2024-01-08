@@ -150,7 +150,7 @@ void def(std::string key, std::string opt="") {
       data.desc = "Select one of the units that will\nbe used as the conversion keyeter for all units";
       data.print(true);
    }
-   else if(key == "in") std::cout<<"\033[1m< Enter options: \033[0m";
+   else if(key == "in") std::cout<<"\033[1m< Enter option: \033[0m";
    else if(key == "ln") std::cout<<"\n";
    else if(key == "unav") std::cout<<"\033[91mUnavailable option: '"<<opt<<"'\033[0m\n\n";
    else if(key == "exit") {
