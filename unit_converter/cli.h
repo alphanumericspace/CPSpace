@@ -9,7 +9,7 @@ void def(std::string key, std::string opt="") {
       
       void print(bool isWithDescription) {
          if(isWithDescription == true) {
-            std::cout<<"\033[1m@ "<<head<<"\033[0m\n\n";
+            std::cout<<"\033[1m@"<<head<<"\033[0m\n\n";
             for(std::string list : lists) {
                std::cout<<list<<"\n";
             }
@@ -150,14 +150,14 @@ void def(std::string key, std::string opt="") {
       data.desc = "Select one of the units that will\nbe used as the conversion keyeter for all units";
       data.print(true);
    }
-   else if(key == "in") std::cout<<"\033[1m> Enter option: \033[0m";
+   else if(key == "in") std::cout<<"\033[1m-> Enter option: \033[0m";
    else if(key == "ln") std::cout<<"\n";
    else if(key == "unav") std::cout<<"\033[91m\033[1m! Unavailable option: '"<<opt<<"'\033[0m\n\n";
    else if(key == "exit") {
-      std::cout<<"\033[91m\033[1m< Exit Program...\033[0m\n\n";
+      std::cout<<"\033[91m\033[1m-< Exit Program...\033[0m\n\n";
       exit(0);
    }
-   else std::cout<<"\033[91m\033[1m! Invlaid key '"<<key<<"'\033[0m\n\n";
+   else std::cout<<"\033[91m\033[1m-! Invlaid key '"<<key<<"'\033[0m\n\n";
 }
 
 #endif
