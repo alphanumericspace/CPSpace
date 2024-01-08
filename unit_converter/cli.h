@@ -150,12 +150,12 @@ void def(std::string key, std::string opt="") {
       data.print(true);
    }
    else if(key == "in") std::cout<<"\033[1m>> Enter option: \033[0m";
-   else if(key == "ln") std::cout<<"\n";
-   else if(key == "unav") std::cout<<"\033[91m\033[1m<< Unavailable option: '"<<opt<<"'\033[0m\n\n";
-   else if(key == "exit") {
+   else if(key == "uo") std::cout<<"\033[91m\033[1m<< Unavailable option: '"<<opt<<"'\033[0m\n\n";
+   else if(key == "ex") {
       std::cout<<"\033[91m\033[1m<< Exit Program...\033[0m\n\n";
       exit(0);
    }
+   else if(key == "ln") std::cout<<"\n";
    else std::cout<<"\033[91m\033[1m<< Invlaid key '"<<key<<"'\033[0m\n\n";
 }
 
