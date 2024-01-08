@@ -4,9 +4,9 @@
 #include "cli.h"
 
 int main() {
-   std::cout<<"CPSPace Project\n\n"
+   std::cout<<"\033[1mCPSPace Project\033[0m\n\n"
             <<"This tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n"
-            <<"GitHub: https://github.com/alphanumericspace/CPSpace/ \n\n";
+            <<"\033[1mGitHub:\033[0m \033[3mhttps://github.com/alphanumericspace/CPSpace/\033[0m \n\n";
    
    cli::def("home");
    
