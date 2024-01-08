@@ -27,7 +27,7 @@ void def(std::string key, std::string opt="") {
       }
    };
    
-   if(key == "home") {
+   if(key == "cvtr") {
       List cvtr;
       cvtr.head = "Main Menu";
       cvtr.list = {
