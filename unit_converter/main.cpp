@@ -4,7 +4,7 @@
 #include "cli.h"
 
 int main() {
-   std::cout<<"\033[1mCPSPace Project\033[0m\n\n"
+   std::cout<<"\033[1mAlphanumeric Space Project - CPSpace\033[0m\n\n"
             <<"This tool is designed to seamlessly convert\nvarious units and simplify your calculations.\n\n"
             <<"\033[1mGitHub: https://github.com/alphanumericspace/CPSpace/ \033[0m\n\n";
    
