@@ -12,9 +12,9 @@ void def(std::string key, std::string opt="") {
             std::cout<<"\033[1m< "<<head<<"\033[0m\n\n";
             
             for(std::string item : list) {
-               std::cout<<item<<"\n";
+               std::cout<<"  "<<item<<"\n";
             }
-            std::cout<<"\n"<<desc<<"\n\n";
+            std::cout<<"\n  "<<desc<<"\n\n";
          }
          else {
             std::cout<<"\033[1m< "<<head<<"\033[0m\n\n";
