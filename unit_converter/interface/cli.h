@@ -28,7 +28,7 @@ void def(std::string key, std::string opt="") {
                   std::cout<<"  "<<item<<"\n";
                }
             }
-            else std::cout<<"\n\n";
+            else std::cout<<"\n\n\n";
          }
       }
    };
