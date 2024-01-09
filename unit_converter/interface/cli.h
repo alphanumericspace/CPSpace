@@ -11,6 +11,9 @@ void def(std::string key, std::string opt="") {
       std::string desc;
       
       void Print(bool isWithDescription) {
+         const std::string b = "\033[1m"; // bold
+         const std::string r = "\033[91m"; // red
+         const std::string z = "\033[0m"; // reset
          if(isWithDescription == true) {
             if(!list.empty()) {
                std::cout<<b<<"< "<<head<<z<<"\n\n";
