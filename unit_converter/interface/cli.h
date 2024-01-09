@@ -195,6 +195,24 @@ void def(std::string key, std::string opt="") {
       dttm.desc = "Select one of the units that will be used as\n  the conversion parameter for all units";
       dttm.Print(true);
    }
+   else if(key == "info") {
+      List info;
+      info.head = "A.S.P. @CPSpace - Unit Converter";
+      info.desc = "This project is under development, check changelog for more details or check this project at GitHub.";
+      info.desc = "GitHub";
+   }
+   else if(key == "docs") {
+      
+   }
+   else if(key == "clog") {
+      
+   }
+   else if(key == "sett") {
+      
+   }
+   else if(key == "licn") {
+      
+   }
    else if(key == "in") std::cout<<"\033[1m> Enter option: \033[0m";
    else if(key == "uo") std::cout<<"\033[91m\033[1m< Unavailable option: '"<<opt<<"'\033[0m\n\n";
    else if(key == "ex") {
