@@ -11,7 +11,7 @@ void def(std::string key, std::string opt="") {
       std::vector<std::string> list;
       std::string desc;
       
-      void Print(bool isWithDescription) {
+      const void Print(bool isWithDescription) {
          if(isWithDescription == true) {
             if(!list.empty()) {
                std::cout<<b<<"< "<<head<<z<<"\n\n";
