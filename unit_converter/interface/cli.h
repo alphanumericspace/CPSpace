@@ -16,9 +16,7 @@ void def(std::string key, std::string opt="") {
                   std::cout<<"  "<<item<<"\n";
                }
             }
-            else std::cout<<"\n";
-            
-            std::cout<<"  "<<desc<<"\n\n";
+            else std::cout<<"  "<<desc<<"\n\n";
          }
          else {
             std::cout<<"\033[1m< "<<head<<"\033[0m\n\n";
@@ -28,8 +26,7 @@ void def(std::string key, std::string opt="") {
                   std::cout<<"  "<<item<<"\n";
                }
             }
-            else std::cout<<"\n";
-            std::cout<<"\n";
+            else std::cout<<"\n\n";
          }
       }
    };
