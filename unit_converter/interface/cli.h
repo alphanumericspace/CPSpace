@@ -5,7 +5,7 @@
 #define r "\033[91m" // red
 #define z "\033[0m" // reset
 
-// 0 mean false, 1 mean true
+// 0 means false & 1 means true
 
 const void def(const std::string key, const std::string opt="") {
    struct List {
