@@ -197,7 +197,7 @@ void def(std::string key, std::string opt="") {
       List info;
       info.head = "A.S.P. @CPSpace - Unit Converter";
       info.desc = "This project is under development, check changelog for\n  more details or check this project at GitHub.";
-      info.Print(true);
+      info.Print(false);
    }
    else if(key == "docs") {
       
