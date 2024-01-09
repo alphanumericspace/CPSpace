@@ -2,6 +2,9 @@
 #define cli
 
 void def(std::string key, std::string opt="") {
+   const std::string b ("\033[1m"); // bold
+   const std::string r ("\033[91m"); // red
+   const std::string z ("\033[0m"); // reset
    struct List {
       std::string head;
       std::vector<std::string> list;
@@ -10,7 +13,7 @@ void def(std::string key, std::string opt="") {
       void Print(bool isWithDescription) {
          if(isWithDescription == true) {
             if(!list.empty()) {
-               std::cout<<"\033[1m< "<<head<<"\033[0m\n\n";
+               std::cout<<b<<"< "<<head<<z<<"\n\n";
                
                for(std::string item : list) {
                   std::cout<<"  "<<item<<"\n";
@@ -18,13 +21,13 @@ void def(std::string key, std::string opt="") {
                std::cout<<"\n  "<<desc<<"\n\n";
             }
             else {
-               std::cout<<"\033[1m< "<<head<<"\033[0m\n\n";
+               std::cout<<b<<"< "<<head<<z<<"\n\n";
                std::cout<<"  "<<desc<<"\n\n";
             }
          }
          else {
             if(!list.empty()) {
-               std::cout<<"\033[1m< "<<head<<"\033[0m\n\n";
+               std::cout<<b<<"< "<<head<<z<<"\n\n";
                
                for(std::string item : list) {
                   std::cout<<"  "<<item<<"\n";
@@ -32,7 +35,7 @@ void def(std::string key, std::string opt="") {
                std::cout<<"\n";
             }
             else {
-               std::cout<<"\033[1m< "<<head<<"\033[0m\n\n";
+               std::cout<<b<<"< "<<head<<z<<"\n\n";
             }
          }
       }
@@ -217,14 +220,14 @@ void def(std::string key, std::string opt="") {
    else if(key == "licn") {
       
    }
-   else if(key == "in") std::cout<<"\033[1m> Enter option: \033[0m";
-   else if(key == "uo") std::cout<<"\033[91m\033[1m< Unavailable option: '"<<opt<<"'\033[0m\n\n";
+   else if(key == "in") std::cout<<b<<"> Enter option: "<<z;
+   else if(key == "uo") std::cout<<r<<b<<"< Unavailable option: '"<<opt<<"'"<<z<<"\n\n";
    else if(key == "ex") {
-      std::cout<<"\033[91m\033[1m< Exit Program...\033[0m\n\n";
+      std::cout<<r<<b<<"< Exit Program..."<<z<<"\n\n";
       exit(0);
    }
    else if(key == "ln") std::cout<<"\n";
-   else std::cout<<"\033[91m\033[1m< Unavailable key: '"<<key<<"'\033[0m\n\n";
+   else std::cout<<r<<b<<"< Unavailable key: '"<<key<<"'"<<z<<"\n\n";
 }
 
 #endif
