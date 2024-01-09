@@ -2,9 +2,9 @@
 #define cli
 
 void def(std::string key, std::string opt="") {
-   const std::string b ("\033[1m"); // bold
-   const std::string r ("\033[91m"); // red
-   const std::string z ("\033[0m"); // reset
+   const std::string b = "\033[1m"; // bold
+   const std::string r = "\033[91m"; // red
+   const std::string z = "\033[0m"; // reset
    struct List {
       std::string head;
       std::vector<std::string> list;
