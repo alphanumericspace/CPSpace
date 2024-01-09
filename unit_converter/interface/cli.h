@@ -54,7 +54,7 @@ const void def(const std::string key, const std::string opt="") {
          "(6) License",
          "(0) Exit Program"
       };
-      home.Print(false);
+      home.Print(0);
    }
    else if(key == "cvtr") {
       List cvtr;
@@ -67,7 +67,7 @@ const void def(const std::string key, const std::string opt="") {
          "(9) Data Size    |  (10) Date and Time",
          "(0) Exit Program"
       };
-      cvtr.Print(false);
+      cvtr.Print(0);
    }
    else if(key == "length") {
       List length;
@@ -86,7 +86,7 @@ const void def(const std::string key, const std::string opt="") {
          "(0) Exit Program"
       };
       length.desc = "Select one of the units that will be used as\n  the conversion parameter for all units";
-      length.Print(true);
+      length.Print(1);
    }
    else if(key == "area") {
       List area;
@@ -103,7 +103,7 @@ const void def(const std::string key, const std::string opt="") {
          "(0) Exit Program"
       };
       area.desc = "Select one of the units that will be used as\n  the conversion parameter for all units.";
-      area.Print(true);
+      area.Print(1);
    }
    else if(key == "volume") {
       List volume;
@@ -124,7 +124,7 @@ const void def(const std::string key, const std::string opt="") {
          "(-1) Previous             |  (0) Exit Program"
       };
       volume.desc = "Select one of the units that will be used as\n  the conversion parameter for all units";
-      volume.Print(true);
+      volume.Print(1);
    }
    else if(key == "weight") {
       List weight;
@@ -144,7 +144,7 @@ const void def(const std::string key, const std::string opt="") {
          "(0) Exit Program"
       };
       weight.desc = "Select one of the units that will be used as\n  the conversion parameter for all units";
-      weight.Print(true);
+      weight.Print(1);
    }
    else if(key == "temp") {
       List temp;
@@ -156,7 +156,7 @@ const void def(const std::string key, const std::string opt="") {
          "(0) Exit Program"
       };
       temp.desc = "Select one of the units that will be used as\n  the conversion parameter for all units.";
-      temp.Print(true);
+      temp.Print(1);
    }
    else if(key == "speed") {
       List speed;
@@ -165,7 +165,7 @@ const void def(const std::string key, const std::string opt="") {
          "(-1) Previous   |  (0) Exit Program"
       };
       speed.desc = "Select one of the units that will be used as\n  the conversion parameter for all units";
-      speed.Print(true);
+      speed.Print(1);
    } 
    else if(key == "press") {
       List press;
@@ -174,7 +174,7 @@ const void def(const std::string key, const std::string opt="") {
          "(-1) Previous   |  (0) Exit Program"
       };
       press.desc = "Select one of the units that will be used as\n  the conversion parameter for all units";
-      press.Print(true);
+      press.Print(1);
    }
    else if(key == "power") {
       List power;
@@ -183,7 +183,7 @@ const void def(const std::string key, const std::string opt="") {
          "(-1) Previous   |  (0) Exit Program"
       };
       power.desc = "Select one of the units that will be used as\n  the conversion parameter for all units.";
-      power.Print(true);
+      power.Print(1);
    }
    else if(key == "data") {
       List data;
@@ -192,7 +192,7 @@ const void def(const std::string key, const std::string opt="") {
          "(-1) Previous   |  (0) Exit Program"
       };
       data.desc = "Select one of the units that will be used as\n  the conversion parameter for all units";
-      data.Print(true);
+      data.Print(1);
    }
    else if(key == "dttm") {
       List dttm;
@@ -201,13 +201,13 @@ const void def(const std::string key, const std::string opt="") {
          "(-1) Previous   |  (0) Exit Program"
       };
       dttm.desc = "Select one of the units that will be used as\n  the conversion parameter for all units";
-      dttm.Print(true);
+      dttm.Print(1);
    }
    else if(key == "info") {
       List info;
       info.head = "A.S.P. @CPSpace - Unit Converter";
       info.desc = "This project is under development, check changelog for\n  more details or check this project at GitHub.";
-      info.Print(true);
+      info.Print(1);
    }
    else if(key == "docs") {
       
