@@ -18,7 +18,7 @@ void def(std::string key, std::string opt="") {
             }
             else std::cout<<"\n";
             
-            std::cout<<"\n  "<<desc<<"\n\n";
+            std::cout<<"  "<<desc<<"\n\n";
          }
          else {
             std::cout<<"\033[1m< "<<head<<"\033[0m\n\n";
@@ -198,7 +198,7 @@ void def(std::string key, std::string opt="") {
    else if(key == "info") {
       List info;
       info.head = "A.S.P. @CPSpace - Unit Converter";
-      info.desc = "This project is under development, check changelog for more details or check this project at GitHub.";
+      info.desc = "This project is under development, check changelog for\n  more details or check this project at GitHub.";
       info.Print(true);
    }
    else if(key == "docs") {
