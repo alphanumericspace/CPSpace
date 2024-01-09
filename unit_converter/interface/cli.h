@@ -1,19 +1,17 @@
 #ifndef cli
 #define cli
 
+#define b "\033[1m"; // bold
+#define r "\033[91m"; // red
+#define z "\033[0m"; // reset
+
 void def(std::string key, std::string opt="") {
-   const std::string b = "\033[1m"; // bold
-   const std::string r = "\033[91m"; // red
-   const std::string z = "\033[0m"; // reset
    struct List {
       std::string head;
       std::vector<std::string> list;
       std::string desc;
       
       void Print(bool isWithDescription) {
-         const std::string b = "\033[1m"; // bold
-         const std::string r = "\033[91m"; // red
-         const std::string z = "\033[0m"; // reset
          if(isWithDescription == true) {
             if(!list.empty()) {
                std::cout<<b<<"< "<<head<<z<<"\n\n";
