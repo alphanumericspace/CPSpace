@@ -182,7 +182,7 @@ int main() {
          while(cvtr != "-1");
       }
       else if(home == "2") {
-         
+         cli::def("info");
       }
       else if(home == "3") {
          
