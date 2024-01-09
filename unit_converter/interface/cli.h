@@ -5,13 +5,13 @@
 #define r "\033[91m" // red
 #define z "\033[0m" // reset
 
-void def(std::string key, std::string opt="") {
+const void def(const std::string key, const std::string opt="") {
    struct List {
       std::string head;
       std::vector<std::string> list;
       std::string desc;
       
-      const void Print(bool isWithDescription) {
+      const void Print(const bool isWithDescription) {
          if(isWithDescription == true) {
             if(!list.empty()) {
                std::cout<<b<<"< "<<head<<z<<"\n\n";
