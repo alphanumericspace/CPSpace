@@ -23,7 +23,7 @@ int main() {
             cli::def("in");
             std::cin>>cvtr;
             cli::def("ln");
-         
+            
             if(cvtr == "1") {
                cli::def("length");
                std::string length;
