@@ -1,6 +1,7 @@
 // Unit Converter
 
 #include <iostream>
+#include <string>
 #include "interface/cli.h"
 
 int main() {
