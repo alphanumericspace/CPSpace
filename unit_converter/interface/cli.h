@@ -1,9 +1,9 @@
 #ifndef cli
 #define cli
 
-#define b "\033[1m"; // bold
-#define r "\033[91m"; // red
-#define z "\033[0m"; // reset
+#define b "\033[1m" // bold
+#define r "\033[91m" // red
+#define z "\033[0m" // reset
 
 void def(std::string key, std::string opt="") {
    struct List {
